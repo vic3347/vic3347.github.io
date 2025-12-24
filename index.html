@@ -4,46 +4,74 @@
   <meta charset="UTF-8">
   <title>Projects</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
       max-width: 800px;
       margin: 60px auto;
       line-height: 1.6;
+
+      /* Background image */
+      background-image: url("./shovelbum.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
+
+    /* Optional readability wrapper */
+    .content {
+      background: rgba(255, 255, 255, 0.88);
+      padding: 30px 40px;
+      border-radius: 8px;
+    }
+
     h1 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 10px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
       margin: 20px 0;
     }
+
     a {
       font-size: 1.2em;
       text-decoration: none;
       color: #0056b3;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  
-<h1>Projects</h1>
 
-<ul>
-    <a href="./research/index.html">Research</a><br>
-  <li>
-    <a href="teaching/">Teaching</a><br>
-  </li>
-  <li>
-    <a href="personal/">Personal</a><br>
-  </li>
-</ul>
+<div class="content">
+  <h1>Projects</h1>
+
+  <ul>
+    <li>
+      <a href="./research/index.html">Research</a>
+    </li>
+    <li>
+      <a href="./teaching/">Teaching</a>
+    </li>
+    <li>
+      <a href="./personal/">Personal</a>
+    </li>
+  </ul>
+</div>
 
 </body>
 </html>
