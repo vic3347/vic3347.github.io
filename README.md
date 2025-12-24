@@ -36,7 +36,9 @@
 <h1>Projects & Work</h1>
 
 <ul>
-    <a href="research/">Research</a><br>
+    <li>
+    </li><a href="research/">Research</a><br>
+  <li>
   <li>
     <a href="teaching/">Teaching</a><br>
   </li>
