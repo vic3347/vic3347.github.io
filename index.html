@@ -73,11 +73,12 @@
     }
 
     .hero > div{
-       background: #ffffff;
-       border: 1px solid #dddddd;
+      background: rgba(255,255,255,0.65);   /* ← transparency here */
+       border: 1px solid rgba(0,0,0,0.12);
        border-radius: 14px;
        padding: 18px 18px;
-      }
+       backdrop-filter: blur(6px); 
+	}
 
     .hero h2{
       margin:0 0 10px;
