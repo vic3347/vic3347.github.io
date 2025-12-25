@@ -4,46 +4,34 @@
   <meta charset="UTF-8">
   <title>Projects</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
       max-width: 800px;
       margin: 60px auto;
       line-height: 1.6;
-    }
-    h1 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 20px 0;
-    }
-    a {
-      font-size: 1.2em;
-      text-decoration: none;
-      color: #0056b3;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  
-<h1>Projects</h1>
+      min-height: 100vh;
 
-<ul>
-    <a href="proects/">Research</a><br>
-  <li>
-    <a href="teaching/">Teaching</a><br>
-  </li>
-  <li>
-    <a href="personal/">Personal</a><br>
-  </li>
-</ul>
+      /* Background image */
+      background-image: url("./shovelbum.png");
+      /* Background image with subtle transparency */
+      background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
+        url("./shovelbum.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-</body>
-</html>
+    @media (max-width: 700px) {
+      body {
+        margin: 30px 16px;
+        background-size: contain;
+        background-position: top;
+        background-attachment: scroll;
+      }
+    }
