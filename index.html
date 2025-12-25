@@ -7,14 +7,14 @@
 
   <style>
     :root{
-      --bg:#0b1020;
-      --panel:rgba(255,255,255,.08);
-      --text:rgba(255,255,255,.95);
-      --muted:rgba(255,255,255,.75);
-      --border:rgba(255,255,255,.18);
+      --bg:#f5f6f8;              /* page background */
+      --panel:#ffffff;          /* cards / panels */
+      --text:#000000;           /* MAIN TEXT = BLACK */
+      --muted:#444444;          /* secondary text */
+      --border:#dddddd;         /* subtle borders */
       --radius:18px;
       --max:980px;
-    }
+}
 
     *{box-sizing:border-box}
     body{
@@ -68,20 +68,16 @@
       align-items:center;
       padding:28px;
       background:
-        linear-gradient(
-          rgba(0,0,0,.55),
-          rgba(0,0,0,.55)
-        ),
-        url("./shovelbum.ong") right / cover no-repeat;
+  	linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,.45)),
+  	url("./shovelbum.png") center / cover no-repeat;
     }
 
-    .hero-content{
-      background:rgba(0, 0, 0,.08);
-      border: 1px solid rgba(0,0,0,.08)
-      padding:18px 18px;
-      border-radius:14px;
-      backdrop-filter: blur(4px);
-    }
+    .hero > div{
+       background: #ffffff;
+       border: 1px solid #dddddd;
+       border-radius: 14px;
+       padding: 18px 18px;
+      }
 
     .hero h2{
       margin:0 0 10px;
@@ -121,6 +117,13 @@
       color:var(--muted);
       margin-bottom:12px;
     }
+     a{
+  	color:#000000;
+	}
+
+	a:hover{
+ 	 text-decoration:underline;
+	}
 
     .grid{
       display:grid;
