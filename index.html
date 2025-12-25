@@ -101,19 +101,6 @@
       border-color: var(--border);
     }
 
-/* ✅ NEW: keeps text readable against the background */
-.hero > div{
-  background: rgba(0,0,0,.45);
-  border: 1px solid rgba(255,255,255,.16);
-  border-radius: 14px;
-  padding: 18px 18px;
-  backdrop-filter: blur(4px);
-}
-
-/* optional spacer to keep the right column breathing room */
-.hero-spacer{
-  min-height: 220px;
-}
 
 
 
@@ -127,11 +114,6 @@
   box-shadow: var(--shadow);
   overflow: hidden;
 
-  /* ✅ CHANGE THIS PATH to your existing image file */
-  background:
-    linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.35)),
-    url("./shovelbum.png") center / cover no-repeat;
-}
 
     @media (max-width: 820px){
       .hero{ grid-template-columns: 1fr; }
