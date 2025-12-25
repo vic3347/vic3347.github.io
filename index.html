@@ -1,105 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Current Projects</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>DataBums — Projects</title>
+  <meta name="description" content="Current research projects and working notes." />
+
   <style>
-    html, body {
+    :root{
+      --bg: #0b1020;
+      --panel: rgba(255,255,255,.06);
+      --panel-2: rgba(255,255,255,.08);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --border: rgba(255,255,255,.14);
+      --shadow: 0 16px 50px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 980px;
+    }
+
+    /* Light mode fallback */
+    @media (prefers-color-scheme: light) {
+      :root{
+        --bg: #f6f7fb;
+        --panel: rgba(10,20,40,.05);
+        --panel-2: rgba(10,20,40,.07);
+        --text: rgba(10,20,40,.92);
+        --muted: rgba(10,20,40,.70);
+        --border: rgba(10,20,40,.14);
+        --shadow: 0 16px 50px rgba(10,20,40,.12);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
       margin: 0;
-      padding: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(120,160,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(255,150,120,.18), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      max-width: 920px;
-      margin: 60px auto;
-      line-height: 1.6;
-<<<<<<< HEAD
-      line-height: 1.7;
-      font-size: 18px;
-      min-height: 100vh;
-      color: #0a1f44;
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 3px solid rgba(120,160,255,.65); outline-offset: 3px; border-radius: 10px; }
 
-      /* Background image */
-      background-image: url("./shovelbum.png");
-      /* Background image with subtle transparency */
-      background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
-      /* Show the full background image with a soft, lighter overlay */
-      background-size: cover;
-      background-position: left;
-      background-size: contain;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color: #f6f8fb;
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 36px 18px 48px;
     }
 
-
-    /* Optional readability wrapper */
-    .content {
-      background: rgba(255, 255, 255, 0.88);
-      padding: 30px 40px;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.94);
-      padding: 36px 44px;
-      border-radius: 14px;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.07);
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 2px 22px;
     }
 
-    h1 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-      margin-top: 0;
-      border-bottom: 2px solid #d7deeb;
-      padding-bottom: 14px;
-      letter-spacing: 0.03em;
-      font-size: 2rem;
-      color: #0a2c68;
+    .brand{
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
     }
-
-    ul {
-      list-style: none;
-      padding: 0;
+    .brand h1{
+      font-size: 20px;
+      letter-spacing: .2px;
       margin: 0;
+      font-weight: 750;
+    }
+    .brand .tag{
+      font-size: 13px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--panel);
     }
 
-    li {
-      margin: 20px 0;
-      margin: 18px 0;
+    nav{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .navlink{
+      font-size: 14px;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+    }
+    .navlink:hover{
+      color: var(--text);
+      background: var(--panel);
+      border-color: var(--border);
     }
 
-    a {
-      font-size: 1.2em;
-      font-weight: 650;
-      text-decoration: none;
-      color: #0056b3;
-      color: #0c4f9c;
-      transition: color 0.15s ease, padding-left 0.15s ease;
+    .hero{
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--panel), transparent);
+      box-shadow: var(--shadow);
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: #073571;
-      padding-left: 6px;
+    @media (max-width: 820px){
+      .hero{ grid-template-columns: 1fr; }
+      nav{ justify-content: flex-start; }
+    }
+
+    .hero h2{
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -0.4px;
+    }
+    .hero p{
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 62ch;
+    }
+
+    .hero .actions{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      font-size: 14px;
+      color: var(--text);
+    }
+    .btn:hover{ background: var(--panel-2); }
+    .btn.primary{
+      background: rgba(120,160,255,.22);
+      border-color: rgba(120,160,255,.42);
+    }
+
+    .hero figure{
+      margin: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      align-self: stretch;
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+    }
+    .hero img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section{
+      margin-top: 24px;
+    }
+    .section h3{
+      margin: 0 0 10px;
+      font-size: 15px;
+      letter-spacing: .2px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 820px){ .grid{ grid-template-columns: 1fr; } }
+
+    .card{
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 16px;
+      padding: 14px 14px 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.18);
+      transition: transform .12s ease, background .12s ease;
+      min-height: 92px;
+    }
+    .card:hover{
+      transform: translateY(-2px);
+      background: var(--panel-2);
+    }
+    .card .title{
+      margin: 0 0 6px;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -.2px;
+    }
+    .card .meta{
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer{
+      margin-top: 26px;
+      padding: 18px 4px 0;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer .smalllinks{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    footer .smalllinks a{
+      padding: 6px 8px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      color: var(--muted);
+    }
+    footer .smalllinks a:hover{
+      color: var(--text);
+      background: var(--panel);
+      border-color: var(--border);
     }
   </style>
 </head>
-<body>
 
-<div class="content">
-    <h1>Projects</h1>
-    <ul>
-      <li>
-        <a href="./research/index.html">Race and Inequality</a>
-      </li>
-      <li>
-        <a href="./teaching/">Global Enumeration Practices</a>
-      </li>
-      <li>
-        <a href="./personal/">Race and Crime</a>
-      </li>
-    </ul>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>DataBums</h1>
+        <span class="tag">Current projects</span>
+      </div>
+      <nav aria-label="Primary">
+        <a class="navlink" href="/research/index.html">Research</a>
+        <a class="navlink" href="/teaching/">Teaching</a>
+        <a class="navlink" href="/personal/">Personal</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Intro">
+        <div>
+          <h2>Projects & working notes</h2>
+          <p>
+            A clean hub for ongoing work—research threads, teaching materials, and personal projects.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="/research/index.html" aria-label="Go to research projects">
+              → Research projects
+            </a>
+            <a class="btn" href="#projects" aria-label="Jump to project list">
+              ↓ View project list
+            </a>
+          </div>
+        </div>
+
+        <figure aria-label="Site image">
+          <!-- IMPORTANT:
+               Keep the SAME image you currently use by setting this path to your existing file.
+               Example: src="/assets/header.jpg" or src="./images/databums.png"
+          -->
+          <img src="/assets/your-existing-image.jpg" alt="DataBums header image" />
+        </figure>
+      </section>
+
+      <section class="section" id="projects" aria-label="Projects">
+        <h3>Projects</h3>
+        <div class="grid">
+          <a class="card" href="/research/index.html">
+            <p class="title">Race and Inequality</p>
+            <p class="meta">Research projects and data notes</p>
+          </a>
+
+          <a class="card" href="/global-enumeration-practices/">
+            <p class="title">Global Enumeration Practices</p>
+            <p class="meta">Comparative census / classification work</p>
+          </a>
+
+          <a class="card" href="/race-and-crime/">
+            <p class="title">Race and Crime</p>
+            <p class="meta">Reading notes, analysis, and teaching overlap</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> DataBums</div>
+      <div class="smalllinks">
+        <a href="/">Home</a>
+        <a href="/research/index.html">Research</a>
+        <a href="/teaching/">Teaching</a>
+        <a href="/personal/">Personal</a>
+      </div>
+    </footer>
   </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
