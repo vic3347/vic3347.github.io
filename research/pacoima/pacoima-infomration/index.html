@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research Files</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #000;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(247,247,247,0.95);
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-inner a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      margin-left: 16px;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .header-inner a:hover {
+      border-bottom-color: #000;
+    }
+
+    /* Main layout */
+    main {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      max-width: 700px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* File list container */
+    .file-block {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+
+    /* Background image */
+    .file-block::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://www.databums.org/shovelbum.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 240px;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+
+    .file-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    ul.file-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    ul.file-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 1.05em;
+    }
+
+    ul.file-list li:last-child {
+      border-bottom: none;
+    }
+
+    .filename {
+      font-family: monospace;
+    }
+
+    .placeholder {
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div><strong>DataBums</strong></div>
+      <nav>
+        <a href="https://www.databums.org/">Home</a>
+        <a href="https://www.databums.org/research/">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Research Files</h1>
+    <p class="description">
+      This page lists working files and materials related to ongoing research.
+      Filenames will be updated as new materials are added.
+    </p>
+
+    <div class="file-block">
+      <div class="file-content">
+
+        <h2>Files</h2>
+
+
+        <ul class="file-list">
+          <li><span class="filename placeholder">Filename_01.ext</span></li>
+          <li><span class="filename placeholder">Filename_02.ext</span></li>
+          <li><span class="filename placeholder">Filename_03.ext</span></li>
+          <li><span class="filename placeholder">Filename_04.ext</span></li>
+          <li><span class="filename placeholder">Filename_05.ext</span></li> 
+
+
+          <!-- ADD MORE FILENAMES BELOW -->
+          <!-- <li><span class="filename">real_file_name.pdf</span></li> -->
+          <!-- ADD MORE FILENAMES ABOVE -->
+        </ul>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+
