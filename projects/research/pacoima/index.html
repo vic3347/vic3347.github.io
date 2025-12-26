@@ -1,175 +1,224 @@
-<DOCTYPE html>
+<Doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Research Files</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Race & Inequality in Pacoima, CA</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7f7;
-      color: #000;
+    :root{
+      --bg:#f5f6f8;
+      --panel:#ffffff;
+      --text:#000000;
+      --muted:#444444;
+      --border:#dddddd;
+      --radius:18px;
+      --max:980px;
     }
 
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(247,247,247,0.95);
-      border-bottom: 1px solid #ddd;
-      z-index: 10;
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.6;
     }
 
-    .header-inner {
-      max-width: 900px;
+    a{
+      color:#000000;
+      text-decoration:none;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+
+    .wrap{
+      max-width: var(--max);
       margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 42px 18px 56px;
     }
 
-    .header-inner a {
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-      margin-left: 16px;
-      border-bottom: 2px solid transparent;
-      padding-bottom: 2px;
+    /* ===== HEADER ===== */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:32px;
     }
 
-    .header-inner a:hover {
-      border-bottom-color: #000;
+    header h1{
+      margin:0;
+      font-size:22px;
+      font-weight:700;
     }
 
-    /* Main layout */
-    main {
-      max-width: 900px;
-      margin: 40px auto 80px;
-      padding: 0 20px;
+    nav a{
+      margin-left:14px;
+      font-size:14px;
+      color:var(--muted);
     }
 
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+    /* ===== HERO ===== */
+    .hero{
+      background: var(--panel);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 30px;
+      margin-bottom:36px;
     }
 
-    p.description {
-      max-width: 700px;
-      color: #444;
-      line-height: 1.6;
-      margin-bottom: 30px;
+    .hero h2{
+      margin:0 0 10px;
+      font-size:34px;
+      line-height:1.2;
+      letter-spacing:-0.4px;
     }
 
-    /* File list container */
-    .file-block {
-      position: relative;
-      background: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 10px 26px rgba(0,0,0,0.06);
-      overflow: hidden;
+    .hero p{
+      margin:0;
+      max-width: 70ch;
+      color: var(--muted);
+      font-size:16px;
     }
 
-    /* Background image */
-    .file-block::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: url("https://www.databums.org/shovelbum.png");
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      background-size: 240px;
-      opacity: 0.10;
-      pointer-events: none;
+    /* ===== SECTIONS ===== */
+    .section-title{
+      font-size:14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin-bottom:14px;
     }
 
-    .file-content {
-      position: relative;
-      z-index: 1;
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:16px;
     }
 
-    h2 {
-      font-size: 1.4em;
-      margin-top: 0;
-      margin-bottom: 18px;
+    @media (max-width: 900px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
     }
 
-    ul.file-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
+    .card{
+      background: var(--panel);
+      border:1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      transition: transform .12s ease, box-shadow .12s ease;
     }
 
-    ul.file-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-      font-size: 1.05em;
+    .card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
     }
 
-    ul.file-list li:last-child {
-      border-bottom: none;
+    .card h3{
+      margin:0 0 8px;
+      font-size:20px;
+      font-weight:700;
     }
 
-    .filename {
-      font-family: monospace;
+    .card p{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+      max-width: 45ch;
     }
 
-    .placeholder {
-      color: #777;
+    /* ===== FOOTER ===== */
+    footer{
+      margin-top:48px;
+      font-size:13px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:12px;
     }
   </style>
 </head>
 
 <body>
+  <div class="wrap">
 
-  <header>
-    <div class="header-inner">
-      <div><strong>DataBums</strong></div>
+    <header>
+      <h1>DataBums</h1>
       <nav>
-        <a href="https://www.databums.org/">Home</a>
-        <a href="https://www.databums.org/research/">Research</a>
+        <a href="/">Home</a>
+        <a href="/research/index.html">Research</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <h1>Links and Documents related to Pacoima</h1>
-    <p class="description">
-      Lots of links and files with descriptions on Pacoima
-    </p>
+    <main>
 
-   <div class="file-block">
-      <div class="file-content">
+      <section class="hero">
+        <h2>Race & Inequality Over Time in Pacoima, CA</h2>
+        <p>
+          This project examines long-term patterns of racial composition,
+          socioeconomic inequality, and spatial change in Pacoima, California,
+          using historical census data, maps, and contextual neighborhood information.
+        </p>
+      </section>
 
-        <h2>Historical Websites</h2>
+      <section>
+        <div class="section-title">Project Components</div>
 
-        <ul class="file-list">
-	   <a class="card" href="https://storymaps.arcgis.com/stories/633ec938a3ad40eca8105a9e159b59d7">
+        <div class="grid">
+
+          <!-- 1. Historical Data -->
+          <a class="card" href="./historical-data/">
+            <h3>Historical Data</h3>
             <p>
-	    Freeway Revolts & Racially Exclusive Participatory Planning
+              Decennial census data, demographic trends, and inequality indicators
+              tracking race, age, poverty, and housing over time.
             </p>
-           <a>
+          </a>
 
+          <!-- 2. Economic Data -->
+          <a class="card" href="./economic-data/">
+            <h3>Economic Data</h3>
+            <p>
+              Historical data on businesses, economic conditions, and industry in Pacoima.
+            </p>
+          </a>
 
-	  <li><span class="filename placeholder">Filename_01.ext</span></li>
-          <li><span class="filename placeholder">Filename_02.ext</span></li>
-          <li><span class="filename placeholder">Filename_03.ext</span></li>
-          <li><span class="filename placeholder">Filename_04.ext</span></li>
-          <li><span class="filename placeholder">Filename_05.ext</span></li> 
+          <!-- 3. Maps -->
+          <a class="card" href="./maps/">
+            <h3>Maps</h3>
+            <p>
+              Spatial visualizations of demographic change, segregation,
+              and neighborhood boundaries across decades.
+            </p>
+          </a>
 
+          <!-- 4. Pacoima Information -->
+          <a class="card" href="./pacoima_information">
+            <h3>Pacoima Information</h3>
+            <p>
+              Historical background, policy context, and local institutional
+              factors shaping inequality in Pacoima.
+            </p>
+          </a>
 
-          <!-- ADD MORE FILENAMES BELOW -->
-          <!-- <li><span class="filename">real_file_name.pdf</span></li> -->
-          <!-- ADD MORE FILENAMES ABOVE -->
-        </ul>
+        </div>
+      </section>
 
-      </div>
-    </div>
-  </main>
+    </main>
 
+    <footer>
+      <div>© <span id="year"></span> DataBums</div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
