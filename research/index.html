@@ -2,12 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>pacoima</title>
+  <title>Research</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 12px;
+    }
+
+    /* === Research link section === */
+    .research-block {
+      position: relative;
+      padding: 40px;
+      margin-top: 30px;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    /* Background image */
+    .research-block::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://www.databums.org/shovelbum.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 260px;
+      opacity: 0.12; /* controls how visible the image is */
+      pointer-events: none;
+    }
+
+    /* Light overlay so text stays readable */
+    .research-block::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #ffffff;
+      opacity: 0.85;
+    }
+
+    .research-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .research-content h2 {
+      margin-top: 0;
+      font-size: 1.6em;
+    }
+
+    .research-content a {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 1.15em;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 2px solid #000;
+      padding-bottom: 3px;
+    }
+
+    .research-content a:hover {
+      opacity: 0.7;
+    }
+
+    /* Space reserved for future links */
+    .future-space {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px dashed #ccc;
+      color: #777;
+      font-size: 0.95em;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Research Projects</h1>
-  <ul>
-    <li><a href="./pacoima/">Pacoima</a></li>
-  </ul>
+
+  <div class="container">
+    <h1>Research</h1>
+
+    <div class="research-block">
+      <div class="research-content">
+
+        <h2>Current Research</h2>
+
+        <a href="http://www.databums.org/research/pacoima/">
+          Pacoima: Census, Neighborhood Change, and History
+        </a>
+
+        <!-- ADD MORE LINKS BELOW THIS LINE -->
+        <div class="future-space">
+          Space reserved for additional research projects.
+        </div>
+        <!-- ADD MORE LINKS ABOVE THIS LINE -->
+
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
+
