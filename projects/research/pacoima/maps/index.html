@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pacoima, CA — Maps (1950–2020)</title>
+  <style>
+    :root{
+      --bg:#f7f7f7;
+      --card:#ffffff;
+      --text:#111;
+      --muted:#555;
+      --border:#dddddd;
+      --link:#0056b3;
+      --shadow: 0 6px 18px rgba(0,0,0,.07);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      color:var(--text);
+      background: var(--bg);
+      line-height:1.6;
+    }
+
+    header{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 18px 10px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .title-wrap h1{
+      margin:0 0 6px 0;
+      font-size: 1.8rem;
+      letter-spacing: .2px;
+    }
+    .title-wrap p{
+      margin:0;
+      color:var(--muted);
+      max-width: 70ch;
+    }
+
+    .top-links{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      margin-top: 4px;
+    }
+    .top-links a{
+      color:var(--link);
+      text-decoration:none;
+      font-weight:600;
+      white-space:nowrap;
+    }
+    .top-links a:hover{ text-decoration: underline; }
+
+    main{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 18px 40px;
+    }
+
+    .toc{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      margin: 10px 0 18px;
+    }
+    .toc h2{
+      margin:0 0 10px 0;
+      font-size: 1.1rem;
+    }
+    .toc-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 14px;
+      margin: 0;
+      padding: 0;
+      list-style:none;
+    }
+    .toc-links a{
+      color:var(--link);
+      text-decoration:none;
+    }
+    .toc-links a:hover{ text-decoration: underline; }
+
+    .decade{
+      margin: 18px 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .decade-header{
+      padding: 16px 16px 10px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.65);
+    }
+    .decade-header h2{
+      margin:0;
+      font-size: 1.35rem;
+    }
+    .decade-body{
+      padding: 16px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .section{
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      background: #fff;
+    }
+    .section h3{
+      margin:0 0 8px 0;
+      font-size: 1.05rem;
+    }
+    .section p{
+      margin: 0 0 10px 0;
+      color: var(--muted);
+    }
+
+    .embed-wrap{
+      width: 100%;
+      overflow:auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 10px;
+    }
+    /* Make iframes responsive-ish while preserving your 800x600 default */
+    .embed-wrap iframe{
+      display:block;
+      width: min(800px, 100%);
+      height: 600px;
+      border: 0;
+      margin: 0 auto;
+    }
+
+    .placeholder{
+      border: 2px dashed #cfcfcf;
+      border-radius: 10px;
+      padding: 14px;
+      color: var(--muted);
+      background: #fafafa;
+    }
+    .placeholder code{
+      color:#222;
+      background:#f0f0f0;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    footer{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 18px 28px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title-wrap">
+      <h1>Pacoima, CA — Maps (1950–2020)</h1>
+      <p>Decade-by-decade Social Explorer embeds and placeholders for additional maps. Replace placeholders with new Social Explorer iframe embeds as you add them.</p>
+    </div>
+
+    <nav class="top-links" aria-label="Top links">
+      <a href="https://www.databums.org/">Home</a>
+      <!-- Adjust this if your Maps folder lives somewhere else -->
+      <a href="../index.html">Back to Pacoima Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="toc">
+      <h2>Jump to a decade</h2>
+      <ul class="toc-links">
+        <li><a href="#d1950">1950s</a></li>
+        <li><a href="#d1960">1960s</a></li>
+        <li><a href="#d1970">1970s</a></li>
+        <li><a href="#d1980">1980s</a></li>
+        <li><a href="#d1990">1990s</a></li>
+        <li><a href="#d2000">2000s</a></li>
+        <li><a href="#d2010">2010s</a></li>
+        <li><a href="#d2020">2020s</a></li>
+      </ul>
+    </section>
+
+    <!-- Reusable iframe snippet -->
+    <!--
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://www.socialexplorer.com/4694ebe9c8/embed"
+        width="800" height="600"
+        allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    -->
+
+    <!-- 1950 -->
+    <section id="d1950" class="decade">
+      <div class="decade-header">
+        <h2>1950s</h2>
+      </div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <p>Add more Social Explorer embeds here.</p>
+          <div class="placeholder">
+            Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here for wellbeing maps.
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Other Maps</h3>
+          <p>Historical boundaries, transportation, land use, redlining overlays, etc.</p>
+          <div class="placeholder">
+            Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here for other maps.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1960 -->
+    <section id="d1960" class="decade">
+      <div class="decade-header"><h2>1960s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1970 -->
+    <section id="d1970" class="decade">
+      <div class="decade-header"><h2>1970s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1980 -->
+    <section id="d1980" class="decade">
+      <div class="decade-header"><h2>1980s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1990 -->
+    <section id="d1990" class="decade">
+      <div class="decade-header"><h2>1990s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2000 -->
+    <section id="d2000" class="decade">
+      <div class="decade-header"><h2>2000s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2010 -->
+    <section id="d2010" class="decade">
+      <div class="decade-header"><h2>2010s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2020 -->
+    <section id="d2020" class="decade">
+      <div class="decade-header"><h2>2020s</h2></div>
+      <div class="decade-body">
+        <div class="section">
+          <h3>Demographic Maps</h3>
+          <p>Embedded Social Explorer map (swap/duplicate as needed).</p>
+          <div class="embed-wrap">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.socialexplorer.com/4694ebe9c8/embed" width="800" height="600"
+              allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Social and Economic Wellbeing Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+        <div class="section">
+          <h3>Other Maps</h3>
+          <div class="placeholder">Placeholder: paste additional Social Explorer <code>&lt;iframe&gt;</code> embed(s) here.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      Tip: To add another Social Explorer map, copy/paste its <code>&lt;iframe&gt;</code> embed code into the appropriate placeholder box.
+    </div>
+  </footer>
+</body>
+</html>
+
