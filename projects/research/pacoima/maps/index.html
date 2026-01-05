@@ -1,165 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pacoima Maps</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pacoima, CA — Maps</title>
   <style>
-    body {
+    :root{
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --line: #e5e5e7;
+      --link: #0b5bd3;
+      --shadow: 0 10px 24px rgba(0,0,0,.06);
+      --radius: 16px;
+      --max: 1000px;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #000;
-      background-color: #fafafa;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
     }
 
-    h1 {
-      border-bottom: 3px solid #ddd;
-      padding-bottom: 10px;
+    header{
+      padding: 28px 18px 14px;
     }
 
-    h2 {
-      margin-top: 50px;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 6px;
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 18px 36px;
     }
 
-    h3 {
-      margin-top: 25px;
+    .topbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
     }
 
-    .map-section {
-      margin-top: 30px;
+    h1{
+      font-size: 28px;
+      margin: 0;
+      letter-spacing: .2px;
     }
 
-    .map-container {
-      margin: 20px 0 40px 0;
+    .navlinks a{
+      display: inline-block;
+      margin-left: 10px;
+      text-decoration: none;
+      color: var(--link);
+      font-weight: 600;
+    }
+    .navlinks a:hover{ text-decoration: underline; }
+
+    .subhead{
+      margin: 6px 0 0;
+      color: var(--muted);
+      max-width: 70ch;
     }
 
-    iframe {
-      max-width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+    .section{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      margin: 16px 0;
     }
 
-    .placeholder {
-      font-style: italic;
-      color: #666;
-      margin: 10px 0 30px 0;
+    .section h2{
+      margin: 0 0 10px;
+      font-size: 20px;
     }
 
-    footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 0.9em;
-      color: #666;
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .pdf{
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 12px;
+      background: #fff;
+    }
+    .pdf a{
+      text-decoration: none;
+      color: var(--link);
+      font-weight: 700;
+    }
+    .pdf a:hover{ text-decoration: underline; }
+    .pdf .meta{
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .divider{
+      height: 1px;
+      background: var(--line);
+      margin: 14px 0;
+    }
+
+    h3{
+      margin: 14px 0 6px;
+      font-size: 16px;
+    }
+
+    .note{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .iframe-wrap{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      margin-top: 10px;
+    }
+    .iframe-wrap iframe{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 920px){
+      .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px){
+      .grid{ grid-template-columns: 1fr; }
+      h1{ font-size: 24px; }
+    }
+
+    footer{
+      color: var(--muted);
+      font-size: 13px;
+      padding: 10px 0 22px;
+      text-align: center;
+    }
+
+    code{
+      background: #f2f2f4;
+      border: 1px solid var(--line);
+      padding: 1px 6px;
+      border-radius: 8px;
+      font-size: .95em;
     }
   </style>
 </head>
 
 <body>
-
-  <h1>Pacoima, CA — Maps</h1>
-
-  <p>
-    This page contains interactive maps documenting demographic, social, and economic
-    change in Pacoima over time using census data and Social Explorer visualizations.
-  </p>
-
-  <!-- ===================== -->
-  <!-- EXISTING MAP SECTIONS -->
-  <!-- ===================== -->
-
-  <h2>1950–1969</h2>
-
-  <div class="map-section">
-    <h3>Demographic Maps</h3>
-    <div class="placeholder">[Additional Social Explorer demographic maps coming soon]</div>
-
-    <h3>Social & Economic Wellbeing Maps</h3>
-    <div class="placeholder">[Additional Social Explorer wellbeing maps coming soon]</div>
-
-    <h3>Other Maps</h3>
-    <div class="placeholder">[Additional maps coming soon]</div>
-  </div>
-
-  <h2>1970–1989</h2>
-
-  <div class="map-section">
-    <h3>Demographic Maps</h3>
-    <div class="placeholder">[Additional Social Explorer demographic maps coming soon]</div>
-
-    <h3>Social & Economic Wellbeing Maps</h3>
-    <div class="placeholder">[Additional Social Explorer wellbeing maps coming soon]</div>
-
-    <h3>Other Maps</h3>
-    <div class="placeholder">[Additional maps coming soon]</div>
-  </div>
-
-  <h2>1990–2009</h2>
-
-  <div class="map-section">
-    <h3>Demographic Maps</h3>
-    <div class="placeholder">[Additional Social Explorer demographic maps coming soon]</div>
-
-    <h3>Social & Economic Wellbeing Maps</h3>
-    <div class="placeholder">[Additional Social Explorer wellbeing maps coming soon]</div>
-
-    <h3>Other Maps</h3>
-    <div class="placeholder">[Additional maps coming soon]</div>
-  </div>
-
-  <h2>2010–2023</h2>
-
-  <div class="map-section">
-    <h3>Demographic Maps</h3>
-    <div class="placeholder">[Additional Social Explorer demographic maps coming soon]</div>
-
-    <h3>Social & Economic Wellbeing Maps</h3>
-    <div class="placeholder">[Additional Social Explorer wellbeing maps coming soon]</div>
-
-    <h3>Other Maps</h3>
-    <div class="placeholder">[Additional maps coming soon]</div>
-  </div>
-
-  <!-- ============================================== -->
-  <!-- NEW SECTION: CHANGE IN AFRICAN AMERICAN POPULATION -->
-  <!-- ============================================== -->
-
-  <h2>Change in African American Population, 1970–2023</h2>
-
-  <div class="map-section">
-    <p>
-      This map visualizes changes in the African American population in Pacoima and
-      surrounding areas from 1970 through 2023 using U.S. Census Data provided by Social Explorer.
-    </p>
-
-    <div class="map-container">
-      <iframe
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-        src="https://www.socialexplorer.com/c85e95bc88/embed"
-        width="960"
-        height="720"
-        allowfullscreen="true"
-        webkitallowfullscreen="true"
-        mozallowfullscreen="true">
-      </iframe>
+  <header class="wrap">
+    <div class="topbar">
+      <h1>Pacoima, CA — Maps</h1>
+      <div class="navlinks" aria-label="Site navigation">
+        <a href="https://www.databums.org/">Home</a>
+        <a href="https://www.databums.org/projects/research/pacoima/">Back to Pacoima Project</a>
+      </div>
     </div>
-  </div>
-
-  <footer>
-    <p>
-      Data sources include the U.S. Decennial Census, American Community Survey,
-      NHGIS, and Social Explorer.
+    <p class="subhead">
+      This page contains (1) downloadable PDF tract profiles and (2) interactive maps documenting demographic, social,
+      and economic change in Pacoima over time using census data and Social Explorer visualizations.
     </p>
-  </footer>
+  </header>
 
+  <main class="wrap">
+
+    <!-- =========================
+         SECTION 1: PDF PROFILES
+         ========================= -->
+    <section class="section" id="tract-profiles">
+      <h2>Profiles of Pacoima Census Tracts 1950-2024</h2>
+      <p class="note">
+        Replace the <code>href</code> values below with the actual PDF filenames/paths once you upload them (e.g.,
+        <code>./pdf/tract_1045_profile.pdf</code>).
+      </p>
+
+      <div class="grid" role="list">
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 1</a>
+          <div class="meta">Short description (e.g., Tract ####.## • 1950–2024)</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 2</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 3</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 4</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 5</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 6</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 7</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 8</a>
+          <div class="meta">Short description</div>
+        </div>
+        <div class="pdf" role="listitem">
+          <a href="#" title="Link to PDF">PDF Profile Placeholder 9</a>
+          <div class="meta">Short description</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SECTION 2: EXISTING MAPS
+         ========================= -->
+    <section class="section" id="interactive-maps">
+      <h2>Interactive and Comparison Maps</h2>
+
+      <p class="note">
+        Content below mirrors the current structure on the page (grouped decades plus the African American population change map).
+        Add additional Social Explorer embeds by pasting their <code>&lt;iframe&gt;</code> code under the relevant headings.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>1950–1969</h3>
+      <h3 style="margin-top:10px;">Demographic Maps</h3>
+      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
+
+      <h3>Social &amp; Economic Wellbeing Maps</h3>
+      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
+
+      <h3>Other Maps</h3>
+      <p class="note">[Additional maps coming soon]</p>
+
+      <div class="divider"></div>
+
+      <h3>1970–1989</h3>
+      <h3 style="margin-top:10px;">Demographic Maps</h3>
+      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
+
+      <h3>Social &amp; Economic Wellbeing Maps</h3>
+      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
+
+      <h3>Other Maps</h3>
+      <p class="note">[Additional maps coming soon]</p>
+
+      <div class="divider"></div>
+
+      <h3>1990–2009</h3>
+      <h3 style="margin-top:10px;">Demographic Maps</h3>
+      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
+
+      <h3>Social &amp; Economic Wellbeing Maps</h3>
+      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
+
+      <h3>Other Maps</h3>
+      <p class="note">[Additional maps coming soon]</p>
+
+      <div class="divider"></div>
+
+      <h3>2010–2023</h3>
+      <h3 style="margin-top:10px;">Demographic Maps</h3>
+      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
+
+      <h3>Social &amp; Economic Wellbeing Maps</h3>
+      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
+
+      <h3>Other Maps</h3>
+      <p class="note">[Additional maps coming soon]</p>
+
+      <div class="divider"></div>
+
+      <h3>Change in African American Population, 1970–2023</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima and surrounding areas from 1970 through 2023
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <p class="note">
+        Data sources include the U.S. Decennial Census, American Community Survey, NHGIS, and Social Explorer.
+      </p>
+
+      <div class="iframe-wrap" aria-label="Social Explorer embed: Change in African American Population, 1970–2023">
+        <iframe
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.socialexplorer.com/c85e95bc88/embed"
+          allowfullscreen="true"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true">
+        </iframe>
+      </div>
+
+    </section>
+
+    <footer>
+      Tip: upload PDFs into a folder (e.g., <code>./pdf/</code>) and update the 9 profile links to point to those files.
+    </footer>
+  </main>
 </body>
 </html>
