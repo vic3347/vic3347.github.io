@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- iPhone-friendly viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Pacoima, CA — Maps</title>
+
   <style>
     :root{
       --bg: #f7f7f8;
@@ -18,17 +20,18 @@
     }
 
     *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
     body{
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.55;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
     }
 
-    header{
-      padding: 28px 18px 14px;
-    }
+    header{ padding: 28px 18px 14px; }
 
     .wrap{
       max-width: var(--max);
@@ -122,31 +125,69 @@
       font-size: 14px;
     }
 
+    /* ---------- iPhone-safe Social Explorer embeds ----------
+       Key idea:
+       - Use a responsive "ratio box" via ::before padding.
+       - Make it taller on small screens so map UI fits.
+       - No fixed iframe width/height attributes.
+    */
     .iframe-wrap{
       position: relative;
       width: 100%;
-      aspect-ratio: 4 / 3;
       border: 1px solid var(--line);
       border-radius: 14px;
       overflow: hidden;
       background: #fff;
       margin-top: 10px;
     }
+
+    /* default ratio ~4:3 */
+    .iframe-wrap::before{
+      content: "";
+      display: block;
+      padding-top: 75%;
+    }
+
+    /* On phones: much taller so the map UI is usable */
+    @media (max-width: 600px){
+      .iframe-wrap::before{ padding-top: 135%; }
+      h1{ font-size: 24px; }
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 920px){
+      .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
     .iframe-wrap iframe{
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       border: 0;
+      display: block;
+      -webkit-overflow-scrolling: touch;
     }
 
-    @media (max-width: 920px){
-      .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    /* Fullscreen/open fallback buttons */
+    .map-actions{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 8px 0 0;
     }
-    @media (max-width: 600px){
-      .grid{ grid-template-columns: 1fr; }
-      h1{ font-size: 24px; }
+    .map-actions a{
+      display: inline-block;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--link);
+      font-weight: 700;
+      font-size: 13px;
+      background: #fff;
     }
+    .map-actions a:hover{ text-decoration: underline; }
 
     footer{
       color: var(--muted);
@@ -162,6 +203,87 @@
       border-radius: 8px;
       font-size: .95em;
     }
+
+    /* Profiles table styling (kept from your original) */
+    #tract-profiles .hint { margin-top: -6px; opacity: 0.85; }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    table.profiles-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 12px; /* creates the “separate sections” look */
+      margin-top: 10px;
+    }
+
+    table.profiles-table thead th {
+      text-align: left;
+      font-weight: 700;
+      padding: 12px 12px;
+      border-bottom: 2px solid #e6e6e6;
+      white-space: nowrap;
+    }
+
+    table.profiles-table td {
+      padding: 12px 12px;
+      vertical-align: top;
+      background: #ffffff;
+      border-top: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    /* Make each tbody look like its own “card section” */
+    table.profiles-table tbody.profile-group td:first-child {
+      border-left: 1px solid #eaeaea;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    table.profiles-table tbody.profile-group td:last-child {
+      border-right: 1px solid #eaeaea;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .pdf-link {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--link);
+    }
+    .pdf-link:hover { text-decoration: underline; }
+
+    /* Small screens: convert table into stacked cards */
+    @media (max-width: 720px) {
+      table.profiles-table thead { display: none; }
+      table.profiles-table, table.profiles-table tbody, table.profiles-table tr, table.profiles-table td {
+        display: block;
+        width: 100%;
+      }
+      table.profiles-table { border-spacing: 0; }
+      table.profiles-table tbody.profile-group td {
+        border-left: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+        border-radius: 0;
+        margin: 0;
+      }
+      table.profiles-table tbody.profile-group td:first-child {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      table.profiles-table tbody.profile-group td:last-child {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      table.profiles-table tbody.profile-group td:nth-child(1)::before { content: "Year: "; font-weight: 700; }
+      table.profiles-table tbody.profile-group td:nth-child(2)::before { content: "PDF: "; font-weight: 700; }
+      table.profiles-table tbody.profile-group td:nth-child(3)::before { content: "Notes: "; font-weight: 700; }
+    }
   </style>
 </head>
 
@@ -170,90 +292,194 @@
     <div class="topbar">
       <h1>Pacoima, CA — Maps</h1>
       <div class="navlinks" aria-label="Site navigation">
-        <a href="https://www.databums.org/">Home</a>
         <a href="https://www.databums.org/projects/research/pacoima/">Back to Pacoima Project</a>
       </div>
     </div>
     <p class="subhead">
-      This page contains (1) downloadable PDF tract profiles and (2) interactive maps documenting demographic, social,
+      This page contains: (1) downloadable PDF tract profiles of Pacoima and (2) interactive maps documenting demographic, social,
       and economic change in Pacoima over time using census data and Social Explorer visualizations.
     </p>
   </header>
 
   <main class="wrap">
 
-<!-- Informational Maps and Files on Pacoima -->
-<section id="info-maps-files" style="margin-bottom:2em;">
-  <h2>Informational Maps and Files on Pacoima</h2>
-  <ul>
-    <li><a href="./LA_Times_Neighborhood_Boundaries_2009.pdf" target="_blank">LA Times Neighborhood Boundaries 2009 (PDF)</a></li>
-    <div class="meta">This is based on a project that LA Times did around 2009.  More info can be found at the project's 
-      <a href="https://maps.latimes.com/neighborhoods/">website</a>
-    </div>
+    <!-- Informational Maps and Files on Pacoima -->
+    <section id="info-maps-files" class="section">
+      <h2>Informational Maps and Files on Pacoima</h2>
+      <ul>
+        <li>
+          <a href="./LA_Times_Neighborhood_Boundaries_2009.pdf" target="_blank" rel="noopener">
+            LA Times Neighborhood Boundaries 2009 (PDF)
+          </a>
+          <div class="note">
+            This is based on a project the LA Times did around 2009. More info can be found at the project's
+            <a href="https://maps.latimes.com/neighborhoods/" target="_blank" rel="noopener">website</a>.
+          </div>
+        </li>
 
-      <div class="meta">This is based on a project that LA Times did around 2009.  More info can be found at the project's 
-      <a href="https://www.socialexplorer.com/reports/socialexplorer/en/report/79332d3a-ea5a-11f0-b335-eb7e89aa2251">website</a>
-    </div>
-  
+         <li>
+          <a href="./print_maps/SanFernandoValley_1923.jpg" target="_blank" rel="noopener">
+            San Fernando Valley Neighborhood Map - 1923 (PDF)
+          </a>
+          <div class="note">
+            Cool map of San Fernando Valley in 1923 with Pacoim and other neighborhoods labeled. (Source:  Library of Congress, Geography and Map Division.)</a>.
+          </div>
+        </li>
+        <li><a href="#" target="_blank" rel="noopener">Placeholder PDF File 2</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Placeholder PDF File 3</a></li>
 
-    
-    <li><a href="#" target="_blank">Placeholder PDF File 2</a></li>
-    <li><a href="#" target="_blank">Placeholder PDF File 3</a></li>
-    <li><a href="#" target="_blank">Placeholder PDF File 4</a></li>
-    <li><a href="#" target="_blank">Placeholder PDF File 5</a></li>
-    <li><a href="#" target="_blank">Placeholder PDF File 6</a></li>
-  </ul>
-</section>
+      </ul>
+    </section>
 
-    
-    
     <!-- =========================
          SECTION 1: PDF PROFILES
          ========================= -->
-    <section class="section" id="tract-profiles">
+    <section id="tract-profiles" class="section">
       <h2>Profiles of Pacoima Census Tracts 1950-2024</h2>
-      <p class="note">
-        Replace the <code>href</code> values below with the actual PDF filenames/paths once you upload them (e.g.,
-        <code>./pdf/tract_1045_profile.pdf</code>).
+      <p class="hint">
+        The following links are profiles of the Los Angeles Pacoima neighborhood. There are 3 geography data sources used to match historical boundaires to 
+        contemporary neighborhood boundaries from the LA Times Neighborhood Boundaries Map above. The 1950-1960 Census tracts are probably the roughest approximations of 
+        the LA Times Neighborhood boundaries and are not standardized to any other Census. The 1970-2010 Census tracts are standardized to 2010 Census tracts, are directly 
+        comparable to each other, and are a close match to the LA Times Neighborhood boundaries. The 2023 profile is based on American Community Survey Census Tract data 
+        and will vary some from previous years but are also a close match to the LA Times Neighborhood boundaries. Because boundaries change, these should not be seen as 
+        direct comparisons across time for a specified geographic space. However, they are good estimates.
       </p>
 
-      <div class="grid" role="list">
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 1</a>
-          <div class="meta">Short description (e.g., Tract ####.## • 1950–2024)</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 2</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 3</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 4</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 5</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 6</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 7</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 8</a>
-          <div class="meta">Short description</div>
-        </div>
-        <div class="pdf" role="listitem">
-          <a href="#" title="Link to PDF">PDF Profile Placeholder 9</a>
-          <div class="meta">Short description</div>
-        </div>
+      <div class="table-wrap">
+        <table class="profiles-table" aria-label="PDF tract profiles by year">
+          <thead>
+            <tr>
+              <th style="width: 110px;">Year</th>
+              <th style="width: 320px;">PDF File</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+
+          <!-- 1950 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">1950</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_1950_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_1950_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                1950 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 1960 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">1960</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_1960_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_1960_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                1960 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 1970 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">1970</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_1970_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_1970_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                1970 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+                1970–2010 are harmonized to 2010 Census tract boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 1980 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">1980</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_1980_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_1980_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                1980 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+                1970–2010 are harmonized to 2010 Census tract boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 1990 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">1990</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_1990_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_1990_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                1990 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+                1970–2010 are harmonized to 2010 Census tract boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 2000 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">2000</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_2000_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_2000_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                2000 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+                1970–2010 are harmonized to 2010 Census tract boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 2010 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">2010</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_2010_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_2010_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                2010 Census tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- 2023 -->
+          <tbody class="profile-group">
+            <tr class="group-top">
+              <td class="year">2023</td>
+              <td class="file">
+                <a class="pdf-link" href="./Tables/Pacoima_2023_Tract_Data.pdf" target="_blank" rel="noopener">
+                  Pacoima_2023_Tract_Data.pdf
+                </a>
+              </td>
+              <td class="desc">
+                2023 tract profiles of Pacoima neighborhood based on overlapping tracts with contemporary Pacoima neighborhood boundaries.
+                Data comes from 5-year ACS.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -264,87 +490,163 @@
       <h2>Interactive and Comparison Maps</h2>
 
       <p class="note">
-        Content below mirrors the current structure on the page (grouped decades plus the African American population change map).
-        Add additional Social Explorer embeds by pasting their <code>&lt;iframe&gt;</code> code under the relevant headings.
+        The following maps are visualizations of decade to decade changes by race and ethnicity from 1960-2023. In each map, the Pacoima neighborhood is centered in the map
+        (it is the shaded area in the 1960-1970 map). You may use the slider to compare across time and zoom in or out to see the large Los Angeles County region.
+        Other map comparison visualizations are forthcoming.
       </p>
 
       <div class="divider"></div>
 
-      <h3>1950–1969</h3>
-      <h3 style="margin-top:10px;">Demographic Maps</h3>
-      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
-
-      <h3>Social &amp; Economic Wellbeing Maps</h3>
-      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
-
-      <h3>Other Maps</h3>
-      <p class="note">[Additional maps coming soon]</p>
-
-      <div class="divider"></div>
-
-      <h3>1970–1989</h3>
-      <h3 style="margin-top:10px;">Demographic Maps</h3>
-      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
-
-      <h3>Social &amp; Economic Wellbeing Maps</h3>
-      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
-
-      <h3>Other Maps</h3>
-      <p class="note">[Additional maps coming soon]</p>
-
-      <div class="divider"></div>
-
-      <h3>1990–2009</h3>
-      <h3 style="margin-top:10px;">Demographic Maps</h3>
-      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
-
-      <h3>Social &amp; Economic Wellbeing Maps</h3>
-      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
-
-      <h3>Other Maps</h3>
-      <p class="note">[Additional maps coming soon]</p>
-
-      <div class="divider"></div>
-
-      <h3>2010–2023</h3>
-      <h3 style="margin-top:10px;">Demographic Maps</h3>
-      <p class="note">[Additional Social Explorer demographic maps coming soon]</p>
-
-      <h3>Social &amp; Economic Wellbeing Maps</h3>
-      <p class="note">[Additional Social Explorer wellbeing maps coming soon]</p>
-
-      <h3>Other Maps</h3>
-      <p class="note">[Additional maps coming soon]</p>
-
-      <div class="divider"></div>
-
-      <h3>Change in African American Population, 1970–2023</h3>
+      <h3>Change in African American Population, 1960–1970</h3>
       <p class="note">
-        This map visualizes changes in the African American population in Pacoima and surrounding areas from 1970 through 2023
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 1960 through 1970
         using U.S. Census Data provided by Social Explorer.
       </p>
-      <p class="note">
-        Data sources include the U.S. Decennial Census, American Community Survey, NHGIS, and Social Explorer.
-      </p>
-
-      <div class="iframe-wrap" aria-label="Social Explorer embed: Change in African American Population, 1970–2023">
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 1960–1970">
         <iframe
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          src="https://www.socialexplorer.com/e8bbd1485e/embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 1960–1970"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/e8bbd1485e/embed" target="_blank" rel="noopener">Open map full screen</a>
+      </div>
+
+      <h3>Change in African American Population, 1970–1980</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 1970 through 1980
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 1970–1980">
+        <iframe
+          src="https://www.socialexplorer.com/3a5ecac72f/embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 1970–1980"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/3a5ecac72f/embed" target="_blank" rel="noopener">Open map full screen</a>
+      </div>
+
+      <h3>Change in African American Population, 1980–1990</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 1980 through 1990
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 1980–1990">
+        <iframe
           src="https://www.socialexplorer.com/c85e95bc88/embed"
-          allowfullscreen="true"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true">
-        </iframe>
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 1980–1990"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/c85e95bc88/embed" target="_blank" rel="noopener">Open map full screen</a>
+      </div>
+
+      <h3>Change in African American Population, 1990–2000</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 1990 through 2000
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 1990–2000">
+        <iframe
+          src="https://www.socialexplorer.com/4b9e2c259f/embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 1990–2000"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/4b9e2c259f/embed" target="_blank" rel="noopener">Open map full screen</a>
+      </div>
+
+      <h3>Change in African American Population, 2000–2010</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 2000 through 2010
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 2000–2010">
+        <iframe
+          src="https://www.socialexplorer.com/a891fc1c0d/embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 2000–2010"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/a891fc1c0d/embed" target="_blank" rel="noopener">Open map full screen</a>
+      </div>
+
+      <h3>Change in African American Population, 2010–2023 (ACS 5 Year)</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 2010 through 2023
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 2010–2023">
+        <iframe
+          src="https://www.socialexplorer.com/c6e5d5da06/embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 2010–2023"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/c6e5d5da06/embed" target="_blank" rel="noopener">Open map full screen</a>
+      </div>
+
+      <h3>Change in African American Population, 1960–2023</h3>
+      <p class="note">
+        This map visualizes changes in the African American population in Pacoima (center) and surrounding areas from 1960 through 2023
+        using U.S. Census Data provided by Social Explorer.
+      </p>
+      <div class="iframe-wrap" aria-label="Social Explorer embed: 1960–2023">
+        <iframe
+          src="https://www.socialexplorer.com/acd9fc80f4/embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Change in African American Population, 1960–2023"
+        ></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.socialexplorer.com/acd9fc80f4/embed" target="_blank" rel="noopener">Open map full screen</a>
       </div>
 
     </section>
 
-    <footer>
-      Tip: upload PDFs into a folder (e.g., <code>./pdf/</code>) and update the 9 profile links to point to those files.
-    </footer>
+    <footer>More to come!</footer>
   </main>
 </body>
 </html>
