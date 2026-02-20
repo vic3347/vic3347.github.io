@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DataBums — Projects</title>
+
+  <style>
+    :root{
+      --bg:#f5f6f8;              /* page background */
+      --panel:#ffffff;          /* cards / panels */
+      --text:#000000;           /* MAIN TEXT = BLACK */
+      --muted:#444444;          /* secondary text */
+      --border:#dddddd;         /* subtle borders */
+      --radius:18px;
+      --max:980px;
+}
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none}
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:36px 18px 48px;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:24px;
+    }
+
+    header h1{
+      margin:0;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    nav a{
+      margin-left:12px;
+      padding:6px 10px;
+      border-radius:8px;
+      color:var(--muted);
+    }
+
+    nav a:hover{
+      background:var(--panel);
+      color:var(--text);
+    }
+
+    /* ===== HERO WITH BACKGROUND IMAGE ===== */
+    .hero{
+      position:relative;
+      border-radius:var(--radius);
+      overflow:hidden;
+      min-height:680px;
+      display:flex;
+      align-items:bottom;
+      padding:28px;
+      background:
+  	linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,.45)),
+  	url("./shovelbum.png") center / cover no-repeat;
+    }
+
+    .hero > div{
+      background: rgba(255,255,255,0.65);   /* ← transparency here */
+       border: 1px solid rgba(0,0,0,0.12);
+       border-radius: 14px;
+       padding: 18px 18px;
+       backdrop-filter: blur(6px); 
+       width: fit-content;  /* shrink to content width */
+       max-width: 520px;    /* prevent it from getting too wide */
+       height: fit-content; /* shring to fit height*/ 
+    }
+
+    .hero h2{
+      margin:0 0 10px;
+      font-size:34px;
+      line-height:1.15;
+    }
+
+    .hero p{
+      margin:0 0 16px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .actions a{
+      display:inline-block;
+      margin-right:10px;
+      padding:10px 14px;
+      border-radius:10px;
+      background:var(--panel);
+      border:1px solid var(--border);
+      font-size:14px;
+    }
+
+    .actions a.primary{
+      background:rgba(120,160,255,.35);
+      border-color:rgba(120,160,255,.6);
+    }
+
+    .section{
+      margin-top:32px;
+    }
+
+    .section h3{
+      font-size:14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin-bottom:12px;
+    }
+     a{
+  	color:#000000;
+	}
+
+	a:hover{
+ 	 text-decoration:underline;
+	}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .hero h2{font-size:28px}
+    }
+
+    .card{
+      padding:16px;
+      border-radius:14px;
+      background:var(--panel);
+      border:1px solid var(--border);
+      transition:transform .12s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-2px);
+    }
+
+    .card .title{
+      font-weight:700;
+      margin:0 0 6px;
+    }
+
+    .card .meta{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:32px;
+      font-size:13px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>DataBums</h1>
+      <nav>
+        <a href="./projects/research/index.html">Research</a>
+        <a href="/teaching/">Teaching</a>
+        <a href="/personal/">Personal</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Current and Past Projects</h2>
+          <p>
+            Follow links to explore existing projects or find data and code connected to past and current projects.  
+            <p>
+            <p>For more information on projects please email victort@gmail.com.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h3>Projects</h3>
+        <div class="grid">
+          <a class="card" href="./projects/research/index.html">
+            <div class="title">Race & Inequality</div>
+            <div class="meta">Current Projects</div>
+          </a>
+
+          <a class="card" href="./projects/global-enumeration-practices/">
+            <div class="title">Global Enumeration Practices</div>
+            <div class="meta">Comparative census research</div>
+          </a>
+
+          <a class="card" href="./projects/race-and-crime/">
+            <div class="title">Race & Crime</div>
+            <div class="meta">Analysis, notes, and teaching overlap</div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> DataBums</div>
+      <div>
+        <a href="/">Home</a> ·
+        <a href="/research/">Research</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
