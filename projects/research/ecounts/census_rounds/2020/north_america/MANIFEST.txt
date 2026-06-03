@@ -1,0 +1,120 @@
+NA Census Forms — Download Manifest
+=================================================================
+
+[OK]  Bermuda/Bermuda_2016_Census_Report_questionnaire_in_appendixB.pdf
+      URL:  https://www.gov.bm/sites/default/files/2016%20Census%20Report.pdf
+      Note: Full 2016 census report; household questionnaire in Appendix B.
+      Size: 4,319,869 bytes
+
+[FAIL] Canada/Canada_2021_2A_short_form_EN.pdf
+       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2A-EN.pdf
+       Note: 2021 Census Questionnaire 2A — short form (all households), English.
+       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+
+[FAIL] Canada/Canada_2021_2A_short_form_FR.pdf
+       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2A-FR.pdf
+       Note: 2021 Census Questionnaire 2A — short form, French.
+       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+
+[FAIL] Canada/Canada_2021_2B_long_form_NHS_EN.pdf
+       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2B-EN.pdf
+       Note: 2021 Census Questionnaire 2B — long form / National Household Survey sample, English.
+       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+
+[FAIL] Canada/Canada_2021_2B_long_form_NHS_FR.pdf
+       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2B-FR.pdf
+       Note: 2021 Census Questionnaire 2B — long form, French.
+       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+
+[OK]  Cayman_Islands/Cayman_Islands_2021_questionnaire_items_brochure.pdf
+      URL:  https://www.eso.ky/user_images/Census_2021_Questionnaire_Items_Brochure.pdf
+      Note: ESO Cayman 2021 — questionnaire items brochure (question-by-question summary).
+      Size: 1,238,947 bytes
+
+[OK]  Cayman_Islands/Cayman_Islands_2021_full_census_form.pdf
+      URL:  https://www.eso.ky/storage/page_docums/uploadFilePdf/764/Final%20Census%202020%20-%20%282021%20Dates%29%20amend%20%2826659%20-%20Activated%2C%20Traditional%29.pdf
+      Note: ESO Cayman 2021 — full census questionnaire form (Traditional enumeration).
+      Size: 618,872 bytes
+
+[OK]  Costa_Rica/Costa_Rica_2022_enumeration_form_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_north/cr2022ef_costa_rica_enumeration_form.es.pdf
+      Note: IPUMS — Costa Rica 2022 enumeration form, Spanish.
+      Size: 918,876 bytes
+
+[OK]  Curacao/Curacao_2023_enumerator_manual_questionnaire_NL.pdf
+      URL:  https://cuatro.sim-cdn.nl/sensocbs/uploads/handleiding_census_2023.pdf
+      Note: CBS Curaçao 2023 — enumerator manual containing full census questionnaire (Dutch).
+      Size: 791,522 bytes
+
+[OK]  Dominican_Republic/Dominican_Republic_2020_enumeration_form_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_north/do2020ef_dominican_republic_enumeration_form.es.pdf
+      Note: IPUMS — Dominican Republic 2020 enumeration form, Spanish.
+      Size: 518,591 bytes
+
+[OK]  El_Salvador/El_Salvador_2024_census_report_questionnaire_in_annex.pdf
+      URL:  https://censo2024.bcr.gob.sv/wp-content/uploads/tablas-geoportal/2025/Informe%20_VII_Censo_de_Poblacion_y_VI_de_Vivienda_marzo_2025.pdf
+      Note: DIGESTYC 2024 — VII Census final report; questionnaire in annex.
+      Size: 24,168,016 bytes
+
+[OK]  Guatemala/Guatemala_2018_enumeration_form_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_north/gt2018ef_guatemala_enumeration_form.es.pdf
+      Note: IPUMS — Guatemala 2018 enumeration form, Spanish.
+      Size: 1,237,179 bytes
+
+[OK]  Mexico/Mexico_2020_cuestionario_basico_INEGI.pdf
+      URL:  https://www.inegi.org.mx/contenidos/programas/ccpv/2020/doc/Censo2020_cuest_basico.pdf
+      Note: INEGI — Mexico 2020 Cuestionario Básico (all households), Spanish.
+      Size: 969,698 bytes
+
+[OK]  Mexico/Mexico_2020_cuestionario_ampliado_INEGI.pdf
+      URL:  https://www.inegi.org.mx/contenidos/programas/ccpv/2020/doc/censo2020_cuest_ampliado.pdf
+      Note: INEGI — Mexico 2020 Cuestionario Ampliado (10% sample), Spanish.
+      Size: 986,778 bytes
+
+[OK]  Mexico/Mexico_2020_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_north/mx2020ef_mexico_enumeration_form.es.pdf
+      Note: IPUMS — Mexico 2020 enumeration form, Spanish.
+      Size: 14,265,714 bytes
+
+[OK]  Panama/Panama_2023_enumeration_form_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_north/pa2023ef_panama_enumeration_form.es.pdf
+      Note: IPUMS — Panama 2023 enumeration form, Spanish.
+      Size: 566,488 bytes
+
+[OK]  Puerto_Rico/Puerto_Rico_2020_decennial_form_ES_EN.pdf
+      URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-spanish-english.pdf
+      Note: US Census Bureau — 2020 Decennial questionnaire, Spanish/English bilingual.
+      Size: 340,470 bytes
+
+[OK]  United_States/US_2020_decennial_enumeration_form_EN_ES_IPUMS.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_north/us2020ef_united_states_enumeration_form.en.es.pdf
+      Note: IPUMS — US 2020 Decennial enumeration form, English/Spanish.
+      Size: 338,375 bytes
+
+[FAIL] United_States/US_2020_decennial_questionnaire_EN.pdf
+       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
+       Note: US Census Bureau — 2020 Decennial questionnaire, English (official Census.gov version).
+       Error: HTTP 404 Not Found
+
+[FAIL] US_Virgin_Islands/USVI_2020_decennial_questionnaire_EN.pdf
+       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
+       Note: US Census Bureau — 2020 Decennial questionnaire (same form as US mainland + Puerto Rico).
+       Error: HTTP 404 Not Found
+
+=================================================================
+Countries with no downloadable PDF (not attempted):
+
+  Aruba, Bahamas, Barbados, Belize, Jamaica, Saint Lucia,
+  Sint Maarten — digital-only censuses, no paper PDF released.
+
+  Greenland — register-based census, no enumeration form.
+
+  Guadeloupe, Martinique, Saint-Pierre and Miquelon —
+  INSEE rolling-census forms; download manually at:
+  https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
+
+  Canada — if the StatCan PDFs above fail, use the hub URL:
+  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-eng.cfm
+
+=================================================================
+Summary: 14 downloaded, 0 copied, 6 failed

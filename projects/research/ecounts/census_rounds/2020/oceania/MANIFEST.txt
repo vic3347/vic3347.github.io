@@ -1,0 +1,144 @@
+Oceania Census Forms — Download Manifest
+=================================================================
+
+PART 1: Direct downloads attempted (11 files)
+-----------------------------------------------------------------
+
+[OK]  Australia/Australia_2021_Census_Household_Form_ABS.pdf
+      URL:  https://www.abs.gov.au/system/files/documents/12486ae64f0f0ea2d056ee6aa54adc34/Sample%202021%20Census%20Household%20Form%20%5B1.1MB%5D.pdf
+      Note: ABS — 2021 Census Sample Household Form. English. All 4 forms at: https://www.abs.gov.au/census/guide-census-data/census-dictionary/2021/downloads
+      Size: 1,115,567 bytes
+
+[OK]  Australia/Australia_2021_Census_Personal_Form_ABS.pdf
+      URL:  https://www.abs.gov.au/system/files/documents/c667f0e095928fb8352301bc482abfb6/Sample%20Personal%20Form%20%5B847KB%5D.pdf
+      Note: ABS — 2021 Census Sample Personal Form. English.
+      Size: 867,082 bytes
+
+[FAIL] Cook_Islands/Cook_Islands_2016_Census_Report_questionnaire_in_appendix.pdf
+       URL:  https://www.cookislands.gov.ck/images/documents/Statistics_Docs/5.Census-Surveys/6.Population-and-Dwelling_2016/2016_CENSUS_REPORT-FINAL.pdf
+       Note: Cook Islands Statistics Office — 2016 Census Report (194pp); questionnaire in Section 5 (personal + dwelling forms). English.
+       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cookislands.gov.ck'. (_ssl.c:1081)
+
+[OK]  Fiji/Fiji_2017_enumeration_form_IPUMS_EN.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/oceania/fj2017ef_fiji_enumeration_form.en.pdf
+      Note: IPUMS — Fiji 2017 enumeration form. English.
+      Size: 545,104 bytes
+
+[OK]  New_Zealand/New_Zealand_2023_Census_Dwelling_Form_Large_Print_StatsNZ.pdf
+      URL:  https://www.census.govt.nz/assets/Uploads/Alternate-Formats/Large-Print/2023-Census-Dwelling-Form_Large-print_SAMPLE.pdf
+      Note: Stats NZ — 2023 Census Dwelling Form (large print sample). English. Combined model census (admin data + field collection).
+      Size: 49,576 bytes
+
+[OK]  New_Zealand/New_Zealand_2023_Census_Individual_Form_Large_Print_StatsNZ.pdf
+      URL:  https://www.census.govt.nz/assets/Uploads/Alternate-Formats/Large-Print/2023-Census-Individual-Form_Large-Print_SAMPLE.pdf
+      Note: Stats NZ — 2023 Census Individual Form (large print sample). English.
+      Size: 49,577 bytes
+
+[OK]  Palau/Palau_2020_Census_Report_SPC_designed_questionnaire_EN.pdf
+      URL:  https://www.palaugov.pw/wp-content/uploads/2022/09/2020-Census-of-Population-and-Housing.pdf
+      Note: Palau OPS — 2020 Census of Population and Housing full report (244pp); SPC-SDD designed the questionnaire. Pacific Data Hub microdata: https://microdata.pacificdata.org/index.php/catalog/866
+      Size: 11,774,752 bytes
+
+[OK]  Samoa/Samoa_2021_Census_Final_Report_questionnaire_in_Annex1_p59_SBS.pdf
+      URL:  https://sbs.gov.ws/documents/census/2021/Census-2021-Final-Report_221122_051222.pdf
+      Note: Samoa Bureau of Statistics — 2021 Census Final Report; questionnaire in Annex 1 from p.59. First CAPI census (CSPro tablets). English.
+      Size: 2,776,136 bytes
+
+[FAIL] American_Samoa/American_Samoa_2020_US_Decennial_questionnaire_EN.pdf
+       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
+       Note: US Census Bureau — 2020 Decennial questionnaire (same form as US mainland). American Samoa enumerated under standard 2020 Decennial program.
+       Error: HTTP 404 Not Found
+
+[FAIL] Guam/Guam_2020_US_Decennial_questionnaire_EN.pdf
+       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
+       Note: US Census Bureau — 2020 Decennial questionnaire (same form as US mainland). Guam enumerated under standard 2020 Decennial program.
+       Error: HTTP 404 Not Found
+
+[FAIL] Northern_Mariana_Islands/CNMI_2020_US_Decennial_questionnaire_EN.pdf
+       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
+       Note: US Census Bureau — 2020 Decennial questionnaire (same form as US mainland). Commonwealth of the Northern Mariana Islands enumerated under standard 2020 Decennial.
+       Error: HTTP 404 Not Found
+
+
+=================================================================
+PART 2: Forms requiring browser / catalog navigation (12 entries)
+(Not attempted by script — Pacific Data Hub questionnaires accessed via catalog)
+-----------------------------------------------------------------
+
+[BROWSER] Australia
+          ABS 2021 Census downloads hub — Interviewer Household Form + Special Short Form:
+          URL:  https://www.abs.gov.au/census/guide-census-data/census-dictionary/2021/downloads
+          Note: ABS — 2 additional forms not downloaded above (confirmed direct URLs not available): (3) 2021 Census Interviewer Household Form; (4) 2021 Census Special Short Form. Both at the ABS downloads hub.
+
+[BROWSER] Kiribati
+          Pacific Data Hub catalog — Kiribati 2020 census questionnaire (EN + iKiribati, 8 sections, in External Resources):
+          URL:  https://microdata.pacificdata.org/index.php/catalog/767
+          Note: KNSO — 2020 PHC; questionnaire available as external resource on Pacific Data Hub. Click 'Related Materials' tab to access.
+
+[BROWSER] Marshall_Islands
+          Pacific Data Hub catalog — Marshall Islands 2021 census questionnaire (EN + Marshallese, 9 sections, in External Resources):
+          URL:  https://microdata.pacificdata.org/index.php/catalog/812
+          Note: RMI Statistics — 2021 PHC; questionnaire available as external resource. Based on SPC Pacific Model Census Questionnaire.
+
+[BROWSER] Nauru
+          Pacific Data Hub catalog — Nauru 2021 census questionnaire (EN + Nauruan, 10 sections, in External Resources):
+          URL:  https://microdata.pacificdata.org/index.php/catalog/816
+          Note: NBS Nauru — 2021 PHC; questionnaire available as external resource on Pacific Data Hub.
+
+[BROWSER] Tokelau
+          Pacific Data Hub catalog — Tokelau 2019 census questionnaire (in External Resources):
+          URL:  https://microdata.pacificdata.org/index.php/catalog/834
+          Note: Statistics NZ/Tokelau — 2019 PHC (3 atolls, ~1,500 people); questionnaire available as external resource on Pacific Data Hub.
+
+[BROWSER] Tonga
+          Tonga Statistics Department — Census Questionnaire PDF (direct link on hub page):
+          URL:  https://tongastats.gov.to/census-2/population-census-3/
+          Note: TSD Tonga — 2021 PHC: Two questionnaires (Individual: 12 modules; Household: 6 modules). Questionnaire PDF directly linked on hub page. Also on Pacific Data Hub: https://microdata.pacificdata.org/index.php/catalog/861
+
+[BROWSER] Tuvalu
+          Pacific Data Hub catalog — Tuvalu 2022 Long-Form Census (PHC + HIES integrated; questionnaire in External Resources):
+          URL:  https://microdata.pacificdata.org/index.php/catalog/829
+          Note: Tuvalu CSD — 2022 Long-Form Census (LFC) combining PHC + HIES. Analytical report: https://sdd.spc.int/digital_library/tuvalu-2022-census-population-and-housing-analytical-report
+
+[BROWSER] Vanuatu
+          Pacific Data Hub catalog — Vanuatu 2020 census questionnaire (EN + FR + Bislama, 13 sections, in External Resources):
+          URL:  https://microdata.pacificdata.org/index.php/catalog/769
+          Note: VNSO Vanuatu — 2020 PHC (Survey Solutions CAPI); questionnaire in 3 languages available as external resource on Pacific Data Hub.
+
+[BROWSER] French_Polynesia
+          ISPF French Polynesia — 2022 census questionnaire hub:
+          URL:  https://www.ispf.pf/
+          Note: ISPF — French Polynesia uses its own full census (not metropolitan INSEE rolling census); 2022 census conducted by ISPF. Questionnaire forms on ISPF hub.
+
+[BROWSER] New_Caledonia
+          ISEE New Caledonia — 2019 census questionnaire hub:
+          URL:  https://www.isee.nc/population/recensement
+          Note: ISEE — New Caledonia uses its own full census (not metropolitan INSEE rolling census); 2019 census by ISEE. Questionnaire forms on ISEE hub.
+
+[BROWSER] Wallis_and_Futuna
+          INSEE rolling-census forms (same as metropolitan France):
+          URL:  https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
+          Note: Wallis and Futuna uses the same INSEE rolling-census forms as metropolitan France (bulletin individuel + feuille de logement).
+
+[BROWSER] Niue
+          Niue Statistics Office — 2022 census report hub (check for standalone questionnaire):
+          URL:  https://niuestatistics.nu/census/population-housing/
+          Note: Niue Statistics Office — 2022 PHC (pop 1,681). Census report published. Check Pacific Data Hub for questionnaire as external resource: https://pacificdata.org/data/dataset/oai-www-spc-int-0f28603c-3787-4673-a5c1-97613234c057
+
+=================================================================
+PART 3: No questionnaire PDF confirmed yet
+-----------------------------------------------------------------
+
+  [Papua New Guinea — To check (2024 census, very recent)]
+  NSO PNG conducted 2024 census (delayed from 2020). No questionnaire PDF confirmed yet. Check: https://www.nso.gov.pg/ and https://sdd.spc.int/pg
+
+=================================================================
+
+KEY RESOURCE: Pacific Data Hub microdata catalog
+  https://microdata.pacificdata.org/
+  Hosts questionnaires for Kiribati, Marshall Islands, Nauru,
+  Tokelau, Tonga, Tuvalu, Vanuatu as External Resources.
+  Navigate to each catalog entry → Related Materials tab → download.
+
+=================================================================
+Summary: 7 downloaded, 0 copied (US Decennial form shared across 3 territories), 4 failed, 12 require browser

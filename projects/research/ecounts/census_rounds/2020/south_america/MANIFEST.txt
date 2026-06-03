@@ -1,0 +1,123 @@
+SA Census Forms — Download Manifest
+=================================================================
+
+[FAIL] Argentina/Argentina_2022_cuestionario_viviendas_particulares_INDEC.pdf
+       URL:  https://censo.gob.ar/wp-content/uploads/2022/02/Censo2022_cuestionario_viviendas_particulares.pdf
+       Note: INDEC — Argentina Censo 2022 unified questionnaire for private dwellings (61 Q). Spanish.
+       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+
+[OK]  Argentina/Argentina_2022_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/ar2022ef_argentina_enumeration_form.es.pdf
+      Note: IPUMS — Argentina 2022 enumeration form. Spanish.
+      Size: 2,229,322 bytes
+
+[OK]  Bolivia/Bolivia_2024_boleta_censal_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/bo2024ef_bolivia_enumeration_form.es.pdf
+      Note: IPUMS — Bolivia 2024 enumeration form (boleta censal, 59 Q, 7 chapters). Spanish.
+      Size: 21,074,992 bytes
+
+[OK]  Brazil/Brazil_2022_questionario_basico_IBGE_PT.pdf
+      URL:  https://censo2022.ibge.gov.br/np_download/censo2022/questionario_basico_completo_CD2022_atualizado_20220906.pdf
+      Note: IBGE — Brazil Censo 2022 Questionário Básico (26 Q, all households). Portuguese.
+      Size: 162,497 bytes
+
+[OK]  Brazil/Brazil_2022_enumeration_form_IPUMS_PT.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/br2022ef_brazil_enumeration_form.pt.pdf
+      Note: IPUMS — Brazil 2022 enumeration form (basic questionnaire). Portuguese.
+      Size: 383,871 bytes
+
+[OK]  Chile/Chile_2024_cuestionario_viviendas_particulares_INE.pdf
+      URL:  https://censo2024.ine.gob.cl/wp-content/uploads/2025/03/Cuestionario-Censo-2024-VP.pdf
+      Note: INE Chile — Censo 2024 questionnaire for private dwellings. Spanish.
+      Size: 545,551 bytes
+
+[OK]  Chile/Chile_2024_cuestionario_Aymara_INE.pdf
+      URL:  https://censo2024.ine.gob.cl/wp-content/uploads/2025/03/Cuestionario-Aymara_CPV2024.pdf
+      Note: INE Chile — Censo 2024 questionnaire in Aymara (indigenous language version).
+      Size: 544,991 bytes
+
+[OK]  Chile/Chile_2024_presentacion_cuestionario_INE.pdf
+      URL:  https://censo2024.ine.gob.cl/wp-content/uploads/2025/03/presentacion-cuestionario-censo-2024.pdf
+      Note: INE Chile — Censo 2024 questionnaire presentation / methodology overview.
+      Size: 742,287 bytes
+
+[OK]  Colombia/Colombia_2018_cuestionario_hogares_DANE_ES.pdf
+      URL:  https://microdatos.dane.gov.co/index.php/catalog/643/download/12215
+      Note: DANE — Colombia CNPV 2018 Cuestionario Hogares (57 Q, private households). Spanish.
+      Size: 1,133,418 bytes
+
+[OK]  Colombia/Colombia_2018_cuestionario_LEA_DANE_ES.pdf
+      URL:  https://microdatos.dane.gov.co/index.php/catalog/643/download/12195
+      Note: DANE — Colombia CNPV 2018 Cuestionario LEA (Lugares Especiales de Alojamiento / institutions). Spanish.
+      Size: 1,076,993 bytes
+
+[OK]  Colombia/Colombia_2018_cuestionario_entorno_urbano_DANE_ES.pdf
+      URL:  https://microdatos.dane.gov.co/index.php/catalog/643/download/12228
+      Note: DANE — Colombia CNPV 2018 Cuestionario Entorno Urbano (urban environment). Spanish.
+      Size: 403,781 bytes
+
+[OK]  Colombia/Colombia_2018_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/co2018ef_colombia_enumeration_form.es.pdf
+      Note: IPUMS — Colombia 2018 enumeration form (hogares). Spanish.
+      Size: 1,133,418 bytes
+
+[OK]  Ecuador/Ecuador_2022_cuestionario_censal_INEC_ES.pdf
+      URL:  https://www.ecuadorencifras.gob.ec/documentos/web-inec/CPV_2022/Doc/Cuestionario%20censal%202022.pdf
+      Note: INEC — Ecuador CPV 2022 cuestionario censal (all households). Spanish.
+      Size: 2,297,540 bytes
+
+[OK]  Ecuador/Ecuador_2022_cuestionario_muestra_INEC_ES.pdf
+      URL:  https://www.ecuadorencifras.gob.ec/documentos/web-inec/CPV_2022/Cuestionario%20censal%20MUESTRA%20WEB%20090922.pdf
+      Note: INEC — Ecuador CPV 2022 cuestionario muestra (sample questionnaire). Spanish.
+      Size: 496,393 bytes
+
+[OK]  Ecuador/Ecuador_2022_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/ec2022ef_ecuador_enumeration_form.es.pdf
+      Note: IPUMS — Ecuador 2022 enumeration form. Spanish.
+      Size: 496,393 bytes
+
+[OK]  Falkland_Islands/Falkland_Islands_2021_census_report_questionnaire_in_appendix.pdf
+      URL:  https://www.falklands.gov.fk/policy/downloads?task=download.send&id=219:falkland-islands-2021-census-report&catid=13
+      Note: Falkland Islands Gov — 2021 Census Report; questionnaire in appendix.
+      Size: 1,917,331 bytes
+
+[OK]  Paraguay/Paraguay_2022_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/py2022ef_paraguay_enumeration_form.es.pdf
+      Note: IPUMS — Paraguay 2022 enumeration form. Spanish.
+      Size: 8,069,812 bytes
+
+[OK]  Peru/Peru_2017_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/pe2017ef_peru_enumeration_form.es.pdf
+      Note: IPUMS — Peru 2017 enumeration form (XII Censo de Población, VII de Vivienda). Spanish.
+      Size: 1,909,598 bytes
+
+[FAIL] Uruguay/Uruguay_2023_cuestionario_censal_INE_ES.pdf
+       URL:  https://www5.ine.gub.uy/documents/CENSO%202023/Cuestionario%20Censal%202023.pdf
+       Note: INE Uruguay — Censo 2023 cuestionario censal. Spanish.
+       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+
+[FAIL] Uruguay/Uruguay_2023_documento_metodologico_INE_ES.pdf
+       URL:  https://www5.ine.gub.uy/documents/CENSO%202023/Documento%20Metodol%C3%B3gico%20Censo%202023.pdf
+       Note: INE Uruguay — Censo 2023 methodology document. Spanish.
+       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+
+[OK]  Uruguay/Uruguay_2023_enumeration_form_IPUMS_ES.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/america_south/uy2023ef_uruguay_enumeration_form.es.pdf
+      Note: IPUMS — Uruguay 2023 enumeration form. Spanish.
+      Size: 157,960 bytes
+
+=================================================================
+Forms not attempted (no stable direct PDF link):
+
+  Brazil — Questionário Amostra (77 Q sample form) +
+  Indigenous questionnaire:
+  https://censo2022.ibge.gov.br/sobre/questionarios.html
+
+  Argentina — Collective Dwellings questionnaire:
+  https://censo.gob.ar/index.php/el-cuestionario/
+
+  French Guiana — INSEE rolling-census forms (browser only):
+  https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
+
+=================================================================
+Summary: 18 downloaded, 0 copied, 3 failed

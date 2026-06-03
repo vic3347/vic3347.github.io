@@ -1,0 +1,269 @@
+Europe Census Forms — Download Manifest
+=================================================================
+
+PART 1: Direct downloads attempted (36 files)
+-----------------------------------------------------------------
+
+[OK]  UK_England_Wales/UK_EW_2021_Household_England_EN.pdf
+      URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fhouseholdenglandpdf.pdf
+      Note: ONS — England 2021 Household Questionnaire. English.
+      Size: 542,097 bytes
+
+[OK]  UK_England_Wales/UK_EW_2021_Household_Wales_EN.pdf
+      URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fhouseholdwalespdf.pdf
+      Note: ONS — Wales 2021 Household Questionnaire. English.
+      Size: 550,987 bytes
+
+[OK]  UK_England_Wales/UK_EW_2021_Household_Wales_CY.pdf
+      URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fhouseholdcymrupdf.pdf
+      Note: ONS — Wales 2021 Household Questionnaire (Holiadur y Cartref). Welsh/Cymraeg.
+      Size: 564,302 bytes
+
+[OK]  UK_England_Wales/UK_EW_2021_Individual_England_EN.pdf
+      URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fenglishindividual.pdf
+      Note: ONS — England 2021 Individual Questionnaire. English.
+      Size: 279,331 bytes
+
+[OK]  UK_England_Wales/UK_EW_2021_Individual_Wales_EN.pdf
+      URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalesindividual.pdf
+      Note: ONS — Wales 2021 Individual Questionnaire. English.
+      Size: 280,926 bytes
+
+[FAIL] UK_England_Wales/UK_EW_2021_Individual_Wales_CY.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwelshindividual.pdf
+       Note: ONS — Wales 2021 Individual Questionnaire (Holiadur Unigol). Welsh/Cymraeg.
+       Error: HTTP 429 Too Many Requests
+
+[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_England_EN.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fenglishcommunalestablishment.pdf
+       Note: ONS — England 2021 Communal Establishment Manager Questionnaire. English.
+       Error: HTTP 429 Too Many Requests
+
+[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_EN.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalescommunalestablishment.pdf
+       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire. English.
+       Error: HTTP 429 Too Many Requests
+
+[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_CY.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwelshcommunalestablishment.pdf
+       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire (Cymraeg/Welsh).
+       Error: HTTP 429 Too Many Requests
+
+[OK]  UK_Scotland/UK_Scotland_2022_Household_questionnaire.pdf
+      URL:  https://www.scotlandscensus.gov.uk/media/mecf4qa4/scotlands-census-2022-household-questionnaire.pdf
+      Note: NRS — Scotland 2022 Household Questionnaire (covers up to 5 HH members).
+      Size: 692,710 bytes
+
+[OK]  UK_Scotland/UK_Scotland_2022_Individual_questionnaire.pdf
+      URL:  https://www.scotlandscensus.gov.uk/media/ulcfhmoq/scotlands-census-2022-individual-questionnaire.pdf
+      Note: NRS — Scotland 2022 Individual Questionnaire (for privacy requests/6th+ person).
+      Size: 342,698 bytes
+
+[OK]  UK_Scotland/UK_Scotland_2022_Large_print_household_questionnaire.pdf
+      URL:  https://www.scotlandscensus.gov.uk/media/qbffwe33/scotlands-census-2021-large-print-household-questionnaire.pdf
+      Note: NRS — Scotland 2022 Large Print Household Questionnaire (covers up to 2 HH members).
+      Size: 515,236 bytes
+
+[OK]  UK_Scotland/UK_Scotland_2022_Communal_establishment_manager_questionnaire.pdf
+      URL:  https://www.scotlandscensus.gov.uk/media/jmzdxc2k/scotlands-census-2022-communal-establishment-manager-questionnaire.pdf
+      Note: NRS — Scotland 2022 Communal Establishment Manager Questionnaire.
+      Size: 246,280 bytes
+
+[OK]  UK_Scotland/UK_Scotland_2022_Communal_establishment_individual_questionnaire.pdf
+      URL:  https://www.scotlandscensus.gov.uk/media/wzjffrtu/scotlands-census-2022-communal-establishment-individual-questionnaire.pdf
+      Note: NRS — Scotland 2022 Communal Establishment Individual Questionnaire.
+      Size: 345,034 bytes
+
+[OK]  UK_Northern_Ireland/UK_NI_2021_Household_questionnaire.pdf
+      URL:  https://www.nisra.gov.uk/sites/nisra.gov.uk/files/publications/2021-census-household-questionnaire.PDF
+      Note: NISRA — Northern Ireland 2021 Census Household Questionnaire. English.
+      Size: 708,910 bytes
+
+[OK]  UK_Northern_Ireland/UK_NI_2021_Household_continuation_questionnaire.pdf
+      URL:  https://www.nisra.gov.uk/sites/nisra.gov.uk/files/publications/2021-census-household-continuation-questionnaire.PDF
+      Note: NISRA — Northern Ireland 2021 Census Household Continuation Questionnaire. English.
+      Size: 531,253 bytes
+
+[OK]  UK_Northern_Ireland/UK_NI_2021_Individual_questionnaire.pdf
+      URL:  https://www.nisra.gov.uk/sites/nisra.gov.uk/files/publications/2021-census-individual-questionnaire.PDF
+      Note: NISRA — Northern Ireland 2021 Census Individual Questionnaire. English.
+      Size: 307,155 bytes
+
+[OK]  UK_Northern_Ireland/UK_NI_2021_Communal_establishment_questionnaire.pdf
+      URL:  https://www.nisra.gov.uk/sites/nisra.gov.uk/files/publications/2021-census-communal-establishment-questionnaire.PDF
+      Note: NISRA — Northern Ireland 2021 Census Communal Establishment Questionnaire. English.
+      Size: 412,499 bytes
+
+[OK]  Bulgaria/Bulgaria_2021_main_card_buildings_dwellings_persons_NSI_BG.pdf
+      URL:  https://census2021.bg/wp-content/uploads/2021/06/karta_jilishta_16str_obrazec.pdf
+      Note: NSI Bulgaria — 2021 Census main преброителна карта (buildings/dwellings/persons, 16pp). Bulgarian. Hub (4 more cards): https://census2021.bg/документи-инструментариум-обучение/
+      Size: 3,292,283 bytes
+
+[OK]  Croatia/Croatia_2021_Popisni_upitnik_DZS_HR.pdf
+      URL:  https://dzs.gov.hr/UserDocsImages/Popis%202021/PDF/Popisni%20upitnik%202021-hr.pdf
+      Note: DZS Croatia — 2021 Census Popisni upitnik (full questionnaire, CAWI+CAPI). Croatian.
+      Size: 377,690 bytes
+
+[OK]  Cyprus/Cyprus_2021_census_preliminary_results_CYSTAT_EN.pdf
+      URL:  https://www.census2021.cystat.gov.cy/Announements/18%20May%202022%20CENSUS%20OF%20POPULATION%20-%20PRELIMINARY%20RESULTS.pdf
+      Note: CYSTAT Cyprus — 2021 Census preliminary results publication (contains questionnaire content). Combined register + field census.
+      Size: 290,676 bytes
+
+[OK]  France/France_INSEE_bulletin_individuel_FR.pdf
+      URL:  https://www.insee.fr/fr/statistiques/fichier/2579979/imet-hs-n-present-questions-bul-ind.pdf
+      Note: INSEE France — Bulletin individuel (individual form, rolling census). French.
+      Size: 344,786 bytes
+
+[OK]  France/France_INSEE_feuille_logement_2023_FR.pdf
+      URL:  https://www.insee.fr/fr/statistiques/fichier/2383177/fiche-logements_2023-06.pdf
+      Note: INSEE France — Feuille de logement (housing form, 2023 edition, rolling census). French.
+      Size: 630,426 bytes
+
+[OK]  France/France_2014_enumeration_form_IPUMS_FR.pdf
+      URL:  https://international.ipums.org/international/resources/census_forms/europe/fr2014ef_france_enumeration_form.fr.pdf
+      Note: IPUMS — France 2014 rolling census enumeration form. French.
+      Size: 3,893,046 bytes
+
+[OK]  Germany/Germany_2022_Zensus_GWZ_Musterfragebogen_Basisbogen_DE.pdf
+      URL:  https://media.frag-den-staat.de/files/foi/905475/gwz-basisbogen-muster.pdf
+      Note: Destatis Zensus 2022 — Gebäude- und Wohnungszählung (GWZ) Musterfragebogen (buildings/dwellings sample form). German. Released via FOI request on FragDenStaat. Haushaltebefragung and Gemeinschaftsunterkünfte sample forms are image-only on zensus2022.de — no PDF released. Hub: https://www.zensus2022.de/DE/Wer-wird-befragt/Musterfragebogen_Uebersicht/_inhalt.html
+      Size: 340,836 bytes
+
+[OK]  Ireland/Ireland_2022_Household_Form_CSO_EN.pdf
+      URL:  https://www.cso.ie/en/media/csoie/census/census2021/Sample_Census_2022_Household_Form_English.pdf
+      Note: CSO Ireland — 2022 Census Sample Household Form. English. Hub (Irish/Gaeilge version + Individual + Listing forms): https://www.cso.ie/en/census/census2022/
+      Size: 5,003,470 bytes
+
+[FAIL] Malta/Malta_2021_census_preliminary_report_questionnaire_in_annex_NSO.pdf
+       URL:  https://nso.gov.mt/wp-content/uploads/Census-of-population-2021-publication-web.pdf
+       Note: NSO Malta — 2021 Census Preliminary Report (questionnaire of 54 Q in Annex; available in Maltese, English, Italian, French, Arabic). Booklet also at https://census2021.gov.mt/
+       Error: HTTP 403 Forbidden
+
+[OK]  Moldova/Moldova_2024_Chestionar_persoana_RPL_BNS_RO.pdf
+      URL:  https://statistica.gov.md/files/files/Recensamint/Recesamint_2024/Chestionare/Chestionare_14.08.2023/Chestionar_RPL_2024_rom_3P.pdf
+      Note: BNS Moldova — 2024 RPL Chestionar persoană (person questionnaire, 62 Q). Romanian. Hub (dwelling 28Q + collective 22Q forms also available): https://statistica.gov.md/ro/chestionare-de-recensamant-10011_60363.html
+      Size: 368,227 bytes
+
+[FAIL] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
+       URL:  https://www.monstat.org/uploads/files/popis%202021/tradicionalni/METODOLOGIJA%20POPISA%202023.pdf
+       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53). Montenegrin.
+       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.monstat.org'. (_ssl.c:1081)
+
+[OK]  Portugal/Portugal_2021_Censos_Agregado_Doméstico_Alojamento_INE_PT.pdf
+      URL:  https://censos.ine.pt/scripts/censos_css_js/quest/PT_ma_Q_AgrDomesticoAlojamento_Censos2021_INE.pdf
+      Note: INE Portugal — Censos 2021 Agregado Doméstico e Alojamento (household + dwelling form). Portuguese.
+      Size: 551,799 bytes
+
+[FAIL] Portugal/Portugal_2021_Censos_Alojamento_Coletivo_INE_PT.pdf
+       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/ma_Q_AlojamentoColetivo_Censos2021_INE.pdf
+       Note: INE Portugal — Censos 2021 Alojamento Coletivo (collective dwelling / institutions form). Portuguese.
+       Error: URL error: timed out
+
+[OK]  Portugal/Portugal_2021_Censos_Individual_INE_EN.pdf
+      URL:  https://censos.ine.pt/scripts/censos_css_js/quest/EN_Q_IND_Censos2021_EN_v03.pdf
+      Note: INE Portugal — Censos 2021 Individual Questionnaire. English translation (rare).
+      Size: 307,873 bytes
+
+[OK]  Romania/Romania_2021_RPL_Chestionar_martor_INS_RO.pdf
+      URL:  https://www.recensamantromania.ro/wp-content/uploads/2022/03/Chestionar-martor_RPL2021_romana.pdf
+      Note: INS Romania — RPL 2021 Chestionar martor (main household/person questionnaire). Romanian. First online-first census.
+      Size: 590,169 bytes
+
+[OK]  Romania/Romania_2021_RPL_Chestionar_RFERL_mirror_RO.pdf
+      URL:  https://docs.rferl.org/ro-RO/2022/02/01/4591c243-8e12-44d1-943b-0b5aed52167c.pdf
+      Note: Romania RPL 2021 chestionar — mirror copy via RFERL.org.
+      Size: 1,408,798 bytes
+
+[OK]  Serbia/Serbia_2022_Individual_questionnaire_RZS_EN.pdf
+      URL:  https://popis2022.stat.gov.rs/media/31012/016b-p1-engleski.pdf
+      Note: RZS Serbia — 2022 Census Individual Questionnaire. English. Hub (Serbian-language forms also available): https://popis2022.stat.gov.rs/en-US/
+      Size: 684,688 bytes
+
+[OK]  Spain/Spain_2021_ECEPOV_sample_survey_questionnaire_INE_ES.pdf
+      URL:  https://www.ine.es/censos2021/proyecto_caracter%C3%ADsticas_esenciales.pdf
+      Note: INE Spain — 2021 ECEPOV supplementary sample survey questionnaire (~1% of population). Spain uses register-based census; no full enumeration questionnaire exists. Spanish.
+      Size: 506,500 bytes
+
+
+=================================================================
+PART 2: Forms requiring browser access (10 entries)
+(Not attempted by script — visit URLs below manually)
+-----------------------------------------------------------------
+
+[BROWSER] UK_Scotland
+          Household Continuation + Prisons CE Individual questionnaires — hub:
+          URL:  https://www.scotlandscensus.gov.uk/documents/scotlands-census-2022-paper-questionnaires/
+          Note: NRS Scotland — 2 additional forms not included above (media hash IDs unconfirmed). Both downloadable from the hub page.
+
+[BROWSER] UK_Jersey
+          Statistics Jersey 2021 Census questionnaire — hub:
+          URL:  https://census.gov.je/
+          Note: Statistics Jersey — 2021 Census; online-first, paper on request. Questionnaire on hub page.
+
+[BROWSER] UK_Isle_of_Man
+          IoM Cabinet Office 2021 Census questionnaire — hub:
+          URL:  https://www.gov.im/census
+          Note: IoM Cabinet Office — Apr 2021 census; online-first, paper on request.
+
+[BROWSER] Czech_Republic
+          ČSÚ SLDB 2021 sčítací formuláře (3 forms) — downloads hub:
+          URL:  https://scitani.gov.cz/ke-stazeni
+          Note: ČSÚ — SLDB 2021: Základní formulář (household, 556 kB), Dodatečný formulář (continuation, 505 kB), Samostatný formulář pro osobu (individual/institutions, 276 kB). Czech only.
+
+[BROWSER] Germany
+          Destatis Zensus 2022 Musterfragebogen hub (Haushalt + Gemeinschaftsunterkünfte displayed as image slideshows, no PDF):
+          URL:  https://www.zensus2022.de/DE/Wer-wird-befragt/Musterfragebogen_Uebersicht/_inhalt.html
+          Note: Destatis — Haushaltebefragung sample form (household) and Gemeinschaftsunterkünfte (communal establishments) Musterformulare are displayed as image-only on the website.
+
+[BROWSER] Ireland
+          CSO Ireland 2022 Census hub (As Gaeilge + Individual + Listing forms):
+          URL:  https://www.cso.ie/en/census/census2022/
+          Note: CSO — 4 forms total: Household (EN), Household (Irish/Gaeilge), Individual, and Listing form for hotels/collective dwellings.
+
+[BROWSER] Luxembourg
+          STATEC RP2021 census hub (digital + paper questionnaire):
+          URL:  https://rp2021.lu/en/home/
+          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
+
+[BROWSER] Moldova
+          BNS Moldova 2024 — Chestionar locuință (28Q) + Chestionar spațiu colectiv (22Q):
+          URL:  https://statistica.gov.md/ro/chestionare-de-recensamant-10011_60363.html
+          Note: BNS — Dwelling questionnaire and Collective dwelling questionnaire also available from this hub page.
+
+[BROWSER] Russia
+          Rosstat VPN 2021 census hub (forms not confirmed as standalone PDFs):
+          URL:  https://rosstat.gov.ru/vpn_popul
+          Note: Rosstat — VPN 2021 (Oct–Nov 2021, first online-enabled census). Census переписные листы П (person), Ж (housing), В (away from usual residence) referenced in publications but no confirmed standalone PDF URL.
+
+[BROWSER] Switzerland
+          BFS Structural Survey (SE) questionnaire hub:
+          URL:  https://www.bfs.admin.ch/bfs/en/home/statistics/population/surveys/se.html
+          Note: BFS Switzerland — Annual Structural Survey (register-based census + ~200,000 HH sample). Fragebogen Strukturerhebung downloadable from BFS asset library.
+
+=================================================================
+PART 3: No questionnaire PDF available (48 entries total — breakdown below)
+-----------------------------------------------------------------
+
+  [Register-based (16 countries — no enumeration form by design)]
+  Andorra, Austria, Belgium, Denmark, Estonia, Faroe Islands, Finland, Iceland, Latvia, Liechtenstein, Lithuania, Netherlands, Norway, San Marino, Slovenia, Sweden, UK–Guernsey.
+
+  [Digital only — no paper PDF released (4 countries)]
+  Albania 2023 (tablets), Greece 2021 (gov.gr portal + enumerators), Hungary 2022 (online + tablet, 20 languages), Poland 2021 (online + mobile app).
+
+  [Fully electronic — no paper form (1 country)]
+  Slovakia 2021 — first fully electronic EU census; online + mobile only. Question list: https://www.scitanie.sk/obyvatelia/zakladne-vysledky
+
+  [Fully digital — questionnaire structure documented but no PDF (1 country)]
+  Kosovo 2024 (ReKos2024): CAPI, 4,400 enumerators. Structure documented by EGRISS: https://egrisstats.org/implementation/country-case-studies/kosovo/
+
+  [Digital/web portal — no paper PDF (1 country)]
+  North Macedonia 2021: citizens self-enumerated at popis2021.stat.gov.mk. No paper form released.
+
+  [Still to check — Belarus 2019]
+  Belstat — 49-question census (paper + online). Results data book (EN): https://www.belstat.gov.by/en/ Questionnaire (переписной лист) not publicly confirmed online.
+
+  [Italy — permanent rolling census (Censimento Permanente)]
+  Annual AREA sample survey, not a traditional full enumeration. Hub: https://www.istat.it/it/censimenti/popolazione-e-abitazioni
+
+=================================================================
+Summary: 29 downloaded, 0 copied, 7 failed, 10 require browser
