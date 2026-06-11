@@ -15,6 +15,11 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       URL:  https://microdata.insd.bf/index.php/catalog/69/related-materials
       Note: INSD — Burkina Faso RGPH 2019; questionnaire ménage ordinaire and others listed as related materials.
                  DIRECT LINK: https://microdata.insd.bf/index.php/catalog/69/download/268
+[OK] Burundi
+      URL:  https://app.rusansuma.bi:8405/publications/resultats-preliminaires
+      Note: INSD — Burundi 2024 Census was fully digitial but it was built on ESRI Survey123 and the attached 
+                  link contains the survey used to create the digital format.
+                 DIRECT LINK: https://communication.rusansuma.bi/wp-content/uploads/2025/10/RAPPORT-ANALYSE_EPC.pdf
 
 [OK]  Cape_Verde/Cape_Verde_2021_enumeration_form_IPUMS_PT.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/africa/cv2021ef_cape_verde_enumeration_form.pt.pdf
@@ -156,7 +161,6 @@ MISSING
 FORMS TO FOLLOW UP ON
 -----------------------------------------------------------------
 
-Burundi (2024)
 Congo Republic (2023)
 Côte d'Ivoire (2021)
 Djibouti (2024)
