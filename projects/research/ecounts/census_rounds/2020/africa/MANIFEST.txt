@@ -31,6 +31,10 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: IPUMS — Comoros 2017 enumeration form. French.
       Size: 495,794 bytes
 
+[OK] Egypt/Egypt_2017_enumeration_form_IPUMS_EN_AR.pdf
+       URL:  https://erfdataportal.com/index.php/catalog/248/related-materials
+       Note: IPUMS — Egypt 2017 enumeration form and codebook frm economic research forum website. Arabic with English codebook (translated by ERF)
+       DIRECT LINK: https://erfdataportal.com/index.php/catalog/248/download/3853
 
 [OK]  Ghana/Ghana_2021_enumeration_form_IPUMS_EN.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/africa/gh2021ef_ghana_enumeration_form.en.pdf
@@ -151,17 +155,12 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
 MISSING
 -----------------------------------------------------------------
 
-[MISSING] Egypt/Egypt_2017_enumeration_form_IPUMS_EN_AR.pdf
-       URL:  https://international.ipums.org/international/resources/census_forms/africa/eg2017ef_egypt_enumeration_form.en.ar.pdf
-       Note: IPUMS — Egypt 2017 enumeration form. English/Arabic bilingual.
-       Error: HTTP 404 Not Found
-
+Congo Republic (2023) (Direct ask: contact@ins-congo.cg, or UNFPA Congo, which staffed the Chief Technical Adviser)
 
 -----------------------------------------------------------------
 FORMS TO FOLLOW UP ON
 -----------------------------------------------------------------
 
-Congo Republic (2023)
 Côte d'Ivoire (2021)
 Djibouti (2024)
 Seychelles (2022)
