@@ -123,6 +123,11 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
        URL:  https://www.sainthelena.gov.sh/documents/Census-2021-Main-Report.pdf
        Note: SHG Statistics — Saint Helena 2021 Census Main Report (methodology and full results).
 
+[OK]   Seychelles
+       URL: https://www.nbs.gov.sc/
+       Note: CAPI...questions embedded in National Bureau of Statistics report 
+       DIRECT LINK: https://www.nbs.gov.sc/downloads/1555-seychelles-population-and-housing-census-2022/download
+
 [OK]  Sierra_Leone/Sierra_Leone_2021_midterm_household_questionnaire_EN.pdf
       URL:  https://www.statistics.sl/images/StatisticsSL/Documents/Census/Mid-Term-Population-and-Housing-Census-Household-Questionnaire.pdf
       Note: Statistics SL — 2021 Mid-Term PHC Household Questionnaire (first CAPI census). English.
@@ -163,7 +168,6 @@ FORMS TO FOLLOW UP ON
 
 Côte d'Ivoire (2021)
 Djibouti (2024)
-Seychelles (2022)
 
 =================================================================
 No questionnaire PDF available
