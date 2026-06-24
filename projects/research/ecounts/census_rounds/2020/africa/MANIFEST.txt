@@ -5,6 +5,10 @@ NOTES ON FORMS
 SCRAPED FILES-- DOWNLOADED WITH URLS
 -----------------------------------------------------------------
 
+[OK]  Algeria 2022
+      URL: SCRIBD (NEED VERIFIED)
+      Note: Fully digital CAPI; no form released. Pulled form from SCRIBD so NEEDS CHECKED with email
+
 [OK]  Botswana/Botswana_2022_enumeration_form_IPUMS_EN.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/africa/bw2022ef_botswana_enumeration_form.en.pdf
       Note: IPUMS — Botswana 2022 enumeration form. English.
@@ -160,23 +164,32 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
 MISSING
 -----------------------------------------------------------------
 
-Congo Republic (2023) (Direct ask: contact@ins-congo.cg, or UNFPA Congo, which staffed the Chief Technical Adviser)
 
 -----------------------------------------------------------------
 FORMS TO FOLLOW UP ON
 -----------------------------------------------------------------
 
+Algeria (2022)--Email and verify that SCRIBD download is correct by requesting 2022 form/CAPI list of questions
+Congo Republic (2023) (Direct ask: contact@ins-congo.cg, or UNFPA Congo, which staffed the Chief Technical Adviser)
 Côte d'Ivoire (2021)
 Djibouti (2024)
+Eswatini 2017 — first digital CAPI; no form released (Contact info: Central Statistical Office
+      P.O. Box 456, Mbabane, Eswatini
+      Tel: +268 2404 2151/2
+      Email: statistics@gov.sz
+      Director of Statistics: Amos M. Zwane
+      
+      UNFPA Eswatini (technical partner): eswatini.unfpa.org)
+  Gambia 2024          — first digital CAPI; no form released
+      statgeneral@gbos.gm — the Statistician General's office, listed as the contact on the IHSN catalog record for the Gambia PHC. 
+      The Statistician General is Nyakassi M.B. Sanyang, named throughout the 2024 census reports, so addressing him by name helps.
+      statgeneral@gbosgov.org — a likely current variant, since the Bureau's domain has shifted to gbosgov.org 
+      (note: gbos.gm may be the older domain, so sending to both covers you).
+Liberia 2022         — CAPI; report on lisgis.gov.lr but questionnaire NOT in appendix
 
 =================================================================
 No questionnaire PDF available
 -----------------------------------------------------------------
-
-  Algeria 2022         — fully digital CAPI; no form released
-  Eswatini 2017        — first digital CAPI; no form released
-  Gambia 2024          — first digital CAPI; no form released
-  Liberia 2022         — CAPI; report on lisgis.gov.lr but questionnaire NOT in appendix
   Morocco 2024         — tablet-based; no PDF released
   Senegal 2023         — RGPH-5 tablets; no form released
   South Africa 2022    — fully digital; NSO confirmed forms not downloadable
