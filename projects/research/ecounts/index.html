@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCounts — Census Forms & Documents</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #000;
+    }
+
+    /* Home link (upper right) — matches parent page */
+    .home-link {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      font-size: 1em;
+      text-decoration: none;
+      color: #000;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+      z-index: 1000;
+    }
+    .home-link:hover { border-bottom: 2px solid #000; }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto 60px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    /* Page header */
+    .page-header {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 14px;
+      margin-bottom: 10px;
+    }
+    .page-header h1 {
+      font-size: 2.2em;
+    }
+    .page-header p {
+      margin-top: 10px;
+      font-size: 0.97em;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      display: flex;
+      gap: 28px;
+      padding: 18px 0 24px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 32px;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-number {
+      font-size: 1.6em;
+      font-weight: bold;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 0.78em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin-bottom: 14px;
+    }
+
+    /* Region grid */
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .region-card {
+      border: 1.5px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 22px 22px 18px;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      background: #fff;
+      position: relative;
+    }
+    .region-card:hover {
+      border-color: #000;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+    }
+
+    .region-name {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .region-meta {
+      font-size: 0.83em;
+      color: #666;
+      line-height: 1.5;
+    }
+    .region-pill {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.75em;
+      background: #f0f0f0;
+      color: #444;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .region-arrow {
+      position: absolute;
+      bottom: 18px;
+      right: 18px;
+      font-size: 1.1em;
+      color: #bbb;
+      transition: color 0.15s;
+    }
+    .region-card:hover .region-arrow { color: #000; }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px dashed #ddd;
+      margin: 0 0 32px;
+    }
+
+    /* About block */
+    .about-block {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.7;
+      max-width: 680px;
+    }
+    .about-block a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .about-block a:hover { border-bottom-color: #000; }
+
+    /* Census round badge */
+    .round-badge {
+      display: inline-block;
+      font-size: 0.78em;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      padding: 2px 8px;
+      color: #555;
+      margin-left: 10px;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="home-link" href="../">← Research</a>
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>eCounts <span class="round-badge">2016 – 2026</span></h1>
+      <p>A comparative archive of census questionnaires and enumeration documents from the 2020 UN census round, covering 173 countries and territories across six world regions.</p>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-number">173</span>
+        <span class="stat-label">Countries &amp; territories</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">6</span>
+        <span class="stat-label">Regions</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Forms obtained</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Register-based</span>
+      </div>
+    </div>
+
+    <p class="section-label">Browse by region</p>
+
+    <div class="region-grid">
+
+      <a class="region-card" href="./africa/">
+        <div class="region-name">Africa</div>
+        <div class="region-meta">
+          54 countries &amp; territories<br>
+          Sub-Saharan and North Africa
+        </div>
+        <span class="region-pill">Placeholder</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./asia/">
+        <div class="region-name">Asia</div>
+        <div class="region-meta">
+          49 countries &amp; territories<br>
+          East, South, Southeast &amp; West Asia
+        </div>
+        <span class="region-pill">Placeholder</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./europe/">
+        <div class="region-name">Europe</div>
+        <div class="region-meta">
+          48 countries &amp; territories<br>
+          Includes register-based systems
+        </div>
+        <span class="region-pill">Placeholder</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./north-america/">
+        <div class="region-name">North America</div>
+        <div class="region-meta">
+          24 countries &amp; territories<br>
+          Caribbean, Central &amp; mainland
+        </div>
+        <span class="region-pill">Placeholder</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./oceania/">
+        <div class="region-name">Oceania</div>
+        <div class="region-meta">
+          22 countries &amp; territories<br>
+          Pacific islands &amp; Australasia
+        </div>
+        <span class="region-pill">Placeholder</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./south-america/">
+        <div class="region-name">South America</div>
+        <div class="region-meta">
+          13 countries &amp; territories<br>
+          Andean, Southern Cone &amp; Amazonian
+        </div>
+        <span class="region-pill">Placeholder</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+    </div>
+
+    <hr class="divider">
+
+    <div class="about-block">
+      <p>This archive is part of the <a href="https://www.databums.org/projects/global-enumeration-practices/">Global Enumeration Practices</a> project. Forms were located through national statistical office websites, <a href="https://international.ipums.org/international/">IPUMS International</a>, the <a href="https://catalog.ihsn.org/">IHSN/World Bank catalog</a>, and direct requests to statistical agencies. Register-based census systems are documented with their source registers and variable inventories in place of a traditional questionnaire.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
