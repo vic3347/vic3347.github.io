@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asia — 2020 Census Round | eCounts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #000;
+    }
+
+    .breadcrumb {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      font-size: 0.95em;
+      z-index: 1000;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: #000;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .breadcrumb a:hover { border-bottom-color: #000; }
+    .breadcrumb-sep {
+      margin: 0 8px;
+      color: #999;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto 60px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    .page-header {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 14px;
+      margin-bottom: 24px;
+    }
+    .page-header h1 {
+      font-size: 2.2em;
+      margin-bottom: 6px;
+    }
+    .page-header .census-year {
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+    }
+    .page-header p {
+      margin-top: 12px;
+      font-size: 0.97em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .section-label {
+      font-size: 0.78em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin: 32px 0 18px;
+    }
+
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .country-card {
+      border: 1.5px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s;
+      background: #fff;
+      position: relative;
+    }
+    .country-card:hover {
+      border-color: #000;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      background-color: #fafafa;
+    }
+
+    .country-name {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .country-meta {
+      font-size: 0.83em;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .status-badge {
+      display: inline-block;
+      font-size: 0.7em;
+      background: #f0f0f0;
+      color: #555;
+      border-radius: 20px;
+      padding: 4px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+    }
+    .status-badge.available {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+    .status-badge.pending {
+      background: #fff3e0;
+      color: #e65100;
+    }
+    .country-arrow {
+      position: absolute;
+      bottom: 18px;
+      right: 18px;
+      font-size: 1.1em;
+      color: #bbb;
+      transition: color 0.15s;
+    }
+    .country-card:hover .country-arrow { color: #000; }
+
+    .divider {
+      border: none;
+      border-top: 1px dashed #ddd;
+      margin: 32px 0;
+    }
+
+    .info-block {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.7;
+      max-width: 680px;
+    }
+    .info-block a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .info-block a:hover { border-bottom-color: #000; }
+  </style>
+</head>
+<body>
+
+  <div class="breadcrumb">
+    <a href="../../../../">eCounts</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../../">2020 Census Round</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>Asia</span>
+  </div>
+
+  <div class="container">
+
+    <div class="page-header">
+      <div class="census-year">2020 Census Round</div>
+      <h1>Asia</h1>
+      <p>Census forms and enumeration documents from the 2020 census round across East, South, Southeast &amp; West Asia.</p>
+    </div>
+
+    <p class="section-label">Countries</p>
+
+    <div class="country-grid">
+
+      <a class="country-card" href="./Bhutan/">
+        <div class="country-name">Bhutan</div>
+        <div class="country-meta">South Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Brunei_Darussalam/">
+        <div class="country-name">Brunei Darussalam</div>
+        <div class="country-meta">Southeast Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./China/">
+        <div class="country-name">China</div>
+        <div class="country-meta">East Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Japan/">
+        <div class="country-name">Japan</div>
+        <div class="country-meta">East Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Mongolia/">
+        <div class="country-name">Mongolia</div>
+        <div class="country-meta">East Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Pakistan/">
+        <div class="country-name">Pakistan</div>
+        <div class="country-meta">South Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Palestine/">
+        <div class="country-name">Palestine</div>
+        <div class="country-meta">West Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Timor-Leste/">
+        <div class="country-name">Timor-Leste</div>
+        <div class="country-meta">Southeast Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+      <a class="country-card" href="./Vietnam/">
+        <div class="country-name">Vietnam</div>
+        <div class="country-meta">Southeast Asia</div>
+        <span class="status-badge available">Available</span>
+        <span class="country-arrow">→</span>
+      </a>
+
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-block">
+      <p>Census forms for additional Asian countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/global-enumeration-practices/">contact the Global Enumeration Practices project</a>.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
