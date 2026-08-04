@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2020 Census Round | eCounts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #000;
+    }
+
+    .breadcrumb {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      font-size: 0.95em;
+      z-index: 1000;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: #000;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .breadcrumb a:hover { border-bottom-color: #000; }
+    .breadcrumb-sep {
+      margin: 0 8px;
+      color: #999;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto 60px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    .page-header {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+    .page-header h1 {
+      font-size: 2.2em;
+      margin-bottom: 6px;
+    }
+    .page-header p {
+      margin-top: 12px;
+      font-size: 0.97em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .back-row {
+      margin: 18px 0 26px;
+    }
+    .back-button {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      font-size: 0.85em;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1.5px solid #000;
+      border-radius: 999px;
+      padding: 8px 14px;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .back-button:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .section-label {
+      font-size: 0.78em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin: 24px 0 18px;
+    }
+
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .region-card {
+      border: 1.5px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s;
+      background: #fff;
+      position: relative;
+      min-height: 112px;
+    }
+    .region-card:hover {
+      border-color: #000;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      background-color: #fafafa;
+    }
+
+    .region-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .region-meta {
+      font-size: 0.83em;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 0.7em;
+      background: #f0f0f0;
+      color: #555;
+      border-radius: 20px;
+      padding: 4px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+    }
+    .status-badge.available {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .region-arrow {
+      position: absolute;
+      bottom: 18px;
+      right: 18px;
+      font-size: 1.1em;
+      color: #bbb;
+      transition: color 0.15s;
+    }
+    .region-card:hover .region-arrow { color: #000; }
+  </style>
+</head>
+<body>
+
+  <div class="breadcrumb">
+    <a href="../">Census Rounds</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>2020</span>
+  </div>
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>2020 Census Round</h1>
+      <p>Select a region to browse country-specific 2020 census materials.</p>
+    </div>
+
+    <div class="back-row">
+      <a class="back-button" href="../">← Back to Census Rounds</a>
+    </div>
+
+    <p class="section-label">Regions</p>
+
+    <div class="region-grid">
+      <a class="region-card" href="./africa/">
+        <div class="region-title">Africa</div>
+        <div class="region-meta">Country catalog and source files</div>
+        <span class="status-badge available">Available</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./asia/">
+        <div class="region-title">Asia</div>
+        <div class="region-meta">Country catalog and source files</div>
+        <span class="status-badge available">Available</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./europe/">
+        <div class="region-title">Europe</div>
+        <div class="region-meta">Country catalog and source files</div>
+        <span class="status-badge available">Available</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./north_america/">
+        <div class="region-title">North America</div>
+        <div class="region-meta">Country catalog and source files</div>
+        <span class="status-badge available">Available</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./oceania/">
+        <div class="region-title">Oceania</div>
+        <div class="region-meta">Country catalog and source files</div>
+        <span class="status-badge available">Available</span>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a class="region-card" href="./south_america/">
+        <div class="region-title">South America</div>
+        <div class="region-meta">Country catalog and source files</div>
+        <span class="status-badge available">Available</span>
+        <span class="region-arrow">→</span>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
