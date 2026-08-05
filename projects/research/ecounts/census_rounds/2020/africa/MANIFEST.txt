@@ -35,6 +35,10 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: IPUMS — Comoros 2017 enumeration form. French.
       Size: 495,794 bytes
 
+[OK]  Congo/Congo_2019_Ordinaire_FR.pdf
+      Retrieved from email: contact@ins-congo.cg
+      Note: received CAPI files that include household paper version of CAPI; Enumerator's manual; documentation on the CAPI system.
+
 [OK] Egypt/Egypt_2017_enumeration_form_IPUMS_EN_AR.pdf
        URL:  https://erfdataportal.com/index.php/catalog/248/related-materials
        Note: IPUMS — Egypt 2017 enumeration form and codebook frm economic research forum website. Arabic with English codebook (translated by ERF)

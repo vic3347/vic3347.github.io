@@ -72,13 +72,6 @@
       margin: 32px 0 18px;
     }
 
-    .country-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-      margin-bottom: 48px;
-    }
-
     .country-card {
       border: 1.5px solid #e0e0e0;
       border-radius: 10px;
@@ -89,6 +82,7 @@
       transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s;
       background: #fff;
       position: relative;
+      margin-bottom: 16px;
     }
     .country-card:hover {
       border-color: #000;
@@ -136,6 +130,21 @@
     }
     .country-card:hover .country-arrow { color: #000; }
 
+    .file-list {
+      margin-top: 10px;
+      padding-left: 18px;
+      line-height: 1.6;
+      font-size: 0.9em;
+    }
+    .file-list li { margin: 2px 0; }
+    .file-list a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .file-list a:hover { border-bottom-color: #000; }
+    .muted { color: #999; font-style: italic; }
+
     .divider {
       border: none;
       border-top: 1px dashed #ddd;
@@ -176,49 +185,52 @@
 
     <p class="section-label">Countries &amp; Territories</p>
 
-    <div class="country-grid">
-
-      <a class="country-card" href="./Australia/">
+      <div class="country-card">
         <div class="country-name">Australia</div>
         <div class="country-meta">Australasia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Australia/Australia_2021_Census_Household_Form_ABS.pdf">Australia_2021_Census_Household_Form_ABS</a></li>
+          <li><a href="./Australia/Australia_2021_Census_Personal_Form_ABS.pdf">Australia_2021_Census_Personal_Form_ABS</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Fiji/">
+      <div class="country-card">
         <div class="country-name">Fiji</div>
         <div class="country-meta">Pacific Islands</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Fiji/Fiji_2017_enumeration_form_IPUMS_EN.pdf">Fiji_2017_enumeration_form_IPUMS_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./New_Zealand/">
+      <div class="country-card">
         <div class="country-name">New Zealand</div>
         <div class="country-meta">Australasia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./New_Zealand/New_Zealand_2023_Census_Dwelling_Form_Large_Print_StatsNZ.pdf">New_Zealand_2023_Census_Dwelling_Form_Large_Print_StatsNZ</a></li>
+          <li><a href="./New_Zealand/New_Zealand_2023_Census_Individual_Form_Large_Print_StatsNZ.pdf">New_Zealand_2023_Census_Individual_Form_Large_Print_StatsNZ</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Palau/">
+      <div class="country-card">
         <div class="country-name">Palau</div>
         <div class="country-meta">Pacific Islands</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Palau/Palau_2020_Census_Report_SPC_designed_questionnaire_EN.pdf">Palau_2020_Census_Report_SPC_designed_questionnaire_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Samoa/">
+      <div class="country-card">
         <div class="country-name">Samoa</div>
         <div class="country-meta">Pacific Islands</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
-
-    </div>
+        <ul class="file-list">
+          <li><a href="./Samoa/Samoa_2021_Census_Final_Report_questionnaire_in_Annex1_p59_SBS.pdf">Samoa_2021_Census_Final_Report_questionnaire_in_Annex1_p59_SBS</a></li>
+        </ul>
+      </div>
 
     <hr class="divider">
 
     <div class="info-block">
-      <p>Census forms for additional Oceanian countries and territories are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/global-enumeration-practices/">contact the Global Enumeration Practices project</a>.</p>
+      <p>Census forms for additional Oceanian countries and territories are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/research/ecounts/contact/">get in touch</a>.</p>
     </div>
 
   </div>
