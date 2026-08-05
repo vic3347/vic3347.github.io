@@ -1,7 +1,8 @@
-Europe Census Forms — Download Manifest
+NOTES ON FORMS FOR EUROPE
 =================================================================
 
-PART 1: Direct downloads attempted (36 files)
+-----------------------------------------------------------------
+SCRAPED FILES-- DOWNLOADED WITH URLS
 -----------------------------------------------------------------
 
 [OK]  UK_England_Wales/UK_EW_2021_Household_England_EN.pdf
@@ -28,26 +29,6 @@ PART 1: Direct downloads attempted (36 files)
       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalesindividual.pdf
       Note: ONS — Wales 2021 Individual Questionnaire. English.
       Size: 280,926 bytes
-
-[FAIL] UK_England_Wales/UK_EW_2021_Individual_Wales_CY.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwelshindividual.pdf
-       Note: ONS — Wales 2021 Individual Questionnaire (Holiadur Unigol). Welsh/Cymraeg.
-       Error: HTTP 429 Too Many Requests
-
-[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_England_EN.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fenglishcommunalestablishment.pdf
-       Note: ONS — England 2021 Communal Establishment Manager Questionnaire. English.
-       Error: HTTP 429 Too Many Requests
-
-[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_EN.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalescommunalestablishment.pdf
-       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire. English.
-       Error: HTTP 429 Too Many Requests
-
-[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_CY.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwelshcommunalestablishment.pdf
-       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire (Cymraeg/Welsh).
-       Error: HTTP 429 Too Many Requests
 
 [OK]  UK_Scotland/UK_Scotland_2022_Household_questionnaire.pdf
       URL:  https://www.scotlandscensus.gov.uk/media/mecf4qa4/scotlands-census-2022-household-questionnaire.pdf
@@ -134,30 +115,21 @@ PART 1: Direct downloads attempted (36 files)
       Note: CSO Ireland — 2022 Census Sample Household Form. English. Hub (Irish/Gaeilge version + Individual + Listing forms): https://www.cso.ie/en/census/census2022/
       Size: 5,003,470 bytes
 
-[FAIL] Malta/Malta_2021_census_preliminary_report_questionnaire_in_annex_NSO.pdf
-       URL:  https://nso.gov.mt/wp-content/uploads/Census-of-population-2021-publication-web.pdf
-       Note: NSO Malta — 2021 Census Preliminary Report (questionnaire of 54 Q in Annex; available in Maltese, English, Italian, French, Arabic). Booklet also at https://census2021.gov.mt/
-       Error: HTTP 403 Forbidden
-
 [OK]  Moldova/Moldova_2024_Chestionar_persoana_RPL_BNS_RO.pdf
       URL:  https://statistica.gov.md/files/files/Recensamint/Recesamint_2024/Chestionare/Chestionare_14.08.2023/Chestionar_RPL_2024_rom_3P.pdf
       Note: BNS Moldova — 2024 RPL Chestionar persoană (person questionnaire, 62 Q). Romanian. Hub (dwelling 28Q + collective 22Q forms also available): https://statistica.gov.md/ro/chestionare-de-recensamant-10011_60363.html
       Size: 368,227 bytes
 
-[FAIL] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
-       URL:  https://www.monstat.org/uploads/files/popis%202021/tradicionalni/METODOLOGIJA%20POPISA%202023.pdf
-       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53). Montenegrin.
-       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.monstat.org'. (_ssl.c:1081)
+[OK]  Poland/Poland_2021_Instructions_with_Questions_EN.pdf
+      URL:  Mirror (confirmed working): krakowexpats.pl/wp-content/uploads/2021/04/Census-English-NSP2021_Wytyczne-do-samospisu_20210325_jezyk-angielski-1.pdf **Private person collection
+      Original GUS URL: spis.gov.pl/wp-content/uploads/2021/03/NSP2021_Wytyczne-do-samospisu_20210325_jezyk-angielski-1.pdf **May not work
+      Polish original: same path with ..._20210311_jezyk-polski.pdf **May not work
+      Note: Poland uses online and tablets to collect data.
 
 [OK]  Portugal/Portugal_2021_Censos_Agregado_Doméstico_Alojamento_INE_PT.pdf
       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/PT_ma_Q_AgrDomesticoAlojamento_Censos2021_INE.pdf
       Note: INE Portugal — Censos 2021 Agregado Doméstico e Alojamento (household + dwelling form). Portuguese.
       Size: 551,799 bytes
-
-[FAIL] Portugal/Portugal_2021_Censos_Alojamento_Coletivo_INE_PT.pdf
-       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/ma_Q_AlojamentoColetivo_Censos2021_INE.pdf
-       Note: INE Portugal — Censos 2021 Alojamento Coletivo (collective dwelling / institutions form). Portuguese.
-       Error: URL error: timed out
 
 [OK]  Portugal/Portugal_2021_Censos_Individual_INE_EN.pdf
       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/EN_Q_IND_Censos2021_EN_v03.pdf
@@ -183,6 +155,46 @@ PART 1: Direct downloads attempted (36 files)
       URL:  https://www.ine.es/censos2021/proyecto_caracter%C3%ADsticas_esenciales.pdf
       Note: INE Spain — 2021 ECEPOV supplementary sample survey questionnaire (~1% of population). Spain uses register-based census; no full enumeration questionnaire exists. Spanish.
       Size: 506,500 bytes
+
+
+-----------------------------------------------------------------
+MISSING
+-----------------------------------------------------------------
+
+[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_England_EN.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fenglishcommunalestablishment.pdf
+       Note: ONS — England 2021 Communal Establishment Manager Questionnaire. English.
+       Error: HTTP 429 Too Many Requests
+
+[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_EN.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalescommunalestablishment.pdf
+       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire. English.
+       Error: HTTP 429 Too Many Requests
+
+[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_CY.pdf
+       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwelshcommunalestablishment.pdf
+       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire (Cymraeg/Welsh).
+       Error: HTTP 429 Too Many Requests
+
+[FAIL] Malta/Malta_2021_census_preliminary_report_questionnaire_in_annex_NSO.pdf
+       URL:  https://nso.gov.mt/wp-content/uploads/Census-of-population-2021-publication-web.pdf
+       Note: NSO Malta — 2021 Census Preliminary Report (questionnaire of 54 Q in Annex; available in Maltese, English, Italian, French, Arabic). Booklet also at https://census2021.gov.mt/
+       Error: HTTP 403 Forbidden
+
+[FAIL] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
+       URL:  https://www.monstat.org/uploads/files/popis%202021/tradicionalni/METODOLOGIJA%20POPISA%202023.pdf
+       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53). Montenegrin.
+       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.monstat.org'. (_ssl.c:1081)
+
+[FAIL] Portugal/Portugal_2021_Censos_Alojamento_Coletivo_INE_PT.pdf
+       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/ma_Q_AlojamentoColetivo_Censos2021_INE.pdf
+       Note: INE Portugal — Censos 2021 Alojamento Coletivo (collective dwelling / institutions form). Portuguese.
+       Error: URL error: timed out
+
+-----------------------------------------------------------------
+FORMS TO FOLLOW UP ON
+-----------------------------------------------------------------
+
 
 
 =================================================================
@@ -241,7 +253,7 @@ PART 2: Forms requiring browser access (10 entries)
           Note: BFS Switzerland — Annual Structural Survey (register-based census + ~200,000 HH sample). Fragebogen Strukturerhebung downloadable from BFS asset library.
 
 =================================================================
-PART 3: No questionnaire PDF available (48 entries total — breakdown below)
+No questionnaire PDF available
 -----------------------------------------------------------------
 
   [Register-based (16 countries — no enumeration form by design)]
