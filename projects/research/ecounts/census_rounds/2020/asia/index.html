@@ -136,6 +136,21 @@
     }
     .country-card:hover .country-arrow { color: #000; }
 
+    .file-list {
+      margin-top: 10px;
+      padding-left: 18px;
+      line-height: 1.6;
+      font-size: 0.9em;
+    }
+    .file-list li { margin: 2px 0; }
+    .file-list a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .file-list a:hover { border-bottom-color: #000; }
+    .muted { color: #999; font-style: italic; }
+
     .divider {
       border: none;
       border-top: 1px dashed #ddd;
@@ -159,7 +174,7 @@
 <body>
 
   <div class="breadcrumb">
-    <a href="../../../../">eCounts</a>
+    <a href="https://www.databums.org/projects/research/ecounts/">eCounts</a>
     <span class="breadcrumb-sep">/</span>
     <a href="../../">2020 Census Round</a>
     <span class="breadcrumb-sep">/</span>
@@ -178,75 +193,76 @@
 
     <div class="country-grid">
 
-      <a class="country-card" href="./Bhutan/">
+      <div class="country-card">
         <div class="country-name">Bhutan</div>
-        <div class="country-meta">South Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Bhutan/Bhutan_2017_PHCB_metadata_variable_list_all_forms_NSB_EN.pdf">Bhutan_2017_PHCB_metadata_variable_list_all_forms_NSB_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Brunei_Darussalam/">
+      <div class="country-card">
         <div class="country-name">Brunei Darussalam</div>
-        <div class="country-meta">Southeast Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Brunei_Darussalam/Brunei_2016_census_forms_IPUMS_Minnesota_EN_MS.pdf">Brunei_2016_census_forms_IPUMS_Minnesota_EN_MS</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./China/">
+      <div class="country-card">
         <div class="country-name">China</div>
-        <div class="country-meta">East Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./China/China_2020_7th_census_4_forms_annex_NBS_ZH.pdf">China_2020_7th_census_4_forms_annex_NBS_ZH</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Japan/">
+      <div class="country-card">
         <div class="country-name">Japan</div>
-        <div class="country-meta">East Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Japan/Japan_2015_census_questionnaire_bilingual_EN_JA.pdf">Japan_2015_census_questionnaire_bilingual_EN_JA</a></li>
+          <li><a href="./Japan/Japan_2020_census_questionnaire_StatsBureau_EN.pdf">Japan_2020_census_questionnaire_StatsBureau_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Mongolia/">
+      <div class="country-card">
         <div class="country-name">Mongolia</div>
-        <div class="country-meta">East Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Mongolia/Mongolia_2020_enumeration_form_IPUMS_EN.pdf">Mongolia_2020_enumeration_form_IPUMS_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Pakistan/">
+      <div class="country-card">
         <div class="country-name">Pakistan</div>
-        <div class="country-meta">South Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Pakistan/Pakistan_2023_7th_census_National_Report_PBS_EN.pdf">Pakistan_2023_7th_census_National_Report_PBS_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Palestine/">
+      <div class="country-card">
         <div class="country-name">Palestine</div>
-        <div class="country-meta">West Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Palestine/Palestine_2017_enumeration_form_IPUMS_EN.pdf">Palestine_2017_enumeration_form_IPUMS_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Timor-Leste/">
+      <div class="country-card">
         <div class="country-name">Timor-Leste</div>
-        <div class="country-meta">Southeast Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Timor-Leste/Timor-Leste_2022_PHC_main_report_questionnaire_at_p150_UNFPA_EN.pdf">Timor-Leste_2022_PHC_main_report_questionnaire_at_p150_UNFPA_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Vietnam/">
+      <div class="country-card">
         <div class="country-name">Vietnam</div>
-        <div class="country-meta">Southeast Asia</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Vietnam/Vietnam_2019_enumeration_form_IPUMS_EN.pdf">Vietnam_2019_enumeration_form_IPUMS_EN</a></li>
+        </ul>
+      </div>
 
     </div>
 
     <hr class="divider">
 
     <div class="info-block">
-      <p>Census forms for additional Asian countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/global-enumeration-practices/">contact the Global Enumeration Practices project</a>.</p>
+      <p>Census forms for additional Asian countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/contact/">get in touch</a>.</p>
     </div>
 
   </div>
