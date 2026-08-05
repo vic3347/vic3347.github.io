@@ -72,13 +72,6 @@
       margin: 32px 0 18px;
     }
 
-    .country-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-      margin-bottom: 48px;
-    }
-
     .country-card {
       border: 1.5px solid #e0e0e0;
       border-radius: 10px;
@@ -89,6 +82,7 @@
       transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s;
       background: #fff;
       position: relative;
+      margin-bottom: 16px;
     }
     .country-card:hover {
       border-color: #000;
@@ -136,6 +130,21 @@
     }
     .country-card:hover .country-arrow { color: #000; }
 
+    .file-list {
+      margin-top: 10px;
+      padding-left: 18px;
+      line-height: 1.6;
+      font-size: 0.9em;
+    }
+    .file-list li { margin: 2px 0; }
+    .file-list a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .file-list a:hover { border-bottom-color: #000; }
+    .muted { color: #999; font-style: italic; }
+
     .divider {
       border: none;
       border-top: 1px dashed #ddd;
@@ -176,84 +185,98 @@
 
     <p class="section-label">Countries &amp; Territories</p>
 
-    <div class="country-grid">
-
-      <a class="country-card" href="./Argentina/">
+      <div class="country-card">
         <div class="country-name">Argentina</div>
         <div class="country-meta">Southern Cone</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Argentina/Argentina_2022_enumeration_form_IPUMS_ES.pdf">Argentina_2022_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Bolivia/">
+      <div class="country-card">
         <div class="country-name">Bolivia</div>
         <div class="country-meta">Andean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Bolivia/Bolivia_2024_boleta_censal_IPUMS_ES.pdf">Bolivia_2024_boleta_censal_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Brazil/">
+      <div class="country-card">
         <div class="country-name">Brazil</div>
         <div class="country-meta">Amazonian</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Brazil/Brazil_2022_enumeration_form_IPUMS_PT.pdf">Brazil_2022_enumeration_form_IPUMS_PT</a></li>
+          <li><a href="./Brazil/Brazil_2022_questionario_basico_IBGE_PT.pdf">Brazil_2022_questionario_basico_IBGE_PT</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Chile/">
+      <div class="country-card">
         <div class="country-name">Chile</div>
         <div class="country-meta">Southern Cone</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Chile/Chile_2024_cuestionario_Aymara_INE.pdf">Chile_2024_cuestionario_Aymara_INE</a></li>
+          <li><a href="./Chile/Chile_2024_cuestionario_viviendas_particulares_INE.pdf">Chile_2024_cuestionario_viviendas_particulares_INE</a></li>
+          <li><a href="./Chile/Chile_2024_presentacion_cuestionario_INE.pdf">Chile_2024_presentacion_cuestionario_INE</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Colombia/">
+      <div class="country-card">
         <div class="country-name">Colombia</div>
         <div class="country-meta">Andean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Colombia/Colombia_2018_cuestionario_LEA_DANE_ES.pdf">Colombia_2018_cuestionario_LEA_DANE_ES</a></li>
+          <li><a href="./Colombia/Colombia_2018_cuestionario_entorno_urbano_DANE_ES.pdf">Colombia_2018_cuestionario_entorno_urbano_DANE_ES</a></li>
+          <li><a href="./Colombia/Colombia_2018_cuestionario_hogares_DANE_ES.pdf">Colombia_2018_cuestionario_hogares_DANE_ES</a></li>
+          <li><a href="./Colombia/Colombia_2018_enumeration_form_IPUMS_ES.pdf">Colombia_2018_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Ecuador/">
+      <div class="country-card">
         <div class="country-name">Ecuador</div>
         <div class="country-meta">Andean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Ecuador/Ecuador_2022_cuestionario_censal_INEC_ES.pdf">Ecuador_2022_cuestionario_censal_INEC_ES</a></li>
+          <li><a href="./Ecuador/Ecuador_2022_cuestionario_muestra_INEC_ES.pdf">Ecuador_2022_cuestionario_muestra_INEC_ES</a></li>
+          <li><a href="./Ecuador/Ecuador_2022_enumeration_form_IPUMS_ES.pdf">Ecuador_2022_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Falkland_Islands/">
+      <div class="country-card">
         <div class="country-name">Falkland Islands</div>
         <div class="country-meta">South Atlantic</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Falkland_Islands/Falkland_Islands_2021_census_report_questionnaire_in_appendix.pdf">Falkland_Islands_2021_census_report_questionnaire_in_appendix</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Paraguay/">
+      <div class="country-card">
         <div class="country-name">Paraguay</div>
         <div class="country-meta">Southern Cone</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Paraguay/Paraguay_2022_enumeration_form_IPUMS_ES.pdf">Paraguay_2022_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Peru/">
+      <div class="country-card">
         <div class="country-name">Peru</div>
         <div class="country-meta">Andean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Peru/Peru_2017_enumeration_form_IPUMS_ES.pdf">Peru_2017_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Uruguay/">
+      <div class="country-card">
         <div class="country-name">Uruguay</div>
         <div class="country-meta">Southern Cone</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
-
-    </div>
+        <ul class="file-list">
+          <li><a href="./Uruguay/Uruguay_2023_enumeration_form_IPUMS_ES.pdf">Uruguay_2023_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
     <hr class="divider">
 
     <div class="info-block">
-      <p>Census forms for additional South American countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/global-enumeration-practices/">contact the Global Enumeration Practices project</a>.</p>
+      <p>Census forms for additional South American countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/research/ecounts/contact/">get in touch</a>.</p>
     </div>
 
   </div>
