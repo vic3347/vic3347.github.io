@@ -72,13 +72,6 @@
       margin: 32px 0 18px;
     }
 
-    .country-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-      margin-bottom: 48px;
-    }
-
     .country-card {
       border: 1.5px solid #e0e0e0;
       border-radius: 10px;
@@ -89,6 +82,7 @@
       transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s;
       background: #fff;
       position: relative;
+      margin-bottom: 16px;
     }
     .country-card:hover {
       border-color: #000;
@@ -136,6 +130,21 @@
     }
     .country-card:hover .country-arrow { color: #000; }
 
+    .file-list {
+      margin-top: 10px;
+      padding-left: 18px;
+      line-height: 1.6;
+      font-size: 0.9em;
+    }
+    .file-list li { margin: 2px 0; }
+    .file-list a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .file-list a:hover { border-bottom-color: #000; }
+    .muted { color: #999; font-style: italic; }
+
     .divider {
       border: none;
       border-top: 1px dashed #ddd;
@@ -176,91 +185,101 @@
 
     <p class="section-label">Countries &amp; Territories</p>
 
-    <div class="country-grid">
-
-      <a class="country-card" href="./Bermuda/">
+      <div class="country-card">
         <div class="country-name">Bermuda</div>
         <div class="country-meta">Caribbean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Bermuda/Bermuda_2016_Census_Report_questionnaire_in_appendixB.pdf">Bermuda_2016_Census_Report_questionnaire_in_appendixB</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Cayman_Islands/">
+      <div class="country-card">
         <div class="country-name">Cayman Islands</div>
         <div class="country-meta">Caribbean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Cayman_Islands/Cayman_Islands_2021_full_census_form.pdf">Cayman_Islands_2021_full_census_form</a></li>
+          <li><a href="./Cayman_Islands/Cayman_Islands_2021_questionnaire_items_brochure.pdf">Cayman_Islands_2021_questionnaire_items_brochure</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Costa_Rica/">
+      <div class="country-card">
         <div class="country-name">Costa Rica</div>
         <div class="country-meta">Central America</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Costa_Rica/Costa_Rica_2022_enumeration_form_ES.pdf">Costa_Rica_2022_enumeration_form_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Curacao/">
+      <div class="country-card">
         <div class="country-name">Curaçao</div>
         <div class="country-meta">Caribbean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Curacao/Curacao_2023_enumerator_manual_questionnaire_NL.pdf">Curacao_2023_enumerator_manual_questionnaire_NL</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Dominican_Republic/">
+      <div class="country-card">
         <div class="country-name">Dominican Republic</div>
         <div class="country-meta">Caribbean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Dominican_Republic/Dominican_Republic_2020_enumeration_form_ES.pdf">Dominican_Republic_2020_enumeration_form_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./El_Salvador/">
+      <div class="country-card">
         <div class="country-name">El Salvador</div>
         <div class="country-meta">Central America</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./El_Salvador/El_Salvador_2024_census_report_questionnaire_in_annex.pdf">El_Salvador_2024_census_report_questionnaire_in_annex</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Guatemala/">
+      <div class="country-card">
         <div class="country-name">Guatemala</div>
         <div class="country-meta">Central America</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Guatemala/Guatemala_2018_enumeration_form_ES.pdf">Guatemala_2018_enumeration_form_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Mexico/">
+      <div class="country-card">
         <div class="country-name">Mexico</div>
         <div class="country-meta">North America</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Mexico/Mexico_2020_cuestionario_ampliado_INEGI.pdf">Mexico_2020_cuestionario_ampliado_INEGI</a></li>
+          <li><a href="./Mexico/Mexico_2020_cuestionario_basico_INEGI.pdf">Mexico_2020_cuestionario_basico_INEGI</a></li>
+          <li><a href="./Mexico/Mexico_2020_enumeration_form_IPUMS_ES.pdf">Mexico_2020_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Panama/">
+      <div class="country-card">
         <div class="country-name">Panama</div>
         <div class="country-meta">Central America</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Panama/Panama_2023_enumeration_form_ES.pdf">Panama_2023_enumeration_form_ES</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./Puerto_Rico/">
+      <div class="country-card">
         <div class="country-name">Puerto Rico</div>
         <div class="country-meta">Caribbean</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
+        <ul class="file-list">
+          <li><a href="./Puerto_Rico/Puerto_Rico_2020_decennial_form_ES_EN.pdf">Puerto_Rico_2020_decennial_form_ES_EN</a></li>
+        </ul>
+      </div>
 
-      <a class="country-card" href="./United_States/">
+      <div class="country-card">
         <div class="country-name">United States</div>
         <div class="country-meta">North America</div>
-        <span class="status-badge available">Available</span>
-        <span class="country-arrow">→</span>
-      </a>
-
-    </div>
+        <ul class="file-list">
+          <li><a href="./United_States/US_2020_decennial_enumeration_form_EN_ES_IPUMS.pdf">US_2020_decennial_enumeration_form_EN_ES_IPUMS</a></li>
+        </ul>
+      </div>
 
     <hr class="divider">
 
     <div class="info-block">
-      <p>Census forms for additional North American countries and territories are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/global-enumeration-practices/">contact the Global Enumeration Practices project</a>.</p>
+      <p>Census forms for additional North American countries and territories are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/research/ecounts/contact/">get in touch</a>.</p>
     </div>
 
   </div>
