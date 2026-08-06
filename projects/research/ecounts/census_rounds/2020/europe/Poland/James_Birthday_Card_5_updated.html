@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, James!</title>
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    
+    html, body { 
+      width: 100%; 
+      height: 100%; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f0f0f0;
+    }
+    
+    .card-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    
+    .card {
+      background: linear-gradient(135deg, #2c5f3f 0%, #1a3d2a 100%);
+      background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('image(20260806-005325).png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent;
+      z-index: 0;
+    }
+    
+    @keyframes drift {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(20px, 20px); }
+    }
+    
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.7), 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+      color: #e8f5e9;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    
+    .band-name {
+      background: rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 0.75rem 1.5rem;
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin: 1rem 0;
+      border: 2px solid rgba(255,255,255,0.3);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+    
+    .message {
+      background: rgba(255,255,255,0.12);
+      border-left: 4px solid #81c784;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+    
+    .locations {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+    
+    .location {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+    
+    .location-emoji {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .thesis-badge {
+      background: linear-gradient(135deg, #ffd600, #ff6f00);
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin: 1rem 0;
+      animation: pulse 2s ease-in-out infinite;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.3);
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    .cta-button {
+      background: #81c784;
+      color: #1a472a;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(129, 199, 132, 0.3);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(129, 199, 132, 0.5);
+    }
+    
+    .cta-button:active {
+      transform: translateY(0);
+    }
+    
+    .note {
+      font-size: 0.8rem;
+      color: #c8e6c9;
+      margin-top: 2rem;
+      font-style: italic;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    
+    .polka-dots {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    .dot1 { top: 10%; left: 5%; animation-delay: 0s; }
+    .dot2 { top: 20%; right: 10%; animation-delay: 1s; }
+    .dot3 { bottom: 15%; left: 15%; animation-delay: 2s; }
+    .dot4 { bottom: 20%; right: 8%; animation-delay: 1.5s; }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); opacity: 0.5; }
+      50% { transform: translateY(-20px); opacity: 0.8; }
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .modal-content {
+      background-color: #fefefe;
+      padding: 0;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    
+    .close-modal {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      background: rgba(255,255,255,0.9);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1001;
+    }
+    
+    .close-modal:hover {
+      color: #000;
+    }
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px 12px 0 0;
+    }
+    
+    .modal-info {
+      padding: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+    
+    .modal-info h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.3rem;
+    }
+    
+    .modal-info p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card-container">
+  <div class="card">
+    <div class="polka-dots dot1"></div>
+    <div class="polka-dots dot2"></div>
+    <div class="polka-dots dot3"></div>
+    <div class="polka-dots dot4"></div>
+    
+    <div class="content">
+      <h1>Happy Birthday, James! 🎵</h1>
+      <p class="subtitle">From Ludlow to Philadelphia: A Life in Motion</p>
+      
+      <div class="locations">
+        <div class="location">
+          <span class="location-emoji">🏰</span>
+          <strong>Ludlow, England</strong><br>
+          <small>Where it started</small>
+        </div>
+        <div class="location">
+          <span class="location-emoji">🎸</span>
+          <strong>Your Thesis</strong><br>
+          <small>Still making waves</small>
+        </div>
+        <div class="location">
+          <span class="location-emoji">🌃</span>
+          <strong>Philadelphia, PA</strong><br>
+          <small>Where you reign</small>
+        </div>
+      </div>
+      
+      <div class="thesis-badge">
+        ✨ The Mann-Dickinson Thesis: Still Disruptively Good ✨
+      </div>
+      
+      <div class="message">
+        <p>
+          You grew up in the shadow of ancient Ludlow Castle, where history echoes through stone walls.<br>
+          Now you're making history yourself—one groundbreaking idea at a time.
+        </p>
+        <p style="margin-top: 1rem;">
+          You've traded the rolling hills of Shropshire for the grit of Philly, converted academics into disciples of your sociological vision, and somehow made the study of agricultural capitalism sound thrilling. 
+        </p>
+        <p style="margin-top: 1rem;">
+          <em>Here's to another year of brilliant insights and bold truths.</em>
+        </p>
+      </div>
+      
+      <div class="band-name">
+        🎶 Let the music play 🎶
+      </div>
+      
+      <button class="cta-button" onclick="celebrateClick(event)">Play the Anthem</button>
+      
+      <p class="note">
+        *Click the button to play Angine de Poitrine's music right here.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="musicModal" class="modal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeModal()">&times;</button>
+    <div style="padding: 1rem;">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h2 style="margin: 0 0 0.5rem 0; color: #333;">Angine de Poitrine</h2>
+        <p style="margin: 0; font-size: 0.9rem; color: #666;"><em>A gift of experimental math rock for your birthday!</em></p>
+      </div>
+      <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/v=2/track=687314663/size=large/tracklist=false/artwork=small/" seamless></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  function celebrateClick(event) {
+    const button = event.target;
+    const modal = document.getElementById('musicModal');
+    modal.classList.add('show');
+    
+    // Create confetti-like effect
+    for (let i = 0; i < 12; i++) {
+      const dot = document.createElement('div');
+      dot.style.position = 'fixed';
+      dot.style.pointerEvents = 'none';
+      dot.style.width = '8px';
+      dot.style.height = '8px';
+      dot.style.background = ['#81c784', '#4db6ac', '#64b5f6', '#ffb74d'][Math.floor(Math.random() * 4)];
+      dot.style.borderRadius = '50%';
+      dot.style.opacity = '0.8';
+      
+      const rect = button.getBoundingClientRect();
+      dot.style.left = (rect.left + rect.width / 2) + 'px';
+      dot.style.top = (rect.top + rect.height / 2) + 'px';
+      
+      document.body.appendChild(dot);
+      
+      const angle = (Math.PI * 2 * i) / 12;
+      const velocity = { x: Math.cos(angle) * 5, y: Math.sin(angle) * 5 - 3 };
+      
+      const animate = () => {
+        dot.style.left = (parseFloat(dot.style.left) + velocity.x) + 'px';
+        dot.style.top = (parseFloat(dot.style.top) + velocity.y) + 'px';
+        velocity.y += 0.1; // gravity
+        dot.style.opacity = parseFloat(dot.style.opacity) - 0.01;
+        
+        if (parseFloat(dot.style.opacity) > 0) {
+          requestAnimationFrame(animate);
+        } else {
+          dot.remove();
+        }
+      };
+      animate();
+    }
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById('musicModal');
+    modal.classList.remove('show');
+  }
+  
+  // Close modal when clicking outside of it
+  window.onclick = function(event) {
+    const modal = document.getElementById('musicModal');
+    if (event.target === modal) {
+      modal.classList.remove('show');
+    }
+  }
+</script>
+
+</body>
+</html>
