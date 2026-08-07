@@ -20,6 +20,16 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: ONS — Wales 2021 Household Questionnaire (Holiadur y Cartref). Welsh/Cymraeg.
       Size: 564,302 bytes
 
+[OK] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_EN.pdf
+       URL: https://www.ons.gov.uk/census/censustransformationprogramme/questiondevelopment/census2021paperquestionnaires
+       Direct Download:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalescommunalestablishment.pdf
+       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire. English.
+
+[OK] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_CY.pdf
+       URL:  https://www.ons.gov.uk/census/censustransformationprogramme/questiondevelopment/census2021paperquestionnaires
+       Direct Download: https://www.ons.gov.uk/file?uri=/census/censustransformationprogramme/questiondevelopment/census2021paperquestionnaires/welshcommunalestablishment1.pdf
+       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire (Cymraeg/Welsh).
+
 [OK]  UK_England_Wales/UK_EW_2021_Individual_England_EN.pdf
       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fenglishindividual.pdf
       Note: ONS — England 2021 Individual Questionnaire. English.
@@ -107,13 +117,17 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
 
 [OK]  Germany/Germany_2022_Zensus_GWZ_Musterfragebogen_Basisbogen_DE.pdf
       URL:  https://media.frag-den-staat.de/files/foi/905475/gwz-basisbogen-muster.pdf
-      Note: Destatis Zensus 2022 — Gebäude- und Wohnungszählung (GWZ) Musterfragebogen (buildings/dwellings sample form). German. Released via FOI request on FragDenStaat. Haushaltebefragung and Gemeinschaftsunterkünfte sample forms are image-only on zensus2022.de — no PDF released. Hub: https://www.zensus2022.de/DE/Wer-wird-befragt/Musterfragebogen_Uebersicht/_inhalt.html
+      Note: Destatis Zensus 2022 — Gebäude- und Wohnungszählung (GWZ) Musterfragebogen (buildings/dwellings sample form). German. Released via FOI request on FragDenStaat. Haushaltebefragung and Gemeinschaftsunterkünftesample forms are image-only on zensus2022.de — no PDF released. Hub: https://www.zensus2022.de/DE/Wer-wird-befragt/Musterfragebogen_Uebersicht/_inhalt.html
       Size: 340,836 bytes
 
 [OK]  Ireland/Ireland_2022_Household_Form_CSO_EN.pdf
       URL:  https://www.cso.ie/en/media/csoie/census/census2021/Sample_Census_2022_Household_Form_English.pdf
       Note: CSO Ireland — 2022 Census Sample Household Form. English. Hub (Irish/Gaeilge version + Individual + Listing forms): https://www.cso.ie/en/census/census2022/
       Size: 5,003,470 bytes
+
+[OK] Malta/Malta_2021_census_preliminary_report_questionnaire_in_annex_NSO.pdf
+       URL:  https://nso.gov.mt/wp-content/uploads/Census-of-population-2021-publication-web.pdf
+       Note: NSO Malta — 2021 Census Preliminary Report (questionnaire of 54 Q in Apendix; available in Maltese, English, Italian, French, Arabic). Booklet also at https://census2021.gov.mt/
 
 [OK]  Moldova/Moldova_2024_Chestionar_persoana_RPL_BNS_RO.pdf
       URL:  https://statistica.gov.md/files/files/Recensamint/Recesamint_2024/Chestionare/Chestionare_14.08.2023/Chestionar_RPL_2024_rom_3P.pdf
@@ -156,35 +170,19 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: INE Spain — 2021 ECEPOV supplementary sample survey questionnaire (~1% of population). Spain uses register-based census; no full enumeration questionnaire exists. Spanish.
       Size: 506,500 bytes
 
+[OK] UK_Scotland
+          Household Continuation + Prisons CE Individual questionnaires — hub:
+          URL:  https://www.scotlandscensus.gov.uk/documents/scotlands-census-2022-paper-questionnaires/
+          Note: NRS Scotland —8 forms included above All downloadable from website.
 
 -----------------------------------------------------------------
 MISSING
 -----------------------------------------------------------------
 
-[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_England_EN.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fenglishcommunalestablishment.pdf
-       Note: ONS — England 2021 Communal Establishment Manager Questionnaire. English.
-       Error: HTTP 429 Too Many Requests
-
-[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_EN.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwalescommunalestablishment.pdf
-       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire. English.
-       Error: HTTP 429 Too Many Requests
-
-[FAIL] UK_England_Wales/UK_EW_2021_Communal_Establishment_Wales_CY.pdf
-       URL:  https://www.ons.gov.uk/file?uri=%2Fcensus%2Fcensustransformationprogramme%2Fquestiondevelopment%2Fcensus2021paperquestionnaires%2Fwelshcommunalestablishment.pdf
-       Note: ONS — Wales 2021 Communal Establishment Manager Questionnaire (Cymraeg/Welsh).
-       Error: HTTP 429 Too Many Requests
-
-[FAIL] Malta/Malta_2021_census_preliminary_report_questionnaire_in_annex_NSO.pdf
-       URL:  https://nso.gov.mt/wp-content/uploads/Census-of-population-2021-publication-web.pdf
-       Note: NSO Malta — 2021 Census Preliminary Report (questionnaire of 54 Q in Annex; available in Maltese, English, Italian, French, Arabic). Booklet also at https://census2021.gov.mt/
-       Error: HTTP 403 Forbidden
-
-[FAIL] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
+[OK] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
        URL:  https://www.monstat.org/uploads/files/popis%202021/tradicionalni/METODOLOGIJA%20POPISA%202023.pdf
-       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53). Montenegrin.
-       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.monstat.org'. (_ssl.c:1081)
+       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53 and control form). Montenegrin.
+       
 
 [FAIL] Portugal/Portugal_2021_Censos_Alojamento_Coletivo_INE_PT.pdf
        URL:  https://censos.ine.pt/scripts/censos_css_js/quest/ma_Q_AlojamentoColetivo_Censos2021_INE.pdf
@@ -202,10 +200,6 @@ PART 2: Forms requiring browser access (10 entries)
 (Not attempted by script — visit URLs below manually)
 -----------------------------------------------------------------
 
-[BROWSER] UK_Scotland
-          Household Continuation + Prisons CE Individual questionnaires — hub:
-          URL:  https://www.scotlandscensus.gov.uk/documents/scotlands-census-2022-paper-questionnaires/
-          Note: NRS Scotland — 2 additional forms not included above (media hash IDs unconfirmed). Both downloadable from the hub page.
 
 [BROWSER] UK_Jersey
           Statistics Jersey 2021 Census questionnaire — hub:
