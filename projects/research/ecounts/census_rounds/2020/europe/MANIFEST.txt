@@ -134,6 +134,10 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: BNS Moldova — 2024 RPL Chestionar persoană (person questionnaire, 62 Q). Romanian. Hub (dwelling 28Q + collective 22Q forms also available): https://statistica.gov.md/ro/chestionare-de-recensamant-10011_60363.html
       Size: 368,227 bytes
 
+[OK] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
+       URL:  https://www.monstat.org/uploads/files/popis%202021/tradicionalni/METODOLOGIJA%20POPISA%202023.pdf
+       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53 and control form). Montenegrin.
+
 [OK]  Poland/Poland_2021_Instructions_with_Questions_EN.pdf
       URL:  Mirror (confirmed working): krakowexpats.pl/wp-content/uploads/2021/04/Census-English-NSP2021_Wytyczne-do-samospisu_20210325_jezyk-angielski-1.pdf **Private person collection
       Original GUS URL: spis.gov.pl/wp-content/uploads/2021/03/NSP2021_Wytyczne-do-samospisu_20210325_jezyk-angielski-1.pdf **May not work
@@ -149,6 +153,10 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/EN_Q_IND_Censos2021_EN_v03.pdf
       Note: INE Portugal — Censos 2021 Individual Questionnaire. English translation (rare).
       Size: 307,873 bytes
+
+[OK] Portugal/Portugal_2021_Censos_Alojamento_Coletivo_INE_PT.pdf
+       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/ma_Q_AlojamentoColetivo_Censos2021_INE.pdf
+       Note: INE Portugal — Censos 2021 Alojamento Coletivo (collective dwelling / institutions form). Portuguese.
 
 [OK]  Romania/Romania_2021_RPL_Chestionar_martor_INS_RO.pdf
       URL:  https://www.recensamantromania.ro/wp-content/uploads/2022/03/Chestionar-martor_RPL2021_romana.pdf
@@ -179,15 +187,7 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
 MISSING
 -----------------------------------------------------------------
 
-[OK] Montenegro/Montenegro_2023_Metodologija_popisa_MONSTAT_ME.pdf
-       URL:  https://www.monstat.org/uploads/files/popis%202021/tradicionalni/METODOLOGIJA%20POPISA%202023.pdf
-       Note: MONSTAT — Montenegro 2023 Census Methodology document (contains full P-1 person questionnaire from p.79 and P-2 dwelling/household questionnaire from p.53 and control form). Montenegrin.
-       
 
-[FAIL] Portugal/Portugal_2021_Censos_Alojamento_Coletivo_INE_PT.pdf
-       URL:  https://censos.ine.pt/scripts/censos_css_js/quest/ma_Q_AlojamentoColetivo_Censos2021_INE.pdf
-       Note: INE Portugal — Censos 2021 Alojamento Coletivo (collective dwelling / institutions form). Portuguese.
-       Error: URL error: timed out
 
 -----------------------------------------------------------------
 FORMS TO FOLLOW UP ON
@@ -201,7 +201,7 @@ PART 2: Forms requiring browser access (10 entries)
 -----------------------------------------------------------------
 
 
-[BROWSER] UK_Jersey
+[OK] UK_Jersey
           Statistics Jersey 2021 Census questionnaire — hub:
           URL:  https://census.gov.je/
           Note: Statistics Jersey — 2021 Census; online-first, paper on request. Questionnaire on hub page.
