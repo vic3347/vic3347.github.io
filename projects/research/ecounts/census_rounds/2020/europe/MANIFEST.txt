@@ -207,9 +207,17 @@ FORMS TO FOLLOW UP ON
 
 
 =================================================================
-PART 2: Forms requiring browser access (10 entries)
-(Not attempted by script — visit URLs below manually)
+Population Registers
 -----------------------------------------------------------------
+
+[OK]  Belgium
+      URL:  https://statbel.fgov.be/fr/themes/census/bases_de_donnees_utilisees. ///DATABASES USED IN 2021 with links
+      Note: Full Population Register.Registre Nationale is primary source of data (https://www.ibz.rrn.fgov.be/fr/professionnel/registre-national)
+      DIRECT LINK: National Register link--https://www.ibz.rrn.fgov.be/sites/default/files/documents/fr/registre-national/fichier-rn/fichier-RN.pdf
+
+
+
+
 
 
 
