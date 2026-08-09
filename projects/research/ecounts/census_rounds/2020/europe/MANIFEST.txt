@@ -85,6 +85,11 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: NISRA — Northern Ireland 2021 Census Communal Establishment Questionnaire. English.
       Size: 412,499 bytes
 
+[OK] UK_Jersey
+          Statistics Jersey 2021 Census questionnaire — hub:
+          URL:  https://census.gov.je/
+          Note: Statistics Jersey — 2021 Census; online-first, paper on request. Questionnaire on hub page.
+
 [OK]  Bulgaria/Bulgaria_2021_main_card_buildings_dwellings_persons_NSI_BG.pdf
       URL:  https://census2021.bg/wp-content/uploads/2021/06/karta_jilishta_16str_obrazec.pdf
       Note: NSI Bulgaria — 2021 Census main преброителна карта (buildings/dwellings/persons, 16pp). Bulgarian. Hub (4 more cards): https://census2021.bg/документи-инструментариум-обучение/
@@ -183,6 +188,12 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
           URL:  https://www.scotlandscensus.gov.uk/documents/scotlands-census-2022-paper-questionnaires/
           Note: NRS Scotland —8 forms included above All downloadable from website.
 
+[OK] UK_Isle_of_Man
+          IoM Cabinet Office 2021 Census questionnaire — hub:
+          URL:  https://www.gov.im/census
+          DIRECT LINK: https://www.gov.im/media/1376421/2021-isle-of-man-census-report-part-ii_11052022.pdf.  (Paper from in Appendix)
+          Note: IoM Cabinet Office — Apr 2021 census; online-first, paper on request.
+
 -----------------------------------------------------------------
 MISSING
 -----------------------------------------------------------------
@@ -196,20 +207,19 @@ FORMS TO FOLLOW UP ON
 
 
 =================================================================
-PART 2: Forms requiring browser access (10 entries)
-(Not attempted by script — visit URLs below manually)
+Population Registers
 -----------------------------------------------------------------
 
+[OK]  Belgium
+      URL:  https://statbel.fgov.be/fr/themes/census/bases_de_donnees_utilisees. ///DATABASES USED IN 2021 with links
+      Note: Full Population Register.Registre Nationale is primary source of data (https://www.ibz.rrn.fgov.be/fr/professionnel/registre-national)
+      DIRECT LINK: National Register link--https://www.ibz.rrn.fgov.be/sites/default/files/documents/fr/registre-national/fichier-rn/fichier-RN.pdf
 
-[OK] UK_Jersey
-          Statistics Jersey 2021 Census questionnaire — hub:
-          URL:  https://census.gov.je/
-          Note: Statistics Jersey — 2021 Census; online-first, paper on request. Questionnaire on hub page.
 
-[BROWSER] UK_Isle_of_Man
-          IoM Cabinet Office 2021 Census questionnaire — hub:
-          URL:  https://www.gov.im/census
-          Note: IoM Cabinet Office — Apr 2021 census; online-first, paper on request.
+
+
+
+
 
 [BROWSER] Czech_Republic
           ČSÚ SLDB 2021 sčítací formuláře (3 forms) — downloads hub:
