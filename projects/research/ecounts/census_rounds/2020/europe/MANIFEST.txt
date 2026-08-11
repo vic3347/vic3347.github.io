@@ -195,10 +195,12 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
           Note: IoM Cabinet Office — Apr 2021 census; online-first, paper on request.
 
 -----------------------------------------------------------------
-MISSING
+MISSING OR INCOMPLETE
 -----------------------------------------------------------------
-
-
+[INCOMPLETE] Ireland
+          CSO Ireland 2022 Census hub (As Gaeilge + Individual + Listing forms):
+          URL:  https://www.cso.ie/en/census/census2022/
+          Note: CSO — 4 forms total: Household (EN), Household (Irish/Gaeilge), Individual, and Listing form for hotels/collective dwellings.
 
 -----------------------------------------------------------------
 FORMS TO FOLLOW UP ON
@@ -207,7 +209,7 @@ FORMS TO FOLLOW UP ON
 
 
 =================================================================
-Population Registers
+Population Registers or Combined Admin Sources
 -----------------------------------------------------------------
 
 [OK]  Belgium
@@ -215,26 +217,18 @@ Population Registers
       Note: Full Population Register.Registre Nationale is primary source of data (https://www.ibz.rrn.fgov.be/fr/professionnel/registre-national)
       DIRECT LINK: National Register link--https://www.ibz.rrn.fgov.be/sites/default/files/documents/fr/registre-national/fichier-rn/fichier-RN.pdf
 
-
-
-
-
-
-
-[BROWSER] Czech_Republic
+[OK] Czechia
           ČSÚ SLDB 2021 sčítací formuláře (3 forms) — downloads hub:
           URL:  https://scitani.gov.cz/ke-stazeni
-          Note: ČSÚ — SLDB 2021: Základní formulář (household, 556 kB), Dodatečný formulář (continuation, 505 kB), Samostatný formulář pro osobu (individual/institutions, 276 kB). Czech only.
+          Note: ČSÚ — SLDB 2021: Základní formulář (household, 556 kB), Dodatečný formulář (continuation, 505 kB), Samostatný formulář pro osobu (individual/institutions, 276 kB). Official English translation             included.
 
-[BROWSER] Germany
+[OK] Germany
           Destatis Zensus 2022 Musterfragebogen hub (Haushalt + Gemeinschaftsunterkünfte displayed as image slideshows, no PDF):
           URL:  https://www.zensus2022.de/DE/Wer-wird-befragt/Musterfragebogen_Uebersicht/_inhalt.html
-          Note: Destatis — Haushaltebefragung sample form (household) and Gemeinschaftsunterkünfte (communal establishments) Musterformulare are displayed as image-only on the website.
+          Note: Destatis — Haushaltebefragung sample form (household) and Gemeinschaftsunterkünfte (communal establishments) Musterformulare are displayed as image-only on the website. 
+            Germany's administrative data sources were primarily Melderegister (municipal registration registers) with supplementary corrections via household sampling and record linkage for duplicate detection.
 
-[BROWSER] Ireland
-          CSO Ireland 2022 Census hub (As Gaeilge + Individual + Listing forms):
-          URL:  https://www.cso.ie/en/census/census2022/
-          Note: CSO — 4 forms total: Household (EN), Household (Irish/Gaeilge), Individual, and Listing form for hotels/collective dwellings.
+
 
 [BROWSER] Luxembourg
           STATEC RP2021 census hub (digital + paper questionnaire):
