@@ -173,6 +173,13 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       Note: Romania RPL 2021 chestionar — mirror copy via RFERL.org.
       Size: 1,408,798 bytes
 
+[OK] Russia
+          Rosstat VPN 2021 census hub (forms not confirmed as standalone PDFs):
+          URL:  https://rosstat.gov.ru/vpn_popul
+          Note: Rosstat — VPN 2021 (Oct–Nov 2021, first online-enabled census). Census переписные листы П (person), Ж (housing), В (away from usual residence) all available as PDF.
+                (LINK: http://static.government.ru/media/acts/files/1201911130001.pdf)
+                Census info here: https://77.rosstat.gov.ru/folder/210976
+
 [OK]  Serbia/Serbia_2022_Individual_questionnaire_RZS_EN.pdf
       URL:  https://popis2022.stat.gov.rs/media/31012/016b-p1-engleski.pdf
       Note: RZS Serbia — 2022 Census Individual Questionnaire. English. Hub (Serbian-language forms also available): https://popis2022.stat.gov.rs/en-US/
@@ -201,6 +208,15 @@ MISSING OR INCOMPLETE
           CSO Ireland 2022 Census hub (As Gaeilge + Individual + Listing forms):
           URL:  https://www.cso.ie/en/census/census2022/
           Note: CSO — 4 forms total: Household (EN), Household (Irish/Gaeilge), Individual, and Listing form for hotels/collective dwellings.
+          EMAILED: 08/11/26
+
+[INCOMPLETE] Luxembourg
+          STATEC RP2021 census hub (digital + paper questionnaire):
+          URL:  https://rp2021.lu/en/home/
+          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
+          EMAILED: 08/12/26
+
+
 
 -----------------------------------------------------------------
 FORMS TO FOLLOW UP ON
@@ -228,27 +244,13 @@ Population Registers or Combined Admin Sources
           Note: Destatis — Haushaltebefragung sample form (household) and Gemeinschaftsunterkünfte (communal establishments) Musterformulare are displayed as image-only on the website. 
             Germany's administrative data sources were primarily Melderegister (municipal registration registers) with supplementary corrections via household sampling and record linkage for duplicate detection.
 
-
-
-[BROWSER] Luxembourg
-          STATEC RP2021 census hub (digital + paper questionnaire):
-          URL:  https://rp2021.lu/en/home/
-          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
-
-[BROWSER] Moldova
-          BNS Moldova 2024 — Chestionar locuință (28Q) + Chestionar spațiu colectiv (22Q):
-          URL:  https://statistica.gov.md/ro/chestionare-de-recensamant-10011_60363.html
-          Note: BNS — Dwelling questionnaire and Collective dwelling questionnaire also available from this hub page.
-
-[BROWSER] Russia
-          Rosstat VPN 2021 census hub (forms not confirmed as standalone PDFs):
-          URL:  https://rosstat.gov.ru/vpn_popul
-          Note: Rosstat — VPN 2021 (Oct–Nov 2021, first online-enabled census). Census переписные листы П (person), Ж (housing), В (away from usual residence) referenced in publications but no confirmed standalone PDF URL.
-
-[BROWSER] Switzerland
+[OK] Switzerland
           BFS Structural Survey (SE) questionnaire hub:
           URL:  https://www.bfs.admin.ch/bfs/en/home/statistics/population/surveys/se.html
           Note: BFS Switzerland — Annual Structural Survey (register-based census + ~200,000 HH sample). Fragebogen Strukturerhebung downloadable from BFS asset library.
+                Population register info: 
+
+
 
 =================================================================
 No questionnaire PDF available
