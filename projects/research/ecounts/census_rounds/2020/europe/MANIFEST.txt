@@ -201,6 +201,15 @@ MISSING OR INCOMPLETE
           CSO Ireland 2022 Census hub (As Gaeilge + Individual + Listing forms):
           URL:  https://www.cso.ie/en/census/census2022/
           Note: CSO — 4 forms total: Household (EN), Household (Irish/Gaeilge), Individual, and Listing form for hotels/collective dwellings.
+          EMAILED: 08/11/26
+
+[INCOMPLETE] Luxembourg
+          STATEC RP2021 census hub (digital + paper questionnaire):
+          URL:  https://rp2021.lu/en/home/
+          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
+          EMAILED: 08/12/26
+
+
 
 -----------------------------------------------------------------
 FORMS TO FOLLOW UP ON
@@ -230,10 +239,8 @@ Population Registers or Combined Admin Sources
 
 
 
-[BROWSER] Luxembourg
-          STATEC RP2021 census hub (digital + paper questionnaire):
-          URL:  https://rp2021.lu/en/home/
-          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
+
+
 
 [BROWSER] Moldova
           BNS Moldova 2024 — Chestionar locuință (28Q) + Chestionar spațiu colectiv (22Q):
