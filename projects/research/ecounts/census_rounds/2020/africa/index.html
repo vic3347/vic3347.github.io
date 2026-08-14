@@ -64,6 +64,31 @@
       line-height: 1.6;
     }
 
+    .quick-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 20px 0 8px;
+    }
+    .quick-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border: 1.5px solid #000;
+      border-radius: 8px;
+      font-size: 0.88em;
+      font-weight: 600;
+      text-decoration: none;
+      color: #000;
+      background: #fff;
+      transition: background 0.15s, color 0.15s;
+    }
+    .quick-link:hover {
+      background: #000;
+      color: #fff;
+    }
+
     .section-label {
       font-size: 0.78em;
       text-transform: uppercase;
@@ -195,6 +220,9 @@
       <div class="census-year">2020 Census Round</div>
       <h1>Africa</h1>
       <p>Census forms and enumeration documents from the 2020 census round across Sub-Saharan and North African countries.</p>
+      <div class="quick-links">
+        <a class="quick-link" href="./Questions/demographic_questions.html">&#10067; Demographic Questions</a>
+      </div>
     </div>
 
     <p class="section-label">Countries</p>
@@ -430,7 +458,7 @@
     <hr class="divider">
 
     <div class="info-block">
-      <p>Census forms for additional African countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/research/ecounts/contact/">get in touch</a>.</p>
+      <p>Census forms for additional African countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/[...]
     </div>
 
     <p class="sources-link"><a href="./MANIFEST.txt">SOURCES</a></p>
