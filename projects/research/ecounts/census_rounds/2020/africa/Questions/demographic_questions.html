@@ -47,7 +47,7 @@ DATA.forEach((d,i)=>{
 });
 document.getElementById('tally').textContent =
   DATA.length + ' countries. ' + DATA.filter(d=>d.verified).length +
-  ' verified against the questionnaire itself; the rest compiled from secondary sources.';
+  ' verified against the questionnaire.';
 
 const esc = s => String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 
@@ -64,7 +64,7 @@ function render(i){
   h += '<dt>Form</dt><dd>' + esc(d.form) + '</dd>';
   h += '<dt>Question</dt><dd>' + esc(d.code) + '</dd>';
   h += '<dt>Source</dt><dd>' + esc(d.source) +
-       (d.verified ? '' : ' <span class="unver">(not verified against the instrument)</span>') +
+       (d.verified ? '' : ' <span class="unver">(not verified yet)</span>') +
        '</dd></dl>';
 
   h += '<p class="q">' + esc(d.question || '\u2014') + '</p>';
