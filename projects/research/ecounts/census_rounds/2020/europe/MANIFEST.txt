@@ -129,6 +129,13 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
       URL:  https://www.cso.ie/en/media/csoie/census/census2021/Sample_Census_2022_Household_Form_English.pdf
       Note: CSO Ireland — 2022 Census Sample Household Form. English. Hub (Irish/Gaeilge version + Individual + Listing forms): https://www.cso.ie/en/census/census2022/
       Size: 5,003,470 bytes
+      Emailed and received documentation from Census@cso.ie
+
+[OK] Luxembourg
+          STATEC RP2021 census hub (digital + paper questionnaire):
+          URL:  https://rp2021.lu/en/home/
+          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
+          EMAILED: 08/12/26; received response with paper questions, agent instructions, and additional info 08/20/2026 from Luxembourg NSO, STATEC (email: info@statec.etat.lu)
 
 [OK] Malta/Malta_2021_census_preliminary_report_questionnaire_in_annex_NSO.pdf
        URL:  https://nso.gov.mt/wp-content/uploads/Census-of-population-2021-publication-web.pdf
@@ -204,18 +211,6 @@ SCRAPED FILES-- DOWNLOADED WITH URLS
 -----------------------------------------------------------------
 MISSING OR INCOMPLETE
 -----------------------------------------------------------------
-[INCOMPLETE] Ireland
-          CSO Ireland 2022 Census hub (As Gaeilge + Individual + Listing forms):
-          URL:  https://www.cso.ie/en/census/census2022/
-          Note: CSO — 4 forms total: Household (EN), Household (Irish/Gaeilge), Individual, and Listing form for hotels/collective dwellings.
-          EMAILED: 08/11/26
-
-[INCOMPLETE] Luxembourg
-          STATEC RP2021 census hub (digital + paper questionnaire):
-          URL:  https://rp2021.lu/en/home/
-          Note: STATEC Luxembourg — Nov 2021 combined register + questionnaire census. 48% digital, 52% paper. Questions on hub page.
-          EMAILED: 08/12/26
-
 
 
 -----------------------------------------------------------------
