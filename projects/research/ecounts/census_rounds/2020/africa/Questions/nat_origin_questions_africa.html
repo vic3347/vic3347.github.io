@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National Origin by Country</title><style>body{font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#222;max-width:720px;margin:0 auto;padding:24px}
+h1{font-size:22px;margin:0 0 4px}p.sub{margin:0 0 20px;color:#555}select{font-size:15px;padding:5px;min-width:240px}
+h2{font-size:19px;margin:24px 0 4px}dl{margin:0 0 16px}dt{font-weight:bold;float:left;width:110px;clear:left}dd{margin:0 0 3px 110px}
+.q{font-size:17px;margin:16px 0}.note{color:#555;margin:0 0 10px;white-space:pre-wrap}
+.none{color:#a33}.yes{color:#176b2c}.na{color:#8a5a00}hr{border:0;border-top:1px solid #ccc;margin:24px 0}</style></head><body>
+<h1>National Origin by Country</h1>
+<p class="sub">Africa &mdash; countries provided so far</p>
+<label for="c">Country: </label><select id="c"></select>
+<div id="out"></div>
+<script id="data" type="application/json">[]</script>
+<script>
+var data=JSON.parse(document.getElementById('data').textContent);
+var sel=document.getElementById('c'),out=document.getElementById('out');
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function render(i){
+ var d=data[i],h='',cls=d.status==='Yes'?'yes':(d.status==='No'?'none':'na');
+ h+='<h2>'+esc(d.country)+'</h2><dl><dt>Status</dt><dd class="'+cls+'"><strong>'+esc(d.status)+'</strong></dd>';
+ h+='<dt>Year</dt><dd>'+esc(d.year)+'</dd><dt>Form</dt><dd>'+esc(d.form)+'</dd>';
+ if(d.code)h+='<dt>Question</dt><dd>'+esc(d.code)+'</dd>';
+ h+='</dl><div class="q">'+esc(d.question)+'</div>';
+ h+='<p class="note"><strong>Notes:</strong> '+esc(d.notes)+'</p>';
+ h+='<p class="note"><strong>Source:</strong> '+esc(d.source)+'</p>';
+ if(d.source_links&&d.source_links.length){h+='<p class="note"><strong>Source:</strong> ';d.source_links.forEach(function(s,i){if(i)h+='; ';h+='<a href="'+esc(s.href)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a>';});h+='</p>';}out.innerHTML=h;
+}
+data.forEach(function(d,i){var o=document.createElement('option');o.value=i;o.textContent=d.country;sel.appendChild(o);});
+sel.addEventListener('change',function(){render(+this.value);});
+render(0);
+</script>
+</body></html>
