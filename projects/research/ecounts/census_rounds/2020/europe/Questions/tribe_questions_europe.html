@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tribal Questions by Country</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#222;max-width:720px;margin:0 auto;padding:24px}
+h1{font-size:22px;margin:0 0 4px} p.sub{margin:0 0 20px;color:#555}
+select{font-size:15px;padding:5px;min-width:240px}
+.note{color:#555;margin:10px 0;white-space:pre-wrap}
+hr{border:0;border-top:1px solid #ccc;margin:24px 0}
+</style>
+</head>
+<body>
+<h1>Tribal Questions by Country</h1>
+<p class="sub">Europe — countries provided so far</p>
+<label for="c">Country: </label>
+<select id="c"></select>
+<div id="out"></div>
+<hr>
+<p class="note" id="tally"></p>
+<script id="data" type="application/json">[]</script>
+<script>
+const data=JSON.parse(document.getElementById('data').textContent);
+const sel=document.getElementById('c'),out=document.getElementById('out');
+if(!data.length){
+  out.innerHTML='<p class="note"><strong>No countries currently have an explicit tribe or tribal-affiliation question documented in the Europe collection.</strong></p>'+
+  '<p class="note">Ethnicity, ethnic group, race, nationality, language, religion, clan, and related categories are not counted as tribe unless the source explicitly asks about tribe or tribal affiliation.</p>';
+}
+document.getElementById('tally').textContent=data.length
+ ? data.length+' countries with supported tribe/tribal-affiliation questions.'
+ : 'No countries currently documented for this topic.';
+</script>
+</body>
+</html>
