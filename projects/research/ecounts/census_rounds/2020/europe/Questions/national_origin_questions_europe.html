@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National Origin Questions by Country</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#222;max-width:760px;margin:0 auto;padding:24px}
+h1{font-size:22px;margin:0 0 4px}p.sub{margin:0 0 20px;color:#555}select{font-size:15px;padding:5px;min-width:260px}
+h2{font-size:19px;margin:24px 0 4px}dl{margin:0 0 16px}dt{font-weight:bold;float:left;width:120px;clear:left}dd{margin:0 0 3px 120px}
+.q{font-size:17px;margin:16px 0}table{border-collapse:collapse;margin:0 0 16px;width:100%}
+th,td{border:1px solid #999;padding:5px 10px;text-align:left;font-size:14px;vertical-align:top}th{background:#eee}
+.note{color:#555;margin:8px 0 10px;white-space:pre-wrap}.source{color:#666;font-size:12px;line-height:1.35;margin-top:14px}
+.source strong{font-size:12px}.yes{color:#176b2c}.supp{color:#8a5a00}hr{border:0;border-top:1px solid #ccc;margin:24px 0}
+.empty{color:#666;margin-top:22px}
+</style></head><body>
+<h1>National Origin Questions by Country</h1><p class="sub">Europe — supplied questionnaire/document batch</p>
+<p class="empty">No countries in this batch have a directly supported question for this topic, so there are no countries to display.</p><script id="data" type="application/json">[]</script>
+<script>
+var data=JSON.parse(document.getElementById('data').textContent),sel=document.getElementById('c'),out=document.getElementById('out');
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function render(i){var d=data[i],cls=d.status==='Yes'?'yes':'supp',h='';
+h+='<h2>'+esc(d.country)+'</h2><dl><dt>Status</dt><dd class="'+cls+'"><strong>'+esc(d.status)+'</strong></dd><dt>Year</dt><dd>'+esc(d.year)+'</dd><dt>Form/source type</dt><dd>'+esc(d.form)+'</dd>';
+if(d.code)h+='<dt>Question</dt><dd>'+esc(d.code)+'</dd>';h+='</dl><div class="q">'+esc(d.question)+'</div>';
+if(d.responses&&d.responses.length){h+='<table><tr><th>Source response / wording</th><th>English interpretation</th></tr>';
+d.responses.forEach(function(r){h+='<tr><td>'+esc(r[0])+'</td><td>'+esc(r[1])+'</td></tr>';});h+='</table>';}
+if(d.skip)h+='<p class="note"><strong>Skip:</strong> '+esc(d.skip)+'</p>';
+if(d.followups&&d.followups.length){h+='<p><strong>Follow-ups:</strong></p><ul>';d.followups.forEach(function(r){h+='<li><strong>'+esc(r[0])+':</strong> '+esc(r[1])+'</li>';});h+='</ul>';}
+if(d.notes)h+='<p class="note"><strong>Notes:</strong> '+esc(d.notes)+'</p>';
+if(d.source)h+='<p class="source"><strong>Source file(s):</strong> '+esc(d.source)+'</p>';out.innerHTML=h;}
+if(data.length){data.forEach(function(d,i){var o=document.createElement('option');o.value=i;o.textContent=d.country;sel.appendChild(o);});
+sel.addEventListener('change',function(){render(+this.value);});
+document.getElementById('tally').textContent=data.length+' countries with supported questions/fields for this topic.';render(0);}
+</script></body></html>
