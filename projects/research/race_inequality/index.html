@@ -1,57 +1,75 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Current Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race and Inequality</title>
 
   <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { min-height: 100%; }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7f7;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-	/* Home link (upper right) */
-   .home-link {
-     position: fixed;
-     top: 20px;
-     right: 24px;
-     font-size: 1em;
-     text-decoration: none;
-     color: #000;
-     padding-bottom: 2px;
-     border-bottom: 2px solid transparent;
-     z-index: 1000;
+      min-height: 100vh;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #1a2340;
+      background: #f5f8fd;
+      position: relative;
     }
 
-   .home-link:hover {
-     border-bottom: 2px solid #000;
+    /* Home link (upper right) */
+    .home-link {
+      position: fixed;
+      top: 24px;
+      right: 32px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.95em;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #2d5fa6;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.18s, color 0.18s;
+      z-index: 1000;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 40px;
-      background: #ffffff;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    .home-link:hover {
+      color: #1a3d7a;
+      border-bottom-color: #1a3d7a;
     }
 
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 30px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 12px;
+    .page-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 40px 100px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      color: #0d1a33;
+      border-bottom: 1.5px solid rgba(74, 127, 193, 0.3);
+      padding-bottom: 16px;
     }
 
     /* === Research link section === */
     .research-block {
       position: relative;
-      padding: 40px;
+      padding: 32px;
       margin-top: 30px;
       border-radius: 14px;
       overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(20, 40, 80, 0.06);
     }
 
     /* Background image */
@@ -63,10 +81,11 @@
       background-repeat: no-repeat;
       background-position: right bottom;
       background-size: 260px;
-      opacity: 0.12; /* controls how visible the image is */
+      opacity: 0.10;
       pointer-events: none;
     }
-  /* Light overlay so text stays readable */
+
+    /* Light overlay so text stays readable */
     .research-block::after {
       content: "";
       position: absolute;
@@ -82,38 +101,59 @@
 
     .research-content h2 {
       margin-top: 0;
-      font-size: 1.6em;
+      font-size: 1.35rem;
+      font-weight: normal;
+      color: #0d1a33;
+      margin-bottom: 6px;
+    }
+
+    .research-content .tag {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.92rem;
+      color: #5a7ba8;
+      letter-spacing: 0.02em;
     }
 
     .research-content a {
-      display: inline-block;
-      margin-top: 15px;
+      display: block;
+      margin-top: 16px;
+      padding: 16px 0;
       font-size: 1.15em;
       text-decoration: none;
-      color: #000;
-      border-bottom: 2px solid #000;
-      padding-bottom: 3px;
+      color: #2d5fa6;
+      border-bottom: 1px solid rgba(74, 127, 193, 0.18);
+      transition: padding-left 0.15s, color 0.15s;
+    }
+
+    .research-content a:last-of-type {
+      border-bottom: none;
     }
 
     .research-content a:hover {
-      opacity: 0.7;
+      padding-left: 10px;
+      color: #1a3d7a;
     }
 
     /* Space reserved for future links */
     .future-space {
-      margin-top: 40px;
+      margin-top: 24px;
       padding-top: 20px;
-      border-top: 1px dashed #ccc;
-      color: #777;
-      font-size: 0.95em;
+      border-top: 1px dashed rgba(74, 127, 193, 0.3);
+      color: #5a72a0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.92rem;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Current Research</h1>
+  <a class="home-link" href="/">Home</a>
+
+  <div class="page-wrap">
+    <header>
+      <h1>Current Research</h1>
+    </header>
 
     <div class="research-block">
       <div class="research-content">
@@ -122,11 +162,7 @@
           Pacoima: Census, Neighborhood Change, and History
         </a>
 
-        <!-- ADD MORE LINKS BELOW THIS LINE -->
-        <div class="future-space">
-          Space reserved for additional research projects.
-        </div>
-        <!-- ADD MORE LINKS ABOVE THIS LINE -->
+
 
       </div>
     </div>
