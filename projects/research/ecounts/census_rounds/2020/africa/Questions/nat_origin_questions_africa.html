@@ -9,7 +9,24 @@ h2{font-size:19px;margin:24px 0 4px}dl{margin:0 0 16px}dt{font-weight:bold;float
 <p class="sub">Africa &mdash; countries provided so far</p>
 <label for="c">Country: </label><select id="c"></select>
 <div id="out"></div>
-<script id="data" type="application/json">[]</script>
+<script id="data" type="application/json">[
+  {
+    "country": "Zambia",
+    "status": "Subsumed",
+    "year": "2022",
+    "form": "2022 Census of Population and Housing Questionnaire",
+    "code": "P20",
+    "question": "What is (NAME)'s citizenship? [Responses: 1-ZAMBIAN, 2-ZAMBIAN-DUAL, 3-NON-ZAMBIAN, 4-UNKNOWN/DON'T KNOW; if non-Zambian, a follow-up asks for the name of the other country of citizenship.]",
+    "notes": "Zambia's 2022 census questionnaire does not include a standalone national-origin question. However, national-origin information is captured indirectly through the citizenship question (P20), which identifies whether a person is Zambian, dual-citizen, or Non-Zambian, and a follow-up item collects the name of the other country of citizenship for non-Zambian respondents. This entry is classified as 'Subsumed' because the national-origin concept (i.e., country of foreign origin) is folded into the citizenship/nationality question rather than asked as its own distinct item.",
+    "source": "zambia_2022-Census-Population-Housing-Qre_FV_5June2022-1.pdf",
+    "source_links": [
+      {
+        "label": "zambia_2022-Census-Population-Housing-Qre_FV_5June2022-1.pdf",
+        "href": "../Sources/zambia_2022-Census-Population-Housing-Qre_FV_5June2022-1.pdf"
+      }
+    ]
+  }
+]</script>
 <script>
 var data=JSON.parse(document.getElementById('data').textContent);
 var sel=document.getElementById('c'),out=document.getElementById('out');
