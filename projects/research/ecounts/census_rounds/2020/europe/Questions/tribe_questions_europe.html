@@ -25,9 +25,10 @@ hr{border:0;border-top:1px solid #ccc;margin:24px 0}
 const data=JSON.parse(document.getElementById('data').textContent);
 const sel=document.getElementById('c'),out=document.getElementById('out');
 if(!data.length){
-  out.innerHTML='<p class="note"><strong>No countries currently have an explicit tribe or tribal-affiliation question documented in the Europe collection.</strong></p>'+
+  out.innerHTML='<p class="note"><strong>Currently, no countries in Europe have a question for this topic.</strong></p>'+
   '<p class="note">Ethnicity, ethnic group, race, nationality, language, religion, clan, and related categories are not counted as tribe unless the source explicitly asks about tribe or tribal affiliation.</p>';
 }
+  
 document.getElementById('tally').textContent=data.length
  ? data.length+' countries with supported tribe/tribal-affiliation questions.'
  : 'No countries currently documented for this topic.';
