@@ -70,6 +70,7 @@
    if(d.followups.length) h+=tbl(d.followups,'Code','Follow-up question');
    if(d.notes)            h+='<p class="note"><strong>Notes:</strong> '+esc(d.notes)+'</p>';
     if(d.verification)   h+='<p class="note"><strong>Source:</strong> '+esc(d.verification)+'</p>';
+    if(d.source_links&&d.source_links.length){h+='<p class="note"><strong>Source:</strong> ';d.source_links.forEach(function(s,i){if(i)h+='; ';h+='<a href="'+esc(s.href)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a>';});h+='</p>';}
    out.innerHTML=h;
  }
  sel.addEventListener('change',function(e){render(+e.target.value);});
