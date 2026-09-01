@@ -93,13 +93,16 @@ NA Census Forms — Download Manifest
       Also included as seperate country files are Guam, American Samoa, Mariana Islands, and US Virgin Islands
       Size: 338,375 bytes
 
+-----------------------------------------------------------------
+REGISTER BASED
+-----------------------------------------------------------------
+Greenland--Link to Danish Civil Registration System included since they use the same registers
+
 =================================================================
 Countries with no downloadable PDF (not attempted):
 
   Aruba, Bahamas, Barbados, Belize, Jamaica, Saint Lucia,
   Sint Maarten — digital-only censuses, no paper PDF released.
-
-  Greenland — register-based census, no enumeration form.
 
   Guadeloupe, Martinique, Saint-Pierre and Miquelon —
   INSEE rolling-census forms; download manually at:
