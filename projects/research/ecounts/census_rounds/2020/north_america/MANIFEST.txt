@@ -9,22 +9,26 @@ NA Census Forms — Download Manifest
 [FAIL] Canada/Canada_2021_2A_short_form_EN.pdf
        URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2A-EN.pdf
        Note: 2021 Census Questionnaire 2A — short form (all households), English.
-       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
+              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-eng.cfm
 
 [FAIL] Canada/Canada_2021_2A_short_form_FR.pdf
        URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2A-FR.pdf
        Note: 2021 Census Questionnaire 2A — short form, French.
-       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
+              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-fra.cfm
 
 [FAIL] Canada/Canada_2021_2B_long_form_NHS_EN.pdf
        URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2B-EN.pdf
        Note: 2021 Census Questionnaire 2B — long form / National Household Survey sample, English.
-       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
+              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-eng.cfm
 
 [FAIL] Canada/Canada_2021_2B_long_form_NHS_FR.pdf
        URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2B-FR.pdf
        Note: 2021 Census Questionnaire 2B — long form, French.
-       Error: Response is not a PDF (starts with: b'<!DOCTYPE html><!--[')
+       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
+              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-fra.cfm
 
 [OK]  Cayman_Islands/Cayman_Islands_2021_questionnaire_items_brochure.pdf
       URL:  https://www.eso.ky/user_images/Census_2021_Questionnaire_Items_Brochure.pdf
@@ -112,9 +116,6 @@ Countries with no downloadable PDF (not attempted):
   Guadeloupe, Martinique, Saint-Pierre and Miquelon —
   INSEE rolling-census forms; download manually at:
   https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
-
-  Canada — if the StatCan PDFs above fail, use the hub URL:
-  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-eng.cfm
 
 =================================================================
 Summary: 14 downloaded, 0 copied, 6 failed
