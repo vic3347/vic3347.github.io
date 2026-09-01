@@ -89,23 +89,8 @@ NA Census Forms — Download Manifest
 
 [OK]  United_States/US_2020_decennial_enumeration_form_EN_ES_IPUMS.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_north/us2020ef_united_states_enumeration_form.en.es.pdf
-      Note: IPUMS — US 2020 Decennial enumeration form, English/Spanish.
+      Note: IPUMS — US 2020 Decennial enumeration form, English/Spanish. Also U.S. Census Bureau — 2020 American Community Survey questionnaire, English.
       Size: 338,375 bytes
-
-[COPIED]  United_States/US_2020_AmericanCommunitySurvey_EN.pdf
-           URL:  (repository copy)
-           Note: U.S. Census Bureau — 2020 American Community Survey questionnaire, English.
-           Size: 3,277,066 bytes
-
-[FAIL] United_States/US_2020_decennial_questionnaire_EN.pdf
-       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
-       Note: US Census Bureau — 2020 Decennial questionnaire, English (official Census.gov version).
-       Error: HTTP 404 Not Found
-
-[FAIL] US_Virgin_Islands/USVI_2020_decennial_questionnaire_EN.pdf
-       URL:  https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/questionnaires-and-instructions/questionnaires/2020-informational-questionnaire-english.pdf
-       Note: US Census Bureau — 2020 Decennial questionnaire (same form as US mainland + Puerto Rico).
-       Error: HTTP 404 Not Found
 
 =================================================================
 Countries with no downloadable PDF (not attempted):
