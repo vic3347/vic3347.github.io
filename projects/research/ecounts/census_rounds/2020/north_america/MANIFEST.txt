@@ -90,6 +90,7 @@ NA Census Forms — Download Manifest
 [OK]  United_States/US_2020_decennial_enumeration_form_EN_ES_IPUMS.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_north/us2020ef_united_states_enumeration_form.en.es.pdf
       Note: IPUMS — US 2020 Decennial enumeration form, English/Spanish. Also U.S. Census Bureau — 2020 American Community Survey questionnaire, English.
+      Also included as seperate country files are Guam, American Samoa, Mariana Islands, and US Virgin Islands
       Size: 338,375 bytes
 
 =================================================================
