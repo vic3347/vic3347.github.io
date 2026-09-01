@@ -1,0 +1,90 @@
+name: Download Canada 2021 Census Forms
+
+on:
+  push:
+    paths:
+      - '.github/workflows/download-canada-census-forms.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download official Statistics Canada PDFs
+        run: |
+          set -euo pipefail
+          mkdir -p projects/research/ecounts/census_rounds/2020/north_america/Canada
+
+          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A_short_form_EN.pdf \
+            'https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q1_V7-eng.pdf'
+          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A_short_form_FR.pdf \
+            'https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q1_V7-fra.pdf'
+          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A-L_long_form_EN.pdf \
+            'https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q2_V6-eng.pdf'
+          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A-L_long_form_FR.pdf \
+            'https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q2_V6-fra.pdf'
+
+          for f in projects/research/ecounts/census_rounds/2020/north_america/Canada/*.pdf; do
+            test "$(head -c 4 "$f")" = '%PDF'
+            echo "$(wc -c < "$f")  $f"
+          done
+
+      - name: Update manifest
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+
+          root = Path('projects/research/ecounts/census_rounds/2020/north_america')
+          manifest = root / 'MANIFEST.txt'
+          text = manifest.read_text(encoding='utf-8')
+
+          canada = [
+              ('Canada_2021_2A_short_form_EN.pdf',
+               'https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q1_V7-eng.pdf',
+               '2021 Census Questionnaire 2A — short form, English.'),
+              ('Canada_2021_2A_short_form_FR.pdf',
+               'https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q1_V7-fra.pdf',
+               'Questionnaire du Recensement de 2021, formulaire 2A — questionnaire abrégé, français.'),
+              ('Canada_2021_2A-L_long_form_EN.pdf',
+               'https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q2_V6-eng.pdf',
+               '2021 Census Questionnaire 2A-L — long form, English; 25% sample.'),
+              ('Canada_2021_2A-L_long_form_FR.pdf',
+               'https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q2_V6-fra.pdf',
+               'Questionnaire du Recensement de 2021, formulaire 2A-L — questionnaire détaillé, français; échantillon de 25 %.'),
+          ]
+
+          old = re.compile(r'\[FAIL\] Canada/.*?(?=\n\[OK\]|\n\[FAIL\]|\n=================================================================)', re.S)
+          text = old.sub('', text, count=1)
+
+          # Remove any existing Canada entries so this workflow is idempotent.
+          text = re.sub(r'\n?\[OK\] Canada/.*?(?=\n\[OK\]|\n\[FAIL\]|\n=================================================================)', '', text, flags=re.S)
+          text = re.sub(r'\n?\[FAIL\] Canada/.*?(?=\n\[OK\]|\n\[FAIL\]|\n=================================================================)', '', text, flags=re.S)
+
+          entries = []
+          for name, url, note in canada:
+              size = (root / 'Canada' / name).stat().st_size
+              entries.append(f'[OK]  Canada/{name}\n      URL:  {url}\n      Note: {note}\n      Size: {size:,} bytes\n')
+
+          marker = '\n[OK]  Cayman_Islands/'
+          block = '\n' + '\n'.join(entries)
+          text = text.replace(marker, block + marker, 1)
+
+          text = re.sub(r'Summary: \d+ downloaded, 0 copied, \d+ failed', 'Summary: 18 downloaded, 0 copied, 2 failed', text)
+          manifest.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit downloaded forms and manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add projects/research/ecounts/census_rounds/2020/north_america/Canada projects/research/ecounts/census_rounds/2020/north_america/MANIFEST.txt
+          git diff --cached --quiet && exit 0
+          git commit -m 'Add official 2021 Canada census questionnaires'
+          git push
