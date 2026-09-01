@@ -6,29 +6,26 @@ NA Census Forms — Download Manifest
       Note: Full 2016 census report; household questionnaire in Appendix B.
       Size: 4,319,869 bytes
 
-[FAIL] Canada/Canada_2021_2A_short_form_EN.pdf
-       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2A-EN.pdf
-       Note: 2021 Census Questionnaire 2A — short form (all households), English.
-       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
-              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-eng.cfm
 
-[FAIL] Canada/Canada_2021_2A_short_form_FR.pdf
-       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2A-FR.pdf
-       Note: 2021 Census Questionnaire 2A — short form, French.
-       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
-              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-fra.cfm
+[OK]  Canada/Canada_2021_2A_short_form_EN.pdf
+      URL:  https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q1_V7-eng.pdf
+      Note: 2021 Census Questionnaire 2A — short form, English.
+      Size: 394,017 bytes
 
-[FAIL] Canada/Canada_2021_2B_long_form_NHS_EN.pdf
-       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2B-EN.pdf
-       Note: 2021 Census Questionnaire 2B — long form / National Household Survey sample, English.
-       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
-              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-eng.cfm
+[OK]  Canada/Canada_2021_2A_short_form_FR.pdf
+      URL:  https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q1_V7-fra.pdf
+      Note: Questionnaire du Recensement de 2021, formulaire 2A — questionnaire abrégé, français.
+      Size: 437,666 bytes
 
-[FAIL] Canada/Canada_2021_2B_long_form_NHS_FR.pdf
-       URL:  https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/2021-census-questionnaire-2B-FR.pdf
-       Note: 2021 Census Questionnaire 2B — long form, French.
-       Error: Direct URL returns an HTML page instead of a PDF. Download manually from the StatCan questionnaire hub:
-              https://www12.statcan.gc.ca/census-recensement/2021/ref/questionnaire/index-fra.cfm
+[OK]  Canada/Canada_2021_2A-L_long_form_EN.pdf
+      URL:  https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q2_V6-eng.pdf
+      Note: 2021 Census Questionnaire 2A-L — long form, English; 25% sample.
+      Size: 1,147,246 bytes
+
+[OK]  Canada/Canada_2021_2A-L_long_form_FR.pdf
+      URL:  https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q2_V6-fra.pdf
+      Note: Questionnaire du Recensement de 2021, formulaire 2A-L — questionnaire détaillé, français; échantillon de 25 %.
+      Size: 1,149,620 bytes
 
 [OK]  Cayman_Islands/Cayman_Islands_2021_questionnaire_items_brochure.pdf
       URL:  https://www.eso.ky/user_images/Census_2021_Questionnaire_Items_Brochure.pdf
@@ -118,4 +115,4 @@ Countries with no downloadable PDF (not attempted):
   https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
 
 =================================================================
-Summary: 14 downloaded, 0 copied, 6 failed
+Summary: 18 downloaded, 0 copied, 2 failed
