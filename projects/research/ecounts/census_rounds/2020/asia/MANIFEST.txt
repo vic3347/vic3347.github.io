@@ -1,7 +1,6 @@
 Asia Census Forms — Download Manifest
 =================================================================
-
-PART 1: Direct downloads attempted (16 files)
+DOWNLOADED
 -----------------------------------------------------------------
 
 [OK]  Bhutan/Bhutan_2017_PHCB_metadata_variable_list_all_forms_NSB_EN.pdf
@@ -86,8 +85,7 @@ PART 1: Direct downloads attempted (16 files)
 
 
 =================================================================
-PART 2: Forms requiring browser / catalog login (9 entries)
-(Not attempted by script — visit URLs below manually)
+NEED DOWNLOADED--LINK AVAILABLE
 -----------------------------------------------------------------
 
 [BROWSER] Bangladesh
@@ -136,7 +134,7 @@ PART 2: Forms requiring browser / catalog login (9 entries)
           Note: DOSM — MyCensus 2020: Documents 2 (private HH/persons), 3a/3b (collective quarters). Methodology report PDF downloaded above contains questionnaire details.
 
 =================================================================
-PART 3: No questionnaire PDF available (33 entries total — breakdown below)
+No questionnaire PDF available (13 countries total — breakdown below)
 -----------------------------------------------------------------
 
   [Register-based (7 countries — no enumeration form by design)]
@@ -149,4 +147,3 @@ PART 3: No questionnaire PDF available (33 entries total — breakdown below)
   Armenia 2022 (ArmStat hub: https://armstat.am/en/?nid=743; questionnaire not public).  Azerbaijan 2019 (paper+tablet; AZSTAT: https://www.stat.gov.az/; form not public).  Maldives 2022 (2 forms used; MBS: https://census.gov.mv/2022/; form not public).  Turkmenistan 2022 (very limited public documentation; Turkmenstat: https://www.stat.gov.tm/en/).
 
 =================================================================
-Summary: 10 downloaded, 0 copied, 6 failed, 9 require browser
