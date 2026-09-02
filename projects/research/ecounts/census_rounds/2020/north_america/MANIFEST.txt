@@ -109,8 +109,9 @@ NA Census Forms — Download Manifest
       Notes: This is a copy of the questions asked in CAPI. There were no paper questionnaired distributed
 
 [OK] Sint Maarten
-      Available but only as a web archived form. Census 2020 was delayed and digital format replaced with paper due to covid
-      URL: https://web.archive.org/web/20230202023607id_/http://www.sintmaartengov.org/government/AZ/laws/AFKONDIGINGSBLAD/AB%202022%20no%2058%20Census%202022%20Questionnaire.pdf
+      Received via email from: Hadeikaye, Peterson" <Hadeikaye.Peterson@sintmaartengov.org> STATINFO <statinfo@sintmaartengov.org>,
+      "Lioe-A-Tjam, Jaghaira" <Jaghaira.Lioe-A-Tjam@sintmaartengov.org>. 
+      Note: There is a web-archived version but it is not accurate.
 
 [OK]  United_States/US_2020_decennial_enumeration_form_EN_ES_IPUMS.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_north/us2020ef_united_states_enumeration_form.en.es.pdf
@@ -133,4 +134,4 @@ Aruba--Email sent 09/01/2026
 Jamaica--Email sent 09/01/2026
 =================================================================
 
-NOTES: Only a couple countires left
+NOTES: Still waiting from Aruba and Jamaica
