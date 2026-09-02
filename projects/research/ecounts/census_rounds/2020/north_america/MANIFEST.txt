@@ -57,6 +57,11 @@ NA Census Forms — Download Manifest
       Note: DIGESTYC 2024 — VII Census final report; questionnaire in annex.
       Size: 24,168,016 bytes
 
+[OK] Guadeloupe, Martinique, Saint-Pierre and Miquelon — Same as french metropole and all the same
+      INSEE rolling-census forms; download manually at:
+      https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
+      included are individual, housing, and institutional forms
+
 [OK]  Guatemala/Guatemala_2018_enumeration_form_ES.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_north/gt2018ef_guatemala_enumeration_form.es.pdf
       Note: IPUMS — Guatemala 2018 enumeration form, Spanish.
@@ -96,18 +101,16 @@ NA Census Forms — Download Manifest
 -----------------------------------------------------------------
 REGISTER BASED
 -----------------------------------------------------------------
-Greenland--Link to Danish Civil Registration System included since they use the same registers
+Greenland--Link to Danish Civil Registration System included since they use the same registers.
+      word file that contains direct links to sources
 
 =================================================================
 Countries with no downloadable PDF (not attempted):
 
   Aruba, Bahamas, Barbados, Belize, Jamaica, Saint Lucia,
-  Sint Maarten — digital-only censuses, no paper PDF released.
+  Saint Maarten — digital-only censuses, no paper PDF released.
 
-  Guadeloupe, Martinique, Saint-Pierre and Miquelon —
-  INSEE rolling-census forms; download manually at:
-  https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
 
 =================================================================
-Summary: 18 downloaded, 1 copied, 2 failed
+Summary: 
 
