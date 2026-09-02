@@ -11,6 +11,9 @@ th,td{border:1px solid #999;padding:5px 10px;text-align:left;font-size:14px;vert
 .source strong{font-size:12px}.yes{color:#176b2c}.supp{color:#8a5a00}hr{border:0;border-top:1px solid #ccc;margin:24px 0}
 .empty{color:#666;margin-top:22px}
 </style></head><body>
+<main>
+<p><a href="../index.html">&larr; Back to 2020 Europe Round</a></p>
+
 <h1>National Origin Questions by Country</h1><p class="sub">Europe — supplied questionnaire</p>
 <p class="empty">Currently, no countries in Europe have a question for this topic</p><script id="data" type="application/json">[]</script>
 <script>
@@ -28,4 +31,4 @@ if(d.source)h+='<p class="source"><strong>Source file(s):</strong> '+esc(d.sourc
 if(data.length){data.forEach(function(d,i){var o=document.createElement('option');o.value=i;o.textContent=d.country;sel.appendChild(o);});
 sel.addEventListener('change',function(){render(+this.value);});
 document.getElementById('tally').textContent=data.length+' countries with supported questions/fields for this topic.';render(0);}
-</script></body></html>
+</script></main></body></html>
