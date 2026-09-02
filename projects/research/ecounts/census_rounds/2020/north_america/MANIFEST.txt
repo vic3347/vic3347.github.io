@@ -1,6 +1,18 @@
 NA Census Forms — Download Manifest
 =================================================================
 
+[OK] Bahamas
+      URL: https://statistics.caricom.org/wp-content/uploads/2025/10/2022-Census-2nd-ReleaseHousehold-and-Dwelling-Characteristics-BS.pdf
+      NOTE: Appendix for actual questionnaire. Appendix I, pages 67–104 of the Second Release (Household and Dwelling Characteristics)
+
+[OK] Barbados
+      URL: https://stats.gov.bb/wp-content/uploads/2024/02/2021-Population-and-Housing-Census.pdf
+      Note In appendix, page 72, is combined individual and household forms with questions
+
+[OK] Belize
+      URL: https://sib.org.bz/wp-content/uploads/2022CensusIndQuestionnaire.pdf (individual)
+           https://sib.org.bz/wp-content/uploads/2022CensusHHQuestionnaire.pdf
+
 [OK]  Bermuda/Bermuda_2016_Census_Report_questionnaire_in_appendixB.pdf
       URL:  https://www.gov.bm/sites/default/files/2016%20Census%20Report.pdf
       Note: Full 2016 census report; household questionnaire in Appendix B.
@@ -57,7 +69,7 @@ NA Census Forms — Download Manifest
       Note: DIGESTYC 2024 — VII Census final report; questionnaire in annex.
       Size: 24,168,016 bytes
 
-[OK] Guadeloupe, Martinique, Saint-Pierre and Miquelon — Same as french metropole and all the same
+[OK] Guadeloupe, Martinique, Saint-Maarten, Saint-Pierre and Miquelon — Same as french metropole and all the same
       INSEE rolling-census forms; download manually at:
       https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
       included are individual, housing, and institutional forms
@@ -92,6 +104,14 @@ NA Census Forms — Download Manifest
       Note: US Census Bureau — 2020 Decennial questionnaire, Spanish/English bilingual.
       Size: 340,470 bytes
 
+[OK] Saint Lucia
+      URL: https://stats.gov.lc/wp-content/uploads/2024/11/St-Lucia-Census-2022.pdf
+      Notes: This is a copy of the questions asked in CAPI. There were no paper questionnaired distributed
+
+[OK] Sint Maarten
+      Available but only as a web archived form. Census 2020 was delayed and digital format replaced with paper due to covid
+      URL: https://web.archive.org/web/20230202023607id_/http://www.sintmaartengov.org/government/AZ/laws/AFKONDIGINGSBLAD/AB%202022%20no%2058%20Census%202022%20Questionnaire.pdf
+
 [OK]  United_States/US_2020_decennial_enumeration_form_EN_ES_IPUMS.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_north/us2020ef_united_states_enumeration_form.en.es.pdf
       Note: IPUMS — US 2020 Decennial enumeration form, English/Spanish. Also U.S. Census Bureau — 2020 American Community Survey questionnaire, English.
@@ -104,13 +124,13 @@ REGISTER BASED
 Greenland--Link to Danish Civil Registration System included since they use the same registers.
       word file that contains direct links to sources
 
+
+-----------------------------------------------------------------
+FOLLOW UP OR EMAILS SENT
+-----------------------------------------------------------------
+Aruba--Email sent 09/01/2026
+
+Jamaica--Email sent 09/01/2026
 =================================================================
-Countries with no downloadable PDF (not attempted):
 
-  Aruba, Bahamas, Barbados, Belize, Jamaica, Saint Lucia,
-  Saint Maarten — digital-only censuses, no paper PDF released.
-
-
-=================================================================
-Summary: 
-
+NOTES: Only a couple countires left
