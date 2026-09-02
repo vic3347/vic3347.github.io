@@ -1,10 +1,11 @@
 SA Census Forms — Download Manifest
 =================================================================
 
-[FAIL] Argentina/Argentina_2022_cuestionario_viviendas_particulares_INDEC.pdf
+[OK] Argentina/Argentina_2022_cuestionario_viviendas_particulares_INDEC.pdf
        URL:  https://censo.gob.ar/wp-content/uploads/2022/02/Censo2022_cuestionario_viviendas_particulares.pdf
+                https://censo.gob.ar/index.php/el-cuestionario/.  [DIGITAL SCREENSHOTS]
        Note: INDEC — Argentina Censo 2022 unified questionnaire for private dwellings (61 Q). Spanish.
-       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+              Fully digital format. Inclluded in folder is copy of paper format and screenshots from digital version
 
 [OK]  Argentina/Argentina_2022_enumeration_form_IPUMS_ES.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_south/ar2022ef_argentina_enumeration_form.es.pdf
@@ -25,6 +26,10 @@ SA Census Forms — Download Manifest
       URL:  https://international.ipums.org/international/resources/census_forms/america_south/br2022ef_brazil_enumeration_form.pt.pdf
       Note: IPUMS — Brazil 2022 enumeration form (basic questionnaire). Portuguese.
       Size: 383,871 bytes
+
+[OK] Brazil-- Indigineous and other forms
+      URL: https://censo2022.ibge.gov.br/sobre/questionarios.html
+      Note: This is also the source for all brazil questionnaires
 
 [OK]  Chile/Chile_2024_cuestionario_viviendas_particulares_INE.pdf
       URL:  https://censo2024.ine.gob.cl/wp-content/uploads/2025/03/Cuestionario-Censo-2024-VP.pdf
@@ -71,6 +76,10 @@ SA Census Forms — Download Manifest
       Note: INEC — Ecuador CPV 2022 cuestionario muestra (sample questionnaire). Spanish.
       Size: 496,393 bytes
 
+[OK]  French Guiana — INSEE rolling-census forms (browser only):
+      URL: https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
+      Note: French protectorate
+
 [OK]  Ecuador/Ecuador_2022_enumeration_form_IPUMS_ES.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_south/ec2022ef_ecuador_enumeration_form.es.pdf
       Note: IPUMS — Ecuador 2022 enumeration form. Spanish.
@@ -91,15 +100,10 @@ SA Census Forms — Download Manifest
       Note: IPUMS — Peru 2017 enumeration form (XII Censo de Población, VII de Vivienda). Spanish.
       Size: 1,909,598 bytes
 
-[FAIL] Uruguay/Uruguay_2023_cuestionario_censal_INE_ES.pdf
-       URL:  https://www5.ine.gub.uy/documents/CENSO%202023/Cuestionario%20Censal%202023.pdf
-       Note: INE Uruguay — Censo 2023 cuestionario censal. Spanish.
-       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-
-[FAIL] Uruguay/Uruguay_2023_documento_metodologico_INE_ES.pdf
+[OK] Uruguay/Uruguay_2023_documento_metodologico_INE_ES.pdf
        URL:  https://www5.ine.gub.uy/documents/CENSO%202023/Documento%20Metodol%C3%B3gico%20Censo%202023.pdf
        Note: INE Uruguay — Censo 2023 methodology document. Spanish.
-       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+       Uruguay combined a traditional census method with administrative data.
 
 [OK]  Uruguay/Uruguay_2023_enumeration_form_IPUMS_ES.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_south/uy2023ef_uruguay_enumeration_form.es.pdf
@@ -107,17 +111,8 @@ SA Census Forms — Download Manifest
       Size: 157,960 bytes
 
 =================================================================
-Forms not attempted (no stable direct PDF link):
+MISSING
 
-  Brazil — Questionário Amostra (77 Q sample form) +
-  Indigenous questionnaire:
-  https://censo2022.ibge.gov.br/sobre/questionarios.html
 
-  Argentina — Collective Dwellings questionnaire:
-  https://censo.gob.ar/index.php/el-cuestionario/
-
-  French Guiana — INSEE rolling-census forms (browser only):
-  https://www.le-recensement-et-moi.fr/cest-simple/documentDuRecensement/
 
 =================================================================
-Summary: 18 downloaded, 0 copied, 3 failed
