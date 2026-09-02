@@ -100,6 +100,10 @@ SA Census Forms — Download Manifest
       Note: IPUMS — Peru 2017 enumeration form (XII Censo de Población, VII de Vivienda). Spanish.
       Size: 1,909,598 bytes
 
+[OK]  Suriname -- https://statistics-suriname.org/census-office/
+      URL: https://www.statistics-suriname.org/wp-content/uploads/2019/02/census_8_specimen_questionair.pdf
+      Note: Combined form
+
 [OK] Uruguay/Uruguay_2023_documento_metodologico_INE_ES.pdf
        URL:  https://www5.ine.gub.uy/documents/CENSO%202023/Documento%20Metodol%C3%B3gico%20Censo%202023.pdf
        Note: INE Uruguay — Censo 2023 methodology document. Spanish.
@@ -113,6 +117,6 @@ SA Census Forms — Download Manifest
 =================================================================
 MISSING
 
-NONE
+Venezuela--Heavily contested and disputed///documentation unavailable and likely incorrect for now
 
 =================================================================
