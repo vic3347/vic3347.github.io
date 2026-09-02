@@ -1,7 +1,6 @@
 Oceania Census Forms — Download Manifest
 =================================================================
-
-PART 1: Direct downloads attempted (11 files)
+DOWNLOADED
 -----------------------------------------------------------------
 
 [OK]  Australia/Australia_2021_Census_Household_Form_ABS.pdf
@@ -61,8 +60,7 @@ PART 1: Direct downloads attempted (11 files)
 
 
 =================================================================
-PART 2: Forms requiring browser / catalog navigation (12 entries)
-(Not attempted by script — Pacific Data Hub questionnaires accessed via catalog)
+NEED TO DOWNLOAD STILL
 -----------------------------------------------------------------
 
 [BROWSER] Australia
@@ -126,7 +124,7 @@ PART 2: Forms requiring browser / catalog navigation (12 entries)
           Note: Niue Statistics Office — 2022 PHC (pop 1,681). Census report published. Check Pacific Data Hub for questionnaire as external resource: https://pacificdata.org/data/dataset/oai-www-spc-int-0f28603c-3787-4673-a5c1-97613234c057
 
 =================================================================
-PART 3: No questionnaire PDF confirmed yet
+PART 3: No questionnaire confirmed yet
 -----------------------------------------------------------------
 
   [Papua New Guinea — To check (2024 census, very recent)]
