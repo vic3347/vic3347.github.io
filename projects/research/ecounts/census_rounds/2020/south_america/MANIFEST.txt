@@ -90,6 +90,11 @@ SA Census Forms — Download Manifest
       Note: Falkland Islands Gov — 2021 Census Report; questionnaire in appendix.
       Size: 1,917,331 bytes
 
+[OK]  Guyana 
+      URL: https://statisticsguyana.gov.gy/census/
+      Direct download: https://statisticsguyana.gov.gy/wp-content/uploads/2019/10/Preliminary-Report-Guyana-National-Population-and-Housing-Census-2022.pdf
+      Note: This is a report and census is found in documentation/appendix
+
 [OK]  Paraguay/Paraguay_2022_enumeration_form_IPUMS_ES.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/america_south/py2022ef_paraguay_enumeration_form.es.pdf
       Note: IPUMS — Paraguay 2022 enumeration form. Spanish.
