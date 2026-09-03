@@ -65,10 +65,9 @@
     }
     .quick-links {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
       margin: 20px 0 8px;
-      max-width: 420px;
     }
     .quick-link {
       display: flex;
@@ -92,6 +91,8 @@
       color: #fff;
       transform: translateY(-1px);
     }
+    @media (max-width: 700px) { .quick-links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 460px) { .quick-links { grid-template-columns: 1fr; } }
 
     .section-label {
       font-size: 0.78em;
@@ -211,12 +212,30 @@
       <h1>South America</h1>
       <p>Census forms and enumeration documents from the 2020 census round across Andean, Southern Cone, and Amazonian countries.</p>
       <div class="quick-links" aria-label="Question topic pages">
+        <a class="quick-link" href="./Questions/ancestry_questions_south_america.html">Ancestry</a>
         <a class="quick-link" href="./Questions/birthplace_questions_south_america.html">Birthplace</a>
         <a class="quick-link" href="./Questions/citizen_question_south_america.html">Citizenship</a>
+        <a class="quick-link" href="./Questions/ethnicity_questions_south_america.html">Ethnicity</a>
+        <a class="quick-link" href="./Questions/language_questions_south_america.html">Language</a>
+        <a class="quick-link" href="./Questions/mother_tongue_south_america.html">Mother Tongue</a>
+        <a class="quick-link" href="./Questions/nat_origin_south_america.html">National Origin</a>
+        <a class="quick-link" href="./Questions/race_questions_south_america.html">Race</a>
+        <a class="quick-link" href="./Questions/religion_questions_south_america.html">Religion</a>
+        <a class="quick-link" href="./Questions/tribe_questions_south_america.html">Tribe</a>
       </div>
     </div>
 
     <p class="section-label">Countries &amp; Territories</p>
+
+      <div class="country-card">
+        <div class="country-name">Antilles-Guyane</div>
+        <div class="country-meta">Caribbean</div>
+        <ul class="file-list">
+          <li><a href="./Antilles-Guyane/antilles_guyane_2026_dwelling_FR.pdf">antilles_guyane_2026_dwelling_FR</a></li>
+          <li><a href="./Antilles-Guyane/antilles_guyane_2026_individual_FR.pdf">antilles_guyane_2026_individual_FR</a></li>
+          <li><a href="./Antilles-Guyane/antilles_guyane_2026_institutional_FR.pdf">antilles_guyane_2026_institutional_FR</a></li>
+        </ul>
+      </div>
 
       <div class="country-card">
         <div class="country-name">Argentina</div>
@@ -283,6 +302,16 @@
       </div>
 
       <div class="country-card">
+        <div class="country-name">French Guiana</div>
+        <div class="country-meta">Caribbean</div>
+        <ul class="file-list">
+          <li><a href="./French%20Guiana/french_guiana_2026_dwelling_FR.pdf">french_guiana_2026_dwelling_FR</a></li>
+          <li><a href="./French%20Guiana/french_guiana_2026_individual_FR.pdf">french_guiana_2026_individual_FR</a></li>
+          <li><a href="./French%20Guiana/french_guiana_2026_institutional_FR.pdf">french_guiana_2026_institutional_FR</a></li>
+        </ul>
+      </div>
+
+      <div class="country-card">
         <div class="country-name">Guyana</div>
         <div class="country-meta">Amazonian</div>
         <ul class="file-list">
@@ -326,7 +355,7 @@
     <hr class="divider">
 
     <div class="info-block">
-      <p>Census forms for additional South American countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/projects/research/ecounts/contact/">get in touch</a>.</p>
+      <p>Census forms for additional South American countries are being digitized and added to the archive. To contribute forms or request a specific country, <a href="https://www.databums.org/pr[...]
     </div>
 
   </div>
