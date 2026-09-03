@@ -63,6 +63,35 @@
       color: #555;
       line-height: 1.6;
     }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 20px 0 8px;
+      max-width: 420px;
+    }
+    .quick-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 10px 14px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 0.9em;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      background: #fff;
+      transition: background 0.15s, color 0.15s, transform 0.15s;
+    }
+    .quick-link:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-1px);
+    }
 
     .section-label {
       font-size: 0.78em;
@@ -181,6 +210,10 @@
       <div class="census-year">2020 Census Round</div>
       <h1>South America</h1>
       <p>Census forms and enumeration documents from the 2020 census round across Andean, Southern Cone, and Amazonian countries.</p>
+      <div class="quick-links" aria-label="Question topic pages">
+        <a class="quick-link" href="./Questions/birthplace_questions_south_america.html">Birthplace</a>
+        <a class="quick-link" href="./Questions/citizen_question_south_america.html">Citizenship</a>
+      </div>
     </div>
 
     <p class="section-label">Countries &amp; Territories</p>
@@ -205,7 +238,7 @@
         <div class="country-name">Brazil</div>
         <div class="country-meta">Amazonian</div>
         <ul class="file-list">
-          <li><a href="./Brazil/Brazil_2022_enumeration_form_IPUMS_PT.pdf">Brazil_2022_enumeration_form_IPUMS_PT</a></li>
+          <li><a href="./Brazil/brazil_2022_long_enumeration_form_IPUMS_PT.pdf">brazil_2022_long_enumeration_form_IPUMS_PT</a></li>
           <li><a href="./Brazil/Brazil_2022_questionario_basico_IBGE_PT.pdf">Brazil_2022_questionario_basico_IBGE_PT</a></li>
         </ul>
       </div>
@@ -250,6 +283,15 @@
       </div>
 
       <div class="country-card">
+        <div class="country-name">Guyana</div>
+        <div class="country-meta">Amazonian</div>
+        <ul class="file-list">
+          <li><a href="./Guyana/Guyana_2022_Preliminary_Report_Census_EN.pdf">Guyana_2022_Preliminary_Report_Census_EN</a></li>
+          <li><a href="./Guyana/guyana_2022_combined_EN.pdf">guyana_2022_combined_EN</a></li>
+        </ul>
+      </div>
+
+      <div class="country-card">
         <div class="country-name">Paraguay</div>
         <div class="country-meta">Southern Cone</div>
         <ul class="file-list">
@@ -262,6 +304,14 @@
         <div class="country-meta">Andean</div>
         <ul class="file-list">
           <li><a href="./Peru/Peru_2017_enumeration_form_IPUMS_ES.pdf">Peru_2017_enumeration_form_IPUMS_ES</a></li>
+        </ul>
+      </div>
+
+      <div class="country-card">
+        <div class="country-name">Suriname</div>
+        <div class="country-meta">Amazonian</div>
+        <ul class="file-list">
+          <li><a href="./Suriname/suriname_2024_combined_DU.pdf">suriname_2024_combined_DU</a></li>
         </ul>
       </div>
 
