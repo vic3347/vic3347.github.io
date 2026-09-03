@@ -13,10 +13,9 @@ DOWNLOADED
       Note: IPUMS Minnesota — Brunei 2016 Census Forms. English/Malay bilingual. Note: 2021 BPP form was downloadable from brucensus.gov.bn during enumeration; may no longer be publicly accessible.
       Size: 451,106 bytes
 
-[FAIL] Cambodia/Cambodia_2019_enumeration_form_IPUMS_KM_EN.pdf
+[OK] Cambodia/Cambodia_2019_enumeration_form_IPUMS_KM_EN.pdf
        URL:  https://international.ipums.org/international/resources/census_forms/asia/kh2019ef_cambodia_enumeration_form.km.en.pdf
        Note: IPUMS — Cambodia 2019 enumeration form. Khmer/English bilingual (CAPI census).
-       Error: HTTP 404 Not Found
 
 [OK]  China/China_2020_7th_census_4_forms_annex_NBS_ZH.pdf
       URL:  https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/html/fu06.pdf
@@ -33,55 +32,42 @@ DOWNLOADED
       Note: Statistics Bureau Japan — 2015 Census questionnaire, bilingual English/Japanese. Structure nearly identical to 2020; useful reference.
       Size: 310,205 bytes
 
-[FAIL] Kyrgyzstan/Kyrgyzstan_2022_census_IOM_migration_compendium_forms_in_annex_EN.pdf
+[OK] Kyrgyzstan/Kyrgyzstan_2022_census_IOM_migration_compendium_forms_in_annex_EN.pdf
        URL:  https://kyrgyzstan.iom.int/sites/g/files/tmzbdl1321/files/documents/2024-03/migration-of-population_nsc_census2022_eng.pdf
        Note: IOM Kyrgyzstan — 2022 Census migration compendium (EN); Census Forms 1–5 in annex. NSC hub: https://stat.gov.kg/en/
-       Error: HTTP 403 Forbidden
+            Also included one in native langauge
 
-[FAIL] Malaysia/Malaysia_2020_MyCensus_methodology_report_DOSM_EN.pdf
+[OK] Malaysia/Malaysia_2020_MyCensus_methodology_report_DOSM_EN.pdf
        URL:  https://www.dosm.gov.my/uploads/release-content/file_20260423083135.pdf
        Note: DOSM Malaysia — MyCensus 2020 Methodology Report (questionnaire structure detailed). Multi-modal: e-Census online, CAPI tablets, postal. MyCensus hub: https://www.mycensus.gov.my/
-       Error: URL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+            multiple langauges inclluded
 
 [OK]  Mongolia/Mongolia_2020_enumeration_form_IPUMS_EN.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/asia/mn2020ef_mongolia_enumeration_form.en.pdf
       Note: IPUMS — Mongolia 2020 enumeration form. English.
-      Size: 645,503 bytes
-
-[FAIL] Mongolia/Mongolia_2020_enumeration_form_IPUMS_MN.pdf
-       URL:  https://international.ipums.org/international/resources/census_forms/asia/mn2020ef_mongolia_enumeration_form.mn.pdf
-       Note: IPUMS — Mongolia 2020 enumeration form. Mongolian.
-       Error: HTTP 404 Not Found
 
 [OK]  Pakistan/Pakistan_2023_7th_census_National_Report_PBS_EN.pdf
       URL:  https://www.pbs.gov.pk/wp-content/uploads/2020/07/National-Census-Report-2023.pdf
       Note: PBS Pakistan — 7th Census 2023 National Report (questionnaire content included). Two forms: Individual Questionnaire + Housing Questionnaire. PBS questionnaire hub: https://census.pbs.gov.pk/questionnaire/
       Size: 12,068,507 bytes
 
-[FAIL] Palestine/Palestine_2017_enumeration_form_IPUMS_AR_EN.pdf
+[OK] Palestine/Palestine_2017_enumeration_form_IPUMS_AR_EN.pdf
        URL:  https://international.ipums.org/international/resources/census_forms/asia/ps2017ef_palestine_enumeration_form.ar.en.pdf
        Note: IPUMS — Palestine 2017 enumeration form. Arabic/English bilingual (PCBS CAPI census).
        Error: HTTP 404 Not Found
 
-[OK]  Palestine/Palestine_2017_enumeration_form_IPUMS_EN.pdf
-      URL:  https://international.ipums.org/international/resources/census_forms/asia/ps2017ef_palestine_enumeration_form.en.pdf
-      Note: IPUMS — Palestine 2017 enumeration form. English only version.
-      Size: 1,029,348 bytes
-
 [OK]  Timor-Leste/Timor-Leste_2022_PHC_main_report_questionnaire_at_p150_UNFPA_EN.pdf
       URL:  https://timor-leste.unfpa.org/sites/default/files/pub-pdf/final-main-report_tlphc-census_2022.pdf
       Note: INETL/UNFPA — Timor-Leste 2022 PHC Main Report; questionnaire for private households at p.150. Also: standalone questionnaire PDF listed on INETL page: https://inetl-ip.gov.tl/2023/05/18/main-report-timor-leste-population-and-housing-census-2022/
-      Size: 4,470,998 bytes
 
 [OK]  Vietnam/Vietnam_2019_enumeration_form_IPUMS_EN.pdf
       URL:  https://international.ipums.org/international/resources/census_forms/asia/vn2019ef_vietnam_enumeration_form.en.pdf
       Note: IPUMS — Vietnam 2019 enumeration form. English.
-      Size: 973,391 bytes
 
-[FAIL] Vietnam/Vietnam_2019_enumeration_form_IPUMS_VI.pdf
+[OK] Vietnam/Vietnam_2019_enumeration_form_IPUMS_VI.pdf
        URL:  https://international.ipums.org/international/resources/census_forms/asia/vn2019ef_vietnam_enumeration_form.vi.pdf
        Note: IPUMS — Vietnam 2019 enumeration form. Vietnamese.
-       Error: HTTP 404 Not Found
+            Long form and Short form should be available
 
 
 =================================================================
