@@ -92,17 +92,22 @@
     }
     /* Region header rows */
     tr.region-header td {
-      background: #f0f0f0;
-      font-size: 0.78em;
+      background: linear-gradient(90deg, #e1e8f0 0%, #f1f5f9 100%);
+      font-size: 0.8em;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #555;
-      padding: 8px 14px;
-      border-top: 2px solid #ddd;
+      letter-spacing: 0.12em;
+      color: #243447;
+      padding: 10px 14px;
+      border-top: 2px solid #c7d1dc;
+      border-bottom: 1px solid #d9e1e8;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.75);
     }
     tr.region-header td.country-col {
-      background: #f0f0f0;
+      background: linear-gradient(90deg, #d7e1eb 0%, #eef3f8 100%);
+      border-right: 2px solid #c7d1dc;
+      box-shadow: inset 5px 0 0 #667a91, inset 0 1px 0 rgba(255,255,255,0.75);
+      z-index: 3;
     }
     /* Data cells */
     td.data-cell {
@@ -130,9 +135,11 @@
     tbody tr:hover td {
       background: #fafafa;
     }
-    tbody tr:hover td.country-col,
     tbody tr.region-header:hover td {
-      background: #f0f0f0;
+      background: linear-gradient(90deg, #e1e8f0 0%, #f1f5f9 100%);
+    }
+    tbody tr.region-header:hover td.country-col {
+      background: linear-gradient(90deg, #d7e1eb 0%, #eef3f8 100%);
     }
   </style>
 </head>
