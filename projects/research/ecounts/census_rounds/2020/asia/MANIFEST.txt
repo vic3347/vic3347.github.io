@@ -114,17 +114,50 @@ NEED DOWNLOADED--LINK AVAILABLE
           URL:  https://psada.psa.gov.ph/catalog/231/related-materials
           Note: PSA Philippines — 2020 CPH: CPH Form 2 (Common HH), Form 3 (Sample HH long form), Form 4 (Institutional), Form 5 (Barangay Characteristics).
 
+[OK] Repiblic of Korea
+          URL: https://www.census.go.kr/main/ehpp/aa/ehppaa100m01?lang=en
+          Direct URL for 2020: https://m.census.go.kr/files/eng/14.Leaflet_for_the_2020_Population_and_Housing_Census%28English%29.pdf?utm_source=chatgpt.com
+          Direct uRL for 2025: https://www.census.go.kr/ehpp/ehppzz200/file-download?atchFileIdntyNo=b9jWr5Rn93L%2BqnzcSFFcirN8ZXY0EHTgfjr4zWMqAgE%3D
+          Note: Conducted as Web; telephone; tablet and paper.
+            combined form available in English and Korean
+
+[OK] Oman. -- E-census (basically an admin based census)
+          Documentatio is available on United Nations website: https://unstats.un.org/unsd/demographic-social/census/document-resources/?countryName=Oman&docType&search&utm_source=chatgpt.com
+          Oman is well documented but difficult to find actual responses used to each question
+
+[OK] Saudi Arabia
+          URL: https://www.stats.gov.sa/ar/statistics?index=119025&subindex=127380
+          Housing and report in English and Arabic
+
+
 =================================================================
-No questionnaire PDF available (13 countries total — breakdown below)
+Population Registers/E-Censuses/Admin
 -----------------------------------------------------------------
 
-  [Register-based (7 countries — no enumeration form by design)]
-  Bahrain, Korea (Republic), Oman, Qatar, Singapore, Taiwan, Türkiye (Turkey). All draw population counts from administrative registers.
+Bahrain 
+     Civil Registration and Vital Statistics      
+     Need more info
 
-  [Digital only — no standalone PDF released (3 countries)]
-  Iran 2016 (online self-enumeration Sep–Oct + face-to-face Oct–Nov; no form released).  Macau SAR 2021 (online ~5 min + telephone + CAPI; no PDF posted).  Saudi Arabia 2022 (first digital census, online portal + QR codes; no PDF released).
+Taiwan
+     Register and Survey Integrated Census
+     Documentation on questions but no access to responses beyond the glossary. Need to follow-up
 
-  [Still to check — 4 countries]
+
+[STILL NEED TO FIND]
+Qatar, Singapore, Türkiye (Turkey). All draw population counts from administrative registers. Some may have sample surveys
+
+
+[Digital only — no standalone PDF released (3 countries)]
+  Iran 2016 (online self-enumeration Sep–Oct + face-to-face Oct–Nov; no form released).   
+
+[Still to check — 4 countries]
   Armenia 2022 (ArmStat hub: https://armstat.am/en/?nid=743; questionnaire not public).  Azerbaijan 2019 (paper+tablet; AZSTAT: https://www.stat.gov.az/; form not public).  Maldives 2022 (2 forms used; MBS: https://census.gov.mv/2022/; form not public).  Turkmenistan 2022 (very limited public documentation; Turkmenstat: https://www.stat.gov.tm/en/).
 
+
 =================================================================
+EMAILED
+=================================================================
+
+MACAU (SAR)
+Macau SAR 2021 (online ~5 min + telephone + CAPI; no PDF posted). 
+emailed 09/04/2026--> info@dsec.gov.mo
