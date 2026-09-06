@@ -92,17 +92,22 @@
     }
     /* Region header rows */
     tr.region-header td {
-      background: #f0f0f0;
-      font-size: 0.78em;
+      background: linear-gradient(90deg, #e1e8f0 0%, #f1f5f9 100%);
+      font-size: 1em;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #555;
-      padding: 8px 14px;
-      border-top: 2px solid #ddd;
+      letter-spacing: 0.12em;
+      color: #243447;
+      padding: 10px 14px;
+      border-top: 2px solid #c7d1dc;
+      border-bottom: 1px solid #d9e1e8;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.75);
     }
     tr.region-header td.country-col {
-      background: #f0f0f0;
+      background: linear-gradient(90deg, #d7e1eb 0%, #eef3f8 100%);
+      border-right: 2px solid #c7d1dc;
+      box-shadow: inset 5px 0 0 #667a91, inset 0 1px 0 rgba(255,255,255,0.75);
+      z-index: 3;
     }
     /* Data cells */
     td.data-cell {
@@ -130,9 +135,11 @@
     tbody tr:hover td {
       background: #fafafa;
     }
-    tbody tr:hover td.country-col,
     tbody tr.region-header:hover td {
-      background: #f0f0f0;
+      background: linear-gradient(90deg, #e1e8f0 0%, #f1f5f9 100%);
+    }
+    tbody tr.region-header:hover td.country-col {
+      background: linear-gradient(90deg, #d7e1eb 0%, #eef3f8 100%);
     }
   </style>
 </head>
@@ -538,6 +545,29 @@
             <td class="country-col" colspan="7">Asia</td>
           </tr>
           <tr>
+            <td class="country-col">Bahrain</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Bahrain/bahrain_central_pop_registry_info.pdf">bahrain_central_pop_registry_info.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Bangladesh</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Bangladesh/bangladesh_2022_combined.pdf">bangladesh_2022_combined.pdf</a>
+              <a href="./2020/asia/Bangladesh/bangladesh_2022_report.pdf">bangladesh_2022_report.pdf</a>
+            </td>
+          </tr>
+          <tr>
             <td class="country-col">Bhutan</td>
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
@@ -560,6 +590,20 @@
             </td>
           </tr>
           <tr>
+            <td class="country-col">Cambodia</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Cambodia/cambodia_2019_combined_EN.pdf">cambodia_2019_combined_EN.pdf</a>
+              <a href="./2020/asia/Cambodia/cambodia_2019_combined_KHMER.pdf">cambodia_2019_combined_KHMER.pdf</a>
+              <a href="./2020/asia/Cambodia/cambodia_2019_report_EN.pdf">cambodia_2019_report_EN.pdf</a>
+              <a href="./2020/asia/Cambodia/cambodia_2019_report_KHMER.pdf">cambodia_2019_report_KHMER.pdf</a>
+            </td>
+          </tr>
+          <tr>
             <td class="country-col">China</td>
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
@@ -568,6 +612,45 @@
             <td class="data-cell empty">—</td>
             <td class="data-cell">
               <a href="./2020/asia/China/China_2020_7th_census_4_forms_annex_NBS_ZH.pdf">China_2020_7th_census_4_forms_annex_NBS_ZH.pdf</a>
+              <a href="./2020/asia/China/china_2020_combined.pdf">china_2020_combined.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Hong Kong SAR</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Hong_Kong_SAR/hong_kong_2021_Report.pdf">hong_kong_2021_Report.pdf</a>
+              <a href="./2020/asia/Hong_Kong_SAR/hong_kong_2021_long_CH.pdf">hong_kong_2021_long_CH.pdf</a>
+              <a href="./2020/asia/Hong_Kong_SAR/hong_kong_2021_long_EN.pdf">hong_kong_2021_long_EN.pdf</a>
+              <a href="./2020/asia/Hong_Kong_SAR/hong_kong_2021_short_CH.pdf">hong_kong_2021_short_CH.pdf</a>
+              <a href="./2020/asia/Hong_Kong_SAR/hong_kong_2021_short_EN.pdf">hong_kong_2021_short_EN.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Indonesia</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Indonesia/indonesia_2020_Maternal_Death_Verification.pdf">indonesia_2020_Maternal_Death_Verification.pdf</a>
+              <a href="./2020/asia/Indonesia/indonesia_2020_long_Form.pdf">indonesia_2020_long_Form.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Israel</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Israel/israel_2022_questionnaire_EN.pdf">israel_2022_questionnaire_EN.pdf</a>
             </td>
           </tr>
           <tr>
@@ -583,6 +666,51 @@
             </td>
           </tr>
           <tr>
+            <td class="country-col">Kazakhstan</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Kazakhstan/kazakhstan_2021_dwellings.pdf">kazakhstan_2021_dwellings.pdf</a>
+              <a href="./2020/asia/Kazakhstan/kazakhstan_2021_housing_conditions.pdf">kazakhstan_2021_housing_conditions.pdf</a>
+              <a href="./2020/asia/Kazakhstan/kazakhstan_2021_individual.pdf">kazakhstan_2021_individual.pdf</a>
+              <a href="./2020/asia/Kazakhstan/kazakhstan_2021_resident_list.pdf">kazakhstan_2021_resident_list.pdf</a>
+              <a href="./2020/asia/Kazakhstan/kazakhstan_2021_temp_residents.pdf">kazakhstan_2021_temp_residents.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Kyrgyzstan</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Kyrgyzstan/kyrgyzstan_2022_combined_EN.pdf">kyrgyzstan_2022_combined_EN.pdf</a>
+              <a href="./2020/asia/Kyrgyzstan/kyrgyzstan_2022_combined_KY.pdf">kyrgyzstan_2022_combined_KY.pdf</a>
+              <a href="./2020/asia/Kyrgyzstan/kyrgyzstan_2022_report_EN.pdf">kyrgyzstan_2022_report_EN.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Malaysia</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_CH.pdf">malaysia_2020_combined_CH.pdf</a>
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_EN.pdf">malaysia_2020_combined_EN.pdf</a>
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_IBAN.pdf">malaysia_2020_combined_IBAN.pdf</a>
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_IBAN2.pdf">malaysia_2020_combined_IBAN2.pdf</a>
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_Kadazandusun.pdf">malaysia_2020_combined_Kadazandusun.pdf</a>
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_MALAY.pdf">malaysia_2020_combined_MALAY.pdf</a>
+              <a href="./2020/asia/Malaysia/malaysia_2020_combined_TAMIL.pdf">malaysia_2020_combined_TAMIL.pdf</a>
+            </td>
+          </tr>
+          <tr>
             <td class="country-col">Mongolia</td>
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
@@ -591,6 +719,33 @@
             <td class="data-cell empty">—</td>
             <td class="data-cell">
               <a href="./2020/asia/Mongolia/Mongolia_2020_enumeration_form_IPUMS_EN.pdf">Mongolia_2020_enumeration_form_IPUMS_EN.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Nepal</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Nepal/nepal_2021_community_NE.pdf">nepal_2021_community_NE.pdf</a>
+              <a href="./2020/asia/Nepal/nepal_2021_documentation_EN.pdf">nepal_2021_documentation_EN.pdf</a>
+              <a href="./2020/asia/Nepal/nepal_2021_enumerator_mannual_NE.pdf">nepal_2021_enumerator_mannual_NE.pdf</a>
+              <a href="./2020/asia/Nepal/nepal_2021_listing_NE.pdf">nepal_2021_listing_NE.pdf</a>
+              <a href="./2020/asia/Nepal/nepal_2021_questionnaire_NE.pdf">nepal_2021_questionnaire_NE.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Oman</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Oman/oman_2020_e_census_data_sources_EN.pdf">oman_2020_e_census_data_sources_EN.pdf</a>
+              <a href="./2020/asia/Oman/oman_2020_e_census_design_EN.pdf">oman_2020_e_census_design_EN.pdf</a>
             </td>
           </tr>
           <tr>
@@ -613,6 +768,67 @@
             <td class="data-cell empty">—</td>
             <td class="data-cell">
               <a href="./2020/asia/Palestine/Palestine_2017_enumeration_form_IPUMS_EN.pdf">Palestine_2017_enumeration_form_IPUMS_EN.pdf</a>
+              <a href="./2020/asia/Palestine/palestine_2017_questionnaire_EN.pdf">palestine_2017_questionnaire_EN.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Philippines</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Philippines/philippines_2020_barangay_EN.pdf">philippines_2020_barangay_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_household_EN.pdf">philippines_2020_household_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_household_sample_EN.pdf">philippines_2020_household_sample_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_household_sel_administered_EN.pdf">philippines_2020_household_sel_administered_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_household_self_administered_sample_EN.pdf">philippines_2020_household_self_administered_sample_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_institutional_EN.pdf">philippines_2020_institutional_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_institutional_self_administered_EN.pdf">philippines_2020_institutional_self_administered_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_listing_EN.pdf">philippines_2020_listing_EN.pdf</a>
+              <a href="./2020/asia/Philippines/philippines_2020_listing_notice.png">philippines_2020_listing_notice.png</a>
+              <a href="./2020/asia/Philippines/philippines_2020_overview.pdf">philippines_2020_overview.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Republic of Korea</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Republic%20of%20Korea/republic_of_korea_2020_combined_EN.pdf">republic_of_korea_2020_combined_EN.pdf</a>
+              <a href="./2020/asia/Republic%20of%20Korea/republic_of_korea_2025_combined_EN_KO.pdf">republic_of_korea_2025_combined_EN_KO.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Saudi Arabia</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/asia/Saudi%20Arabia/saudi_arabia_2022_housing_report_AR.pdf">saudi_arabia_2022_housing_report_AR.pdf</a>
+              <a href="./2020/asia/Saudi%20Arabia/saudi_arabia_2022_housing_report_EN.pdf">saudi_arabia_2022_housing_report_EN.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Taiwan</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2010/asia/Taiwan/taiwan_2010_glossary_questions_EN.pdf">taiwan_2010_glossary_questions_EN.pdf</a>
+              <a href="./2010/asia/Taiwan/taiwan_2010_summary_EN.pdf">taiwan_2010_summary_EN.pdf</a>
+            </td>
+            <td class="data-cell">
+              <a href="./2020/asia/Taiwan/taiwan_2-2-_question_glossary.pdf">taiwan_2-2-_question_glossary.pdf</a>
+              <a href="./2020/asia/Taiwan/taiwan_2020_description_EN.pdf">taiwan_2020_description_EN.pdf</a>
+              <a href="./2020/asia/Taiwan/taiwan_2020_question_source_EN.pdf">taiwan_2020_question_source_EN.pdf</a>
             </td>
           </tr>
           <tr>
@@ -635,6 +851,8 @@
             <td class="data-cell empty">—</td>
             <td class="data-cell">
               <a href="./2020/asia/Vietnam/Vietnam_2019_enumeration_form_IPUMS_EN.pdf">Vietnam_2019_enumeration_form_IPUMS_EN.pdf</a>
+              <a href="./2020/asia/Vietnam/vietnam_2019_housing_EN.pdf">vietnam_2019_housing_EN.pdf</a>
+              <a href="./2020/asia/Vietnam/vietnam_2019_instructctions_VIET.pdf">vietnam_2019_instructctions_VIET.pdf</a>
             </td>
           </tr>
           <!-- EUROPE -->
@@ -711,9 +929,14 @@
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
-            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2010/europe/Cyprus/cyprus_2011_questionnaire_EN.pdf">cyprus_2011_questionnaire_EN.pdf</a>
+            </td>
             <td class="data-cell">
               <a href="./2020/europe/Cyprus/Cyprus_2021_census_preliminary_results_CYSTAT_EN.pdf">Cyprus_2021_census_preliminary_results_CYSTAT_EN.pdf</a>
+              <a href="./2020/europe/Cyprus/cyprus_2021_questionnaire_AR.pdf">cyprus_2021_questionnaire_AR.pdf</a>
+              <a href="./2020/europe/Cyprus/cyprus_2021_questionnaire_EN.pdf">cyprus_2021_questionnaire_EN.pdf</a>
+              <a href="./2020/europe/Cyprus/cyprus_2021_questionnaire_TU.pdf">cyprus_2021_questionnaire_TU.pdf</a>
             </td>
           </tr>
           <tr>
@@ -1248,6 +1471,18 @@
             </td>
           </tr>
           <tr>
+            <td class="country-col">Jamaica</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2010/north_america/Jamaica/jamaica_2010_housing_EN.pdf">jamaica_2010_housing_EN.pdf</a>
+              <a href="./2010/north_america/Jamaica/jamaica_2010_individual_EN.pdf">jamaica_2010_individual_EN.pdf</a>
+            </td>
+            <td class="data-cell empty">—</td>
+          </tr>
+          <tr>
             <td class="country-col">Martinique</td>
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
@@ -1388,6 +1623,19 @@
             <td class="country-col" colspan="7">Oceania</td>
           </tr>
           <tr>
+            <td class="country-col">American Samoa</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/oceania/American_Samoa/american_samoa_2020_informational_questionnaire_EN.pdf">american_samoa_2020_informational_questionnaire_EN.pdf</a>
+              <a href="./2020/oceania/American_Samoa/american_samoa_2020_questionnaire_EN.pdf">american_samoa_2020_questionnaire_EN.pdf</a>
+              <a href="./2020/oceania/American_Samoa/american_samoa_2020_questionnaire_ES_EN.pdf">american_samoa_2020_questionnaire_ES_EN.pdf</a>
+            </td>
+          </tr>
+          <tr>
             <td class="country-col">Australia</td>
             <td class="data-cell empty">—</td>
             <td class="data-cell empty">—</td>
@@ -1444,6 +1692,19 @@
               <a href="./2020/oceania/French%20Polynesia/french_polynesia_2017_individual.pdf">french_polynesia_2017_individual.pdf</a>
               <a href="./2020/oceania/French%20Polynesia/french_polynesia_2022_housing.pdf">french_polynesia_2022_housing.pdf</a>
               <a href="./2020/oceania/French%20Polynesia/french_polynesia_2022_individual.pdf">french_polynesia_2022_individual.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Guam</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/oceania/Guam/guam_2020_informational_questionnaire_EN.pdf">guam_2020_informational_questionnaire_EN.pdf</a>
+              <a href="./2020/oceania/Guam/guam_2020_questionnaire_EN.pdf">guam_2020_questionnaire_EN.pdf</a>
+              <a href="./2020/oceania/Guam/guam_2020_questionnaire_ES_EN.pdf">guam_2020_questionnaire_ES_EN.pdf</a>
             </td>
           </tr>
           <tr>
@@ -1505,6 +1766,19 @@
               <a href="./2020/oceania/Niue/niue_2022_census_Report.pdf">niue_2022_census_Report.pdf</a>
               <a href="./2020/oceania/Niue/niue_2022_household.pdf">niue_2022_household.pdf</a>
               <a href="./2020/oceania/Niue/niue_2022_personal.pdf">niue_2022_personal.pdf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="country-col">Northern Mariana Islands</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell empty">—</td>
+            <td class="data-cell">
+              <a href="./2020/oceania/Northern_Mariana_Islands/northern_mariana_2020_informational_questionnaire_EN.pdf">northern_mariana_2020_informational_questionnaire_EN.pdf</a>
+              <a href="./2020/oceania/Northern_Mariana_Islands/northern_mariana_2020_questionnaire_EN.pdf">northern_mariana_2020_questionnaire_EN.pdf</a>
+              <a href="./2020/oceania/Northern_Mariana_Islands/northern_mariana_2020_questionnaire_ES_EN.pdf">northern_mariana_2020_questionnaire_ES_EN.pdf</a>
             </td>
           </tr>
           <tr>
