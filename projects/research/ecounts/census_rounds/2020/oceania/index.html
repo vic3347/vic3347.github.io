@@ -63,6 +63,36 @@
       color: #555;
       line-height: 1.6;
     }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 20px 0 8px;
+    }
+    .quick-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 10px 14px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 0.9em;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      background: #fff;
+      transition: background 0.15s, color 0.15s, transform 0.15s;
+    }
+    .quick-link:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    @media (max-width: 700px) { .quick-links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 460px) { .quick-links { grid-template-columns: 1fr; } }
 
     .section-label {
       font-size: 0.78em;
@@ -181,6 +211,18 @@
       <div class="census-year">2020 Census Round</div>
       <h1>Oceania</h1>
       <p>Census forms and enumeration documents from the 2020 census round across Pacific islands and Australasia.</p>
+      <div class="quick-links" aria-label="Question topic pages">
+        <a class="quick-link" href="./Questions/birthplace_questions_oceania.html">Birthplace</a>
+        <a class="quick-link" href="./Questions/ethnicity_questions_oceania.html">Ethnicity</a>
+        <a class="quick-link" href="./Questions/tribe_questions_oceania.html">Tribe</a>
+        <a class="quick-link" href="./Questions/race_questions_oceania.html">Race</a>
+        <a class="quick-link" href="./Questions/language_questions_oceania.html">Language</a>
+        <a class="quick-link" href="./Questions/mother_tongue_oceania.html">Mother Tongue</a>
+        <a class="quick-link" href="./Questions/religion_questions_oceania.html">Religion</a>
+        <a class="quick-link" href="./Questions/nat_origin_oceania.html">National Origin</a>
+        <a class="quick-link" href="./Questions/citizen_question_oceania.html">Citizenship</a>
+        <a class="quick-link" href="./Questions/ancestry_questions_oceania.html">Ancestry</a>
+      </div>
     </div>
 
     <p class="section-label">Countries &amp; Territories</p>
