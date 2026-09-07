@@ -64,10 +64,12 @@
       line-height: 1.6;
     }
     .quick-links {
+      list-style: none;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
       margin: 20px 0 8px;
+      padding: 0;
     }
     .quick-link {
       display: flex;
@@ -225,17 +227,19 @@
       <div class="census-year">2020 Census Round</div>
       <h1>Asia</h1>
       <p>Census forms and enumeration documents from the 2020 census round across East, South, Southeast &amp; West Asia.</p>
-      <div class="quick-links" aria-label="Question topic pages">
-        <a class="quick-link" href="./Questions/birthplace_questions_asia.html">Birthplace</a>
-        <a class="quick-link" href="./Questions/ethnicity_questions_asia.html">Ethnicity</a>
-        <a class="quick-link" href="./Questions/race_questions_asia.html">Race</a>
-        <a class="quick-link" href="./Questions/language_questions_asia.html">Language</a>
-        <a class="quick-link" href="./Questions/mother_tongue_asia.html">Mother Tongue</a>
-        <a class="quick-link" href="./Questions/religion_questions_asia.html">Religion</a>
-        <a class="quick-link" href="./Questions/nat_origin_asia.html">National Origin</a>
-        <a class="quick-link" href="./Questions/citizen_question_asia.html">Citizenship</a>
-        <a class="quick-link" href="./Questions/ancestry_questions_asia.html">Ancestry</a>
-      </div>
+      <nav aria-label="Question topic pages">
+        <ul class="quick-links">
+          <li><a class="quick-link" href="./Questions/birthplace_questions_asia.html">Birthplace</a></li>
+          <li><a class="quick-link" href="./Questions/ethnicity_questions_asia.html">Ethnicity</a></li>
+          <li><a class="quick-link" href="./Questions/race_questions_asia.html">Race</a></li>
+          <li><a class="quick-link" href="./Questions/language_questions_asia.html">Language</a></li>
+          <li><a class="quick-link" href="./Questions/mother_tongue_asia.html">Mother Tongue</a></li>
+          <li><a class="quick-link" href="./Questions/religion_questions_asia.html">Religion</a></li>
+          <li><a class="quick-link" href="./Questions/nat_origin_asia.html">National Origin</a></li>
+          <li><a class="quick-link" href="./Questions/citizen_question_asia.html">Citizenship</a></li>
+          <li><a class="quick-link" href="./Questions/ancestry_questions_asia.html">Ancestry</a></li>
+        </ul>
+      </nav>
     </div>
 
     <p class="section-label">Countries</p>
