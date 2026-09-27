@@ -38,7 +38,7 @@
 
     /* ── Layout ── */
     .page-wrap {
-      max-width: 760px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 72px 40px 100px;
     }
@@ -48,6 +48,13 @@
       margin-bottom: 56px;
     }
 
+    .profile-hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 24px 32px;
+    }
+
     header h1 {
       font-size: 4.2rem;
       font-weight: normal;
@@ -55,6 +62,24 @@
       color: #0d1a33;
       margin-bottom: 24px;
       line-height: 1.05;
+    }
+
+    .profile-portrait {
+      width: clamp(170px, 24vw, 240px);
+      aspect-ratio: 3 / 4;
+      border: 1px solid rgba(74, 127, 193, 0.35);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 14px 30px rgba(13, 26, 51, 0.12);
+      background: #f8fbff;
+    }
+
+    .profile-portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 20%;
     }
 
     /* Nav */
@@ -79,6 +104,12 @@
 
     nav a:hover {
       color: #1a3d7a;
+      border-bottom-color: #1a3d7a;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #1a3d7a;
+      outline-offset: 3px;
       border-bottom-color: #1a3d7a;
     }
 
@@ -197,6 +228,25 @@
     footer nav a:hover {
       color: #2d5fa6;
       border-bottom-color: #2d5fa6;
+    }
+
+    @media (max-width: 780px) {
+      .page-wrap {
+        padding: 56px 24px 80px;
+      }
+
+      .profile-hero {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .profile-portrait {
+        width: min(62vw, 250px);
+      }
+
+      header h1 {
+        font-size: clamp(2.6rem, 11vw, 3.5rem);
+      }
     }
   </style>
 </head>
@@ -408,12 +458,19 @@
   <div class="page-wrap">
 
     <header>
-      <h1>Dr. Victor R. Thompson</h1>
-      <nav>
-        <a href="/personal/">Personal</a>
-        <a href="./projects/research/index.html">Research</a>
-        <a href="/teaching/">Teaching</a>
-      </nav>
+      <div class="profile-hero">
+        <div>
+          <h1>Dr. Victor R. Thompson</h1>
+          <nav>
+            <a href="/personal/">Personal</a>
+            <a href="./projects/research/index.html">Research</a>
+            <a href="/teaching/">Teaching</a>
+          </nav>
+        </div>
+        <figure class="profile-portrait">
+          <img src="./assets/images/victor-thompson-portrait.png" alt="Portrait of Dr. Victor R. Thompson">
+        </figure>
+      </div>
     </header>
 
     <main>
