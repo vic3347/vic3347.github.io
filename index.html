@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DataBums — Projects</title>
+  <title>Dr. Victor Thompson</title>
   <style>
     /* ── Reset ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -16,8 +16,9 @@
     body {
       min-height: 100vh;
       font-family: Georgia, 'Times New Roman', serif;
-      color: #1a2340;
+      color: #0f1f3b;
       position: relative;
+      background: #dfe8f5;
     }
 
     /* The SVG background layer — fixed, covers viewport, always behind content */
@@ -26,7 +27,7 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      z-index: -3;
       overflow: hidden;
     }
 
@@ -36,31 +37,90 @@
       /* preserveAspectRatio="xMidYMid slice" is set on the SVG element itself */
     }
 
+    #bg-photo {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(120deg, rgba(8, 19, 41, 0.72), rgba(10, 24, 53, 0.38) 42%, rgba(24, 53, 99, 0.30)),
+        url("./assets/images/victor-thompson-portrait.png") center 16% / cover no-repeat;
+    }
+
+    #bg-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 16% 14%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0) 54%),
+        linear-gradient(180deg, rgba(234, 241, 252, 0.18) 0%, rgba(234, 241, 252, 0.58) 100%);
+      pointer-events: none;
+    }
+
     /* ── Layout ── */
     .page-wrap {
-      max-width: 760px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 72px 40px 100px;
     }
 
     /* ── Header / site title ── */
     header {
-      margin-bottom: 56px;
+      margin-bottom: 30px;
+      padding: 36px 38px;
+      background: rgba(248, 251, 255, 0.84);
+      border: 1px solid rgba(85, 121, 175, 0.36);
+      border-radius: 26px;
+      box-shadow: 0 20px 50px rgba(8, 24, 51, 0.18);
+      backdrop-filter: blur(6px);
+    }
+
+    .profile-hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 24px 32px;
     }
 
     header h1 {
-      font-size: 4.2rem;
+      font-size: clamp(2.9rem, 7.4vw, 4.3rem);
       font-weight: normal;
       letter-spacing: -0.02em;
-      color: #0d1a33;
-      margin-bottom: 24px;
+      color: #0f2140;
+      margin-bottom: 14px;
       line-height: 1.05;
+    }
+
+    .hero-subtitle {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.02rem;
+      line-height: 1.6;
+      color: #263f67;
+      max-width: 46ch;
+      margin-bottom: 20px;
+    }
+
+    .profile-portrait {
+      width: clamp(190px, 27vw, 280px);
+      aspect-ratio: 3 / 4;
+      border: 3px solid rgba(255, 255, 255, 0.9);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 42px rgba(10, 27, 55, 0.26);
+      background: #f5f9ff;
+    }
+
+    .profile-portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 16%;
     }
 
     /* Nav */
     nav {
       display: flex;
-      gap: 32px;
+      gap: 26px;
       flex-wrap: wrap;
     }
 
@@ -70,7 +130,7 @@
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: #2d5fa6;
+      color: #1f4f94;
       text-decoration: none;
       border-bottom: 2px solid transparent;
       padding-bottom: 3px;
@@ -78,13 +138,25 @@
     }
 
     nav a:hover {
-      color: #1a3d7a;
-      border-bottom-color: #1a3d7a;
+      color: #13386f;
+      border-bottom-color: #13386f;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #0a2f63;
+      outline-offset: 3px;
+      border-bottom-color: #0a2f63;
+      border-radius: 2px;
     }
 
     /* ── Main content ── */
     main {
-      padding: 0;
+      padding: 34px 38px 20px;
+      background: rgba(251, 253, 255, 0.86);
+      border: 1px solid rgba(85, 121, 175, 0.28);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px rgba(10, 27, 55, 0.16);
+      backdrop-filter: blur(5px);
     }
 
     main > h2 {
@@ -93,26 +165,26 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      color: #2d5fa6;
+      color: #20508f;
       margin-bottom: 14px;
     }
 
     main > p {
       font-size: 1.15rem;
-      line-height: 1.75;
-      color: #1a2b4a;
+      line-height: 1.7;
+      color: #1b2e4f;
       margin-bottom: 8px;
     }
 
     main > p a {
-      color: #2d5fa6;
+      color: #1f4f94;
       text-decoration: none;
-      border-bottom: 1.5px solid rgba(45, 95, 166, 0.4);
+      border-bottom: 1.5px solid rgba(31, 79, 148, 0.45);
       transition: border-color 0.15s;
     }
 
     main > p a:hover {
-      border-bottom-color: #2d5fa6;
+      border-bottom-color: #1f4f94;
     }
 
     /* ── Projects section ── */
@@ -122,10 +194,10 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #4a6fa0;
+      color: #335c93;
       margin: 52px 0 24px;
       padding-bottom: 10px;
-      border-bottom: 1.5px solid rgba(74, 127, 193, 0.3);
+      border-bottom: 1.5px solid rgba(70, 115, 173, 0.34);
     }
 
     .project-grid {
@@ -136,25 +208,30 @@
 
     .project-card {
       display: block;
-      padding: 24px 0;
-      border-bottom: 1px solid rgba(74, 127, 193, 0.18);
+      padding: 20px 20px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(75, 118, 175, 0.18);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.76);
       text-decoration: none;
       color: inherit;
-      transition: padding-left 0.15s;
+      transition: transform 0.16s, box-shadow 0.16s, border-color 0.16s;
     }
 
     .project-card:last-child {
-      border-bottom: none;
+      margin-bottom: 0;
     }
 
     .project-card:hover {
-      padding-left: 10px;
+      transform: translateY(-2px);
+      border-color: rgba(67, 108, 165, 0.42);
+      box-shadow: 0 10px 22px rgba(15, 35, 68, 0.13);
     }
 
     .project-card h3 {
       font-size: 1.35rem;
       font-weight: normal;
-      color: #0d1a33;
+      color: #0d1e3d;
       margin-bottom: 6px;
       line-height: 1.3;
     }
@@ -162,16 +239,20 @@
     .project-card .tag {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 0.92rem;
-      color: #5a7ba8;
+      color: #4a678f;
       letter-spacing: 0.02em;
     }
 
     /* ── Footer ── */
     footer {
-      margin-top: 64px;
+      margin-top: 28px;
+      padding: 20px 26px;
+      background: rgba(244, 249, 255, 0.86);
+      border: 1px solid rgba(92, 130, 186, 0.3);
+      border-radius: 18px;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 0.95rem;
-      color: #5a72a0;
+      color: #425f88;
       display: flex;
       align-items: center;
       gap: 20px;
@@ -188,15 +269,52 @@
 
     footer nav a {
       font-size: 0.95rem;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 0.02em;
       text-transform: none;
-      color: #5a72a0;
+      color: #425f88;
     }
 
     footer nav a:hover {
-      color: #2d5fa6;
-      border-bottom-color: #2d5fa6;
+      color: #1f4f94;
+      border-bottom-color: #1f4f94;
+    }
+
+    @media (max-width: 780px) {
+      .page-wrap {
+        padding: 56px 24px 80px;
+      }
+
+      header,
+      main {
+        padding: 26px 22px;
+      }
+
+      .profile-hero {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 20px;
+      }
+
+      .profile-portrait {
+        width: min(68vw, 250px);
+      }
+
+      nav {
+        gap: 16px;
+      }
+
+      nav a {
+        letter-spacing: 0.045em;
+      }
+
+      main > p {
+        font-size: 1.06rem;
+      }
+
+      footer {
+        padding: 18px 20px;
+      }
     }
   </style>
 </head>
@@ -403,17 +521,27 @@
       </g>
     </svg>
   </div>
+  <div id="bg-photo" aria-hidden="true"></div>
+  <div id="bg-overlay" aria-hidden="true"></div>
 
   <!-- ── Page content ── -->
   <div class="page-wrap">
 
     <header>
-      <h1>DataBums</h1>
-      <nav>
-        <a href="./projects/research/index.html">Research</a>
-        <a href="/teaching/">Teaching</a>
-        <a href="/personal/">Personal</a>
-      </nav>
+      <div class="profile-hero">
+        <div>
+          <h1>Dr. Victor R. Thompson</h1>
+          <p class="hero-subtitle">Sociology and data science scholarship focused on race, inequality, and comparative census research.</p>
+          <nav>
+            <a href="/personal/">Personal</a>
+            <a href="./projects/research/index.html">Research</a>
+            <a href="/teaching/">Teaching</a>
+          </nav>
+        </div>
+        <figure class="profile-portrait">
+          <img src="./assets/images/linkedin.jpg" alt="Professional headshot of Dr. Victor R. Thompson" width="2316" height="3088" loading="eager" decoding="async">
+        </figure>
+      </div>
     </header>
 
     <main>
@@ -441,3 +569,7 @@
 
     <footer>
       <span class="copy">© DataBums</span>
+    </footer>
+  </div>
+</body>
+</html>
