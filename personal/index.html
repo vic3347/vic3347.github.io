@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Victor R. Thompson — Associate Professor of Sociology at Rider University. Research on race, ethnicity, enumeration, crime attitudes, social psychology, social demography, and research methods.">
+  <title>Victor R. Thompson | Sociologist &amp; Professor</title>
+  <style>
+    :root {
+      --ink: #18202a;
+      --muted: #62707c;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --accent: #a4452b;
+      --accent-dark: #70311f;
+      --gold: #c99b4a;
+      --line: #e8e1d7;
+      --shadow: 0 18px 45px rgba(39, 31, 24, .09);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(201, 155, 74, .13), transparent 29rem),
+        var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .16em; }
+    a:hover { color: var(--accent-dark); }
+    .wrap { width: min(1120px, calc(100% - 2rem)); margin: auto; }
+
+    header {
+      min-height: 78vh;
+      display: grid;
+      align-items: center;
+      padding: 4rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      width: 38rem;
+      height: 38rem;
+      right: -15rem;
+      top: -13rem;
+      border: 1px solid rgba(164, 69, 43, .18);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2.5rem rgba(164, 69, 43, .04), 0 0 0 5.5rem rgba(164, 69, 43, .025);
+      pointer-events: none;
+    }
+    nav { position: absolute; top: 1.25rem; left: 0; right: 0; z-index: 2; }
+    nav .nav-inner { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+    .monogram { font-weight: bold; letter-spacing: .12em; font-size: .85rem; text-transform: uppercase; }
+    nav ul { display: flex; flex-wrap: wrap; gap: 1rem 1.25rem; list-style: none; margin: 0; padding: 0; font-size: .92rem; }
+    nav a { color: var(--ink); text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+
+    .eyebrow { color: var(--accent); font: 700 .82rem/1.2 Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, h3 { line-height: 1.15; margin-top: 0; }
+    h1 { font-size: clamp(3rem, 9vw, 7.4rem); letter-spacing: -.055em; max-width: 850px; margin-bottom: 1.3rem; }
+    h1 span { color: var(--accent); }
+    .lead { max-width: 700px; font-size: clamp(1.15rem, 2.1vw, 1.45rem); color: #43515d; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+    .button { display: inline-block; padding: .7rem 1.05rem; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; font: 700 .88rem Arial, sans-serif; }
+    .button.primary { color: #fff; background: var(--accent); }
+    .button.primary:hover { color: #fff; background: var(--accent-dark); }
+    .button.secondary { color: var(--accent); }
+
+    main { padding-bottom: 4rem; }
+    section { padding: 4.5rem 0; border-top: 1px solid var(--line); }
+    .section-heading { display: grid; grid-template-columns: minmax(180px, .65fr) 1.35fr; gap: 2rem; margin-bottom: 2rem; }
+    h2 { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -.035em; }
+    .section-intro { margin: 0; color: var(--muted); font-size: 1.07rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { grid-column: span 4; padding: 1.35rem; background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .card h3 { color: var(--accent-dark); margin-bottom: .45rem; font-size: 1.2rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .tag-list { display: flex; flex-wrap: wrap; gap: .55rem; padding: 0; list-style: none; }
+    .tag-list li { padding: .45rem .75rem; background: #f1e9df; border-radius: 999px; font-size: .92rem; }
+
+    .timeline { border-left: 2px solid var(--gold); margin-left: .5rem; padding-left: 1.5rem; }
+    .timeline-item { position: relative; margin-bottom: 1.6rem; }
+    .timeline-item::before { content: ""; width: .65rem; height: .65rem; background: var(--accent); border: 3px solid var(--paper); border-radius: 50%; position: absolute; left: -1.86rem; top: .35rem; box-shadow: 0 0 0 1px var(--accent); }
+    .timeline-item h3 { margin-bottom: .2rem; }
+    .date { color: var(--accent); font: 700 .8rem Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+    .timeline-item p { margin: .25rem 0 0; color: var(--muted); }
+
+    .publication-list { display: grid; gap: 1rem; }
+    .publication { padding: 1.1rem 1.25rem; border-left: 4px solid var(--gold); background: rgba(255,255,255,.72); }
+    .publication p { margin: 0; }
+    .publication .kind { color: var(--accent); font: 700 .72rem Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .two-col { columns: 2 300px; column-gap: 3rem; }
+    .two-col li { break-inside: avoid; margin-bottom: .7rem; }
+    .compact-list { padding-left: 1.2rem; }
+
+    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .contact-panel { padding: 1.5rem; background: var(--ink); color: #f8f3ea; box-shadow: var(--shadow); }
+    .contact-panel a { color: #f1c980; }
+    footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+
+    @media (max-width: 760px) {
+      nav .nav-inner { align-items: flex-start; flex-direction: column; }
+      nav ul { gap: .5rem .9rem; }
+      header { min-height: 85vh; padding-top: 7rem; }
+      .section-heading, .contact { grid-template-columns: 1fr; gap: .8rem; }
+      .card { grid-column: span 12; }
+      section { padding: 3.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <nav aria-label="Primary navigation">
+      <div class="wrap nav-inner">
+        <div class="monogram">VRT / Sociology</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="eyebrow">Scholar · Teacher · Department Leader</div>
+      <h1>Victor R.<br><span>Thompson</span></h1>
+      <p class="lead">Associate Professor of Sociology and Chair of the Department of Sociology, Criminal Justice and Social Work at <a href="https://www.rider.edu/" target="_blank" rel="noopener">Rider University</a>.</p>
+      <p class="lead">My work examines how societies classify people, understand crime, and reproduce—or challenge—racial and ethnic inequality.</p>
+      <div class="hero-links">
+        <a class="button primary" href="Victor%20Thompson%20c.v.%20June%202026.pdf" target="_blank" rel="noopener">Download the full C.V. (PDF)</a>
+        <a class="button secondary" href="#research">Explore research ↓</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <div class="section-heading">
+        <h2>About</h2>
+        <p class="section-intro">A sociologist of race, institutions, and public life, Victor Thompson brings together comparative research, social psychology, social demography, and rigorous research methods.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Current position</h3><p>Associate Professor of Sociology and Chair, Department of Sociology, Criminal Justice and Social Work, Rider University, July 2016–present.</p></article>
+        <article class="card"><h3>Education</h3><p>Ph.D. and M.A. in Sociology from Stanford University; B.A. in Sociology from the University of Illinois Urbana–Champaign.</p></article>
+        <article class="card"><h3>Academic communities</h3><p>Member of the <a href="https://www.asanet.org/" target="_blank" rel="noopener">American Sociological Association</a>, <a href="https://www.populationassociation.org/" target="_blank" rel="noopener">Population Association of America</a>, and <a href="https://aapor.org/" target="_blank" rel="noopener">American Association for Public Opinion Research</a>.</p></article>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-heading">
+        <h2>Research<br>questions</h2>
+        <div>
+          <p class="section-intro">How do census categories shape belonging? How do race and social context influence attitudes toward crime and punishment? What can comparative data reveal about identity, inequality, and the state?</p>
+          <ul class="tag-list" aria-label="Research interests">
+            <li>Race &amp; ethnicity</li><li>Enumeration practices</li><li>Crime attitudes</li><li>Social psychology</li><li>Social demography</li><li>Research methods</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Global ethnic enumeration</h3><p>Comparative work on how nations count race, ethnicity, and culture in censuses and other population systems, including the project <em>Global Ethnic Enumeration Practices: Race, Ethnicity, and Culture in the Census, 1965–2024</em>.</p></article>
+        <article class="card"><h3>Race, crime &amp; punishment</h3><p>Research on racialized mass incarceration, public attitudes toward crime, the legitimacy of criminal justice institutions, and how social experience colors support for policy.</p></article>
+        <article class="card"><h3>Students as collaborators</h3><p>Current student-led projects examine grievance and violence in extremist groups and the effectiveness of juvenile intervention programs for African American youth.</p></article>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="section-heading">
+        <h2>Leadership &amp;<br>service</h2>
+        <p class="section-intro">Department building, accreditation, curriculum design, student mentorship, and interdisciplinary collaboration are central parts of my academic practice.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="date">2016–present</div><h3>Chair, Department of Sociology and Criminology</h3><p>Led strategic hiring, program growth, external reviews, curricular planning, promotion and tenure review, revenue planning, internships, and student support.</p></div>
+        <div class="timeline-item"><div class="date">2023–present</div><h3>Bachelor of Social Work program</h3><p>Directed program development, curriculum sequencing, CSWE accreditation preparation and assessment mapping, and faculty hiring related to accreditation and growth.</p></div>
+        <div class="timeline-item"><div class="date">2015–present</div><h3>Co-Coordinator, Multicultural Studies</h3><p>Developed African American Studies and Latinx Studies minors, organized campus-wide programming on race and crime, and coordinated experiential learning opportunities.</p></div>
+        <div class="timeline-item"><div class="date">2022–2024</div><h3>Cannabis Studies Certificate</h3><p>Organized academic and public-facing events connected to New Jersey’s emerging cannabis industry and minority-focused community engagement initiatives.</p></div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-heading">
+        <h2>Selected<br>writing</h2>
+        <p class="section-intro">Selected publications, chapters, reviews, and works in progress. For the complete record—including presentations, grants, fellowships, and service—please see the <a href="Victor%20Thompson%20c.v.%20June%202026.pdf" target="_blank" rel="noopener">full C.V.</a>.</p>
+      </div>
+      <div class="publication-list">
+        <article class="publication"><div class="kind">Journal article · 2020</div><p>Brogan, M., Rusciano, F. L., Thompson, V., &amp; Walden, K. “Perceptions of terrorism and counterterrorism: Fear, risk and the 2016 Trump effect.” <em>Journal of Homeland Security and Emergency Management</em>, 17(1).</p></article>
+        <article class="publication"><div class="kind">Book chapter · 2018</div><p>“Citizenship and the Census.” In R. Fiske-Rusciano (Ed.), <em>Experiencing Race, Class, and Gender in the U.S.</em> (7th ed.). Rowman &amp; Littlefield.</p></article>
+        <article class="publication"><div class="kind">Book chapter · 2015</div><p>With Tahu Kukutai, “Inside-Out: The politics of ethnically enumerating the nation.” In <em>Social Statistics and Ethnic Diversity: Cross-National Perspectives</em>. IMISCOE–Amsterdam University Press.</p></article>
+        <article class="publication"><div class="kind">Journal article · 2011</div><p>With Lawrence D. Bobo, “Thinking about Crime: Race and lay accounts of lawbreaking behavior.” <em>ANNALS of the American Academy of Political and Social Science</em>, 634(1), 16–38.</p></article>
+        <article class="publication"><div class="kind">Book chapter · 2011</div><p>“The Strange Career of Racial Science, Racial Categories and African American Identity.” In H. L. Gates Jr. (Ed.), <em>Handbook of African American Citizenship (1865–Present)</em>. Oxford University Press.</p></article>
+        <article class="publication"><div class="kind">Current work · 2026</div><p>With Robert Hode, “Grievance and Violence in Extremist Groups: A Comparative Analysis of Far-Right, Far-Left, and Jihadist Radicalization,” and with Janaya Ross, “Meta-analysis of Juvenile Intervention Programs for African American Youth.”</p></article>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <div class="section-heading">
+        <h2>Teaching</h2>
+        <p class="section-intro">Courses connect sociological theory and evidence to questions students encounter in institutions, communities, media, and public policy.</p>
+      </div>
+      <ul class="two-col compact-list">
+        <li>Theories of Racism</li><li>Race and Crime</li><li>Racial and Ethnic Relations</li><li>Research Methods</li><li>Punishment</li><li>Introduction to Law and Society</li><li>Introduction to Criminology</li><li>Crime and Media</li><li>Sociology of Deviance</li><li>Social Demography</li><li>Punishment and Society</li><li>Social Theory</li><li>Immigration and Identity</li><li>Social Problems</li><li>Research Methods and Writing for Sociologists</li><li>Political Sociology</li>
+      </ul>
+      <p><strong>Tools:</strong> R (Posit), STATA, SPSS, Git/GitHub, Python, QGIS, and Kaggle.</p>
+    </section>
+
+    <section id="contact">
+      <div class="section-heading">
+        <h2>Start a<br>conversation</h2>
+        <p class="section-intro">For research collaborations, teaching and speaking invitations, or questions about the work, please get in touch.</p>
+      </div>
+      <div class="contact">
+        <div class="contact-panel">
+          <h3>Victor R. Thompson</h3>
+          <p>Rider University<br>2083 Lawrenceville Rd.<br>Lawrenceville, NJ 08648</p>
+          <p><a href="mailto:victort@gmail.com">victort@gmail.com</a><br><a href="tel:+14087186065">408-718-6065</a></p>
+        </div>
+        <div>
+          <h3>Useful links</h3>
+          <ul class="compact-list">
+            <li><a href="Victor%20Thompson%20c.v.%20June%202026.pdf">Download the complete C.V. as a PDF</a></li>
+            <li><a href="https://www.rider.edu/" target="_blank" rel="noopener">Rider University</a></li>
+            <li><a href="https://www.census.gov/" target="_blank" rel="noopener">U.S. Census Bureau</a></li>
+            <li><a href="https://www.asanet.org/" target="_blank" rel="noopener">American Sociological Association</a></li>
+            <li><a href="https://www.populationassociation.org/" target="_blank" rel="noopener">Population Association of America</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© Victor R. Thompson · <a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
