@@ -55,6 +55,8 @@
       pointer-events: none;
     }
     nav { position: absolute; top: 1.25rem; left: 0; right: 0; z-index: 2; }
+    .home-link { display: inline-block; margin-bottom: .6rem; font: 700 .82rem/1.2 Arial, sans-serif; }
+    .home-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 2px; }
     nav .nav-inner { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
     .monogram { font-weight: bold; letter-spacing: .12em; font-size: .85rem; text-transform: uppercase; }
     nav ul { display: flex; flex-wrap: wrap; gap: 1rem 1.25rem; list-style: none; margin: 0; padding: 0; font-size: .92rem; }
@@ -117,6 +119,9 @@
 <body>
   <header id="top">
     <nav aria-label="Primary navigation">
+      <div class="wrap">
+        <a class="home-link" href="https://drvthompson.com/">Return to drvthompson.com</a>
+      </div>
       <div class="wrap nav-inner">
         <div class="monogram">VRT / Sociology</div>
         <ul>
