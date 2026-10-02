@@ -39,6 +39,26 @@ NA Census Forms — Download Manifest
       Note: Questionnaire du Recensement de 2021, formulaire 2A-L — questionnaire détaillé, français; échantillon de 25 %.
       Size: 1,149,620 bytes
 
+[OK]  Canada/Canada_2021_2A_short_form_EN.pdf
+      URL:  https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q1_V7-eng.pdf
+      Note: 2021 Census Questionnaire 2A — short form, English.
+      Size: 394,017 bytes
+
+[OK]  Canada/Canada_2021_2A_short_form_FR.pdf
+      URL:  https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q1_V7-fra.pdf
+      Note: Questionnaire du Recensement de 2021, formulaire 2A — questionnaire abrégé, français.
+      Size: 437,666 bytes
+
+[OK]  Canada/Canada_2021_2A-L_long_form_EN.pdf
+      URL:  https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q2_V6-eng.pdf
+      Note: 2021 Census Questionnaire 2A-L — long form, English; 25% sample.
+      Size: 1,147,246 bytes
+
+[OK]  Canada/Canada_2021_2A-L_long_form_FR.pdf
+      URL:  https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q2_V6-fra.pdf
+      Note: Questionnaire du Recensement de 2021, formulaire 2A-L — questionnaire détaillé, français; échantillon de 25 %.
+      Size: 1,149,620 bytes
+
 [OK]  Cayman_Islands/Cayman_Islands_2021_questionnaire_items_brochure.pdf
       URL:  https://www.eso.ky/user_images/Census_2021_Questionnaire_Items_Brochure.pdf
       Note: ESO Cayman 2021 — questionnaire items brochure (question-by-question summary).

@@ -6,7 +6,7 @@ import sys
 
 BASE = Path(
     "/Users/vthompson/Documents/github/vic3347.github.io/"
-    "projects/research/ecounts/census_rounds/2020"
+    "research/ecounts/census_rounds/2020"
 )
 
 POSSIBLE_NAMES = [
