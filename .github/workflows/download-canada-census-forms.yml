@@ -19,18 +19,18 @@ jobs:
       - name: Download official Statistics Canada PDFs
         run: |
           set -euo pipefail
-          mkdir -p projects/research/ecounts/census_rounds/2020/north_america/Canada
+          mkdir -p research/ecounts/census_rounds/2020/north_america/Canada
 
-          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A_short_form_EN.pdf \
+          curl -fL --retry 3 -o research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A_short_form_EN.pdf \
             'https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q1_V7-eng.pdf'
-          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A_short_form_FR.pdf \
+          curl -fL --retry 3 -o research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A_short_form_FR.pdf \
             'https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q1_V7-fra.pdf'
-          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A-L_long_form_EN.pdf \
+          curl -fL --retry 3 -o research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A-L_long_form_EN.pdf \
             'https://www.statcan.gc.ca/en/statistical-programs/instrument/3901_Q2_V6-eng.pdf'
-          curl -fL --retry 3 -o projects/research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A-L_long_form_FR.pdf \
+          curl -fL --retry 3 -o research/ecounts/census_rounds/2020/north_america/Canada/Canada_2021_2A-L_long_form_FR.pdf \
             'https://www.statcan.gc.ca/fr/programmes-statistiques/instrument/3901_Q2_V6-fra.pdf'
 
-          for f in projects/research/ecounts/census_rounds/2020/north_america/Canada/*.pdf; do
+          for f in research/ecounts/census_rounds/2020/north_america/Canada/*.pdf; do
             test "$(head -c 4 "$f")" = '%PDF'
             echo "$(wc -c < "$f")  $f"
           done
@@ -41,7 +41,7 @@ jobs:
           from pathlib import Path
           import re
 
-          root = Path('projects/research/ecounts/census_rounds/2020/north_america')
+          root = Path('research/ecounts/census_rounds/2020/north_america')
           manifest = root / 'MANIFEST.txt'
           text = manifest.read_text(encoding='utf-8')
 
@@ -84,7 +84,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add projects/research/ecounts/census_rounds/2020/north_america/Canada projects/research/ecounts/census_rounds/2020/north_america/MANIFEST.txt
+          git add research/ecounts/census_rounds/2020/north_america/Canada research/ecounts/census_rounds/2020/north_america/MANIFEST.txt
           git diff --cached --quiet && exit 0
           git commit -m 'Add official 2021 Canada census questionnaires'
           git push
