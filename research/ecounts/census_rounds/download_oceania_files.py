@@ -7,7 +7,7 @@ from pathlib import Path
 from urllib.parse import urljoin, unquote
 from urllib.request import Request, urlopen
 
-BASE_URL = "https://www.databums.org/projects/research/ecounts/census_rounds/2020/oceania/"
+BASE_URL = "https://www.drvthompson.com/research/ecounts/census_rounds/2020/oceania/"
 USER_AGENT = "Mozilla/5.0 (eCounts Oceania downloader)"
 
 
