@@ -1,103 +1,277 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Description" content="Teaching, curriculum development, and student mentoring by Dr. Victor R. Thompson.">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #255455; -webkit-text-stroke: #255455}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #48525f; -webkit-text-stroke: #48525f; min-height: 18.0px}
-    p.p11 {margin: 0.0px 0.0px 11.4px 0.0px; font: 11.4px 'Helvetica Neue'; color: #48525f; -webkit-text-stroke: #48525f}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.5px 'Helvetica Neue'; color: #48525f; -webkit-text-stroke: #48525f}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #255455; -webkit-text-stroke: #255455}
-    li.li6 {margin: 0.0px 0.0px 9.0px 0.0px; font: 12.8px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26}
-    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #255455; -webkit-text-stroke: #255455; background-color: #e0ebeb}
-    li.li10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.8px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26}
-    span.s1 {font-kerning: none}
-    span.s2 {text-decoration: underline ; font-kerning: none}
-    span.s3 {-webkit-text-stroke: 0px #000000}
-    span.s4 {font: 14.4px 'Helvetica Neue'; -webkit-text-stroke: 0px #000000}
-    span.s5 {font: 14.4px 'Helvetica Neue'; font-kerning: none}
-    span.s6 {font: 10.8px 'Helvetica Neue'; font-kerning: none; color: #48525f; -webkit-text-stroke: 0px #48525f}
-    span.s7 {font: 11.4px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #255455}
-    ul.ul1 {list-style-type: none}
-    ul.ul2 {list-style-type: disc}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching, curriculum development, and student mentoring by Dr. Victor R. Thompson.">
+  <title>Teaching | Dr. Victor Thompson</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #0f1f3b;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 50%),
+        linear-gradient(135deg, #ffffff 0%, #f5f8fd 45%, #dfe8f5 100%);
+      background-attachment: fixed;
+    }
+
+    .page-wrap { max-width: 980px; margin: 0 auto; padding: 56px 40px 90px; }
+
+    header {
+      margin-bottom: 30px;
+      padding: 34px 38px;
+      background: rgba(248, 251, 255, 0.9);
+      border: 1px solid rgba(85, 121, 175, 0.36);
+      border-radius: 26px;
+      box-shadow: 0 20px 50px rgba(8, 24, 51, 0.14);
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 18px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1f4f94;
+      text-decoration: none;
+    }
+    .back:hover { color: #13386f; }
+
+    header h1 {
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      color: #0f2140;
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.02rem;
+      line-height: 1.6;
+      color: #263f67;
+      max-width: 52ch;
+      margin-bottom: 20px;
+    }
+
+    nav { display: flex; gap: 12px 24px; flex-wrap: wrap; }
+    nav a {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1f4f94;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 3px;
+      transition: border-color 0.18s, color 0.18s;
+    }
+    nav a:hover { color: #13386f; border-bottom-color: #13386f; }
+    a:focus-visible { outline: 3px solid #0a2f63; outline-offset: 3px; border-radius: 2px; }
+
+    main {
+      padding: 14px 38px 30px;
+      background: rgba(251, 253, 255, 0.9);
+      border: 1px solid rgba(85, 121, 175, 0.28);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px rgba(10, 27, 55, 0.12);
+    }
+
+    section { padding: 26px 0 8px; scroll-margin-top: 20px; }
+    section + section { border-top: 1.5px solid rgba(70, 115, 173, 0.22); }
+
+    h2 {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #335c93;
+      margin-bottom: 16px;
+    }
+
+    .roles {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #4a678f;
+      margin: -6px 0 14px;
+    }
+
+    ul.items { list-style: none; }
+    ul.items > li {
+      position: relative;
+      padding: 12px 16px 12px 20px;
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #1b2e4f;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(75, 118, 175, 0.18);
+      border-left: 4px solid #4a7fc1;
+      border-radius: 12px;
+    }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin-top: 10px; }
+    .chips li {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.82rem;
+      color: #255455;
+      background: #e0ebeb;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .course-card {
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(75, 118, 175, 0.18);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.76);
+    }
+    .course-card h3 { font-size: 1.3rem; font-weight: normal; color: #0d1e3d; margin-bottom: 2px; }
+    .course-card .years {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.85rem;
+      color: #c8803a;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .course-card p { font-size: 1rem; line-height: 1.6; color: #1b2e4f; }
+
+    .note { font-size: 1rem; line-height: 1.7; color: #1b2e4f; margin: 12px 0 18px; }
+    .note a { color: #1f4f94; text-decoration: none; border-bottom: 1.5px solid rgba(31,79,148,0.45); }
+    .note a:hover { border-bottom-color: #1f4f94; }
+
+    footer {
+      margin-top: 28px;
+      padding: 18px 26px;
+      background: rgba(244, 249, 255, 0.86);
+      border: 1px solid rgba(92, 130, 186, 0.3);
+      border-radius: 18px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.95rem;
+      color: #425f88;
+    }
+
+    @media (max-width: 780px) {
+      .page-wrap { padding: 36px 20px 70px; }
+      header, main { padding-left: 22px; padding-right: 22px; }
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1"><a href="file:///">← Home</a></span></p>
-<h1 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 31.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Teaching</span></h1>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p1"><span class="s2">Curriculum</span></p>
-<p class="p1"><span class="s2">Instructional leadership</span></p>
-<p class="p1"><span class="s2">Advising &amp; mentoring</span></p>
-<p class="p1"><span class="s2">Recognition</span></p>
-<p class="p1"><span class="s2">Courses taught</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26; min-height: 23.0px"><span class="s1"></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Course development &amp; curriculum</span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s1">Responsible for internal and external department assessment and reviews as Chair of the Department.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Led the development of the Criminal Justice major and the restructuring of the Sociology major.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Developed the initial curriculum for the Bachelor of Social Work for approval by the Middle States Commission on Higher Education, and recruited the Program and Field Directors for the new BSW major.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Developed new minors in African American Studies and Latinx Studies.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Core member of the committee that developed the General Education Core at Rider University.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Developed and regularly taught courses in criminology, sociology, race and ethnicity, research methods, and social inequality at the undergraduate and graduate levels, including:</span></li>
-  <ul class="ul1">
-    <li class="li7"><span class="s3"></span><span class="s1">Introductory sociology &amp; criminology</span></li>
-    <li class="li7"><span class="s3"></span><span class="s1">Research methods</span></li>
-    <li class="li7"><span class="s3"></span><span class="s1">Racism</span></li>
-    <li class="li7"><span class="s3"></span><span class="s1">Race and crime</span></li>
-    <li class="li7"><span class="s3"></span><span class="s1">Race, class and gender</span></li>
-    <li class="li7"><span class="s3"></span><span class="s1">Social demography</span></li>
-    <li class="li7"><span class="s3"></span><span class="s1">Internships &amp; guided studies</span></li>
-  </ul>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Teaching roles &amp; instructional leadership</span></h2>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.8px 'Helvetica Neue'; color: #161d26">Chair of Department of Sociology, Criminal Justice, and Social Work</h2>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 12.8px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Program Director for Internships in the Department of Sociology &amp; Criminology at Rider University, overseeing placement, supervision, and assessment.</span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s1">Internship Coordinator for Justice Studies at San José State University, graduate and undergraduate level.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Graduate instructor for Research Methods and Race &amp; Crime at San José State University.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Senior Thesis and Honors Thesis Advisor at Stanford University for all juniors and seniors in African American Studies, Chicana and Chicano Studies, Asian American Studies, American Indian Studies, and Comparative Studies in Race and Ethnicity, guiding students through the thesis process with weekly writing workshops and scholarship support.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Advising, mentoring &amp; high-impact learning</span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s1">Advise students in African American Studies and Latinx Studies on course selection, minor requirements, and career planning.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Advised and mentored students through New Jersey’s Educational Opportunity Program (EOP), supporting first-generation and underserved students with academic, developmental, and scholarship guidance.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Honors College Advisor at Stanford University, supervising theses and research development alongside broader mentorship.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Represented Rider University at Bonner High Impact Institute meetings at Allegheny College (2013) and Siena College (2014).</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Awards, grants &amp; service supporting teaching</span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s1">Stanford Teaching Assistant Improvement Grant for strengthening teaching assistant training and instructional quality.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Multiple Rider University Summer Research Fellowships and Research Grants, several supporting course development and research mentorship with students.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Supported student research through coauthored conference presentations and papers.</span></li>
-  <li class="li6"><span class="s3"></span><span class="s1">Active contributor to instructional technology, curriculum committees, and college-level academic governance.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">Courses taught</span></h2>
-<ul class="ul1">
-  <li class="li10"><span class="s4"></span><span class="s5">Rider University<br>
-</span><span class="s6">2010 – present<br>
-</span><span class="s1">Theories of Racism; Race and Crime; Racial and Ethnic Relations; Research Methods; Punishment; Introduction to Criminology; Introduction to Law &amp; Society; Crime and Media; Sociology of Deviance; Social Demography; Punishment and Society.</span></li>
-  <li class="li10"><span class="s4"></span><span class="s5">San José State University<br>
-</span><span class="s6">2005 – 2008 and 2016 – 2018<br>
-</span><span class="s1">Graduate &amp; Undergraduate Research Methods; Graduate Race &amp; Crime; Social Theory; Immigration &amp; Identity; Social Problems; Writing for Sociologists; Introduction to Sociology.</span></li>
-  <li class="li10"><span class="s4"></span><span class="s5">Columbus State Community College<br>
-</span><span class="s6">2009 – 2010<br>
-</span><span class="s1">Introductory Sociology; Sociology of Deviance.</span></li>
-  <li class="li10"><span class="s4"></span><span class="s5">Stanford University<br>
-</span><span class="s6">2002 – 2009<br>
-</span><span class="s1">Senior Seminar in Comparative Studies in Race and Ethnicity; Pre-Honors Seminar on Research Methods &amp; Thesis Writing; Race, Community &amp; Urban Sociology; Political Sociology (Summer Fellow); American Language &amp; Culture; Writing Tutor &amp; Advisor (Urban Studies).</span></li>
-</ul>
-<p class="p11"><span class="s1">Courses on race, crime, and punishment draw directly on my <a href="file:///research/index.html#punishment"><span class="s2">research with Lawrence Bobo</span></a>.</span></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 13.2px 'Helvetica Neue'; color: #161d26; -webkit-text-stroke: #161d26"><span class="s1">More</span></h2>
-<ul class="ul2">
-  <li class="li1"><span class="s3"><a href="file:///personal/"><span class="s7">About &amp; CV</span></a></span></li>
-  <li class="li1"><span class="s3"><a href="file:///research/index.html"><span class="s7">Research</span></a></span></li>
-</ul>
-<p class="p13"><span class="s1">© DataBums</span></p>
+  <div class="page-wrap">
+
+    <header>
+      <a class="back" href="../">← Home</a>
+      <h1>Teaching &amp; Mentoring</h1>
+      <p class="hero-subtitle">An abbreviated list of teaching and mentoring contributions: curriculum, instructional leadership, advising, and courses taught.</p>
+      <nav>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#mentoring">Mentoring</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#courses">Courses</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="curriculum">
+        <h2>Course Development &amp; Curriculum</h2>
+        <ul class="items">
+          <li>Responsible for department assessment and reviews, both internal and external, as Chair of Department.</li>
+          <li>Led the development of the Criminal Justice major and the restructuring of the Sociology major.</li>
+          <li>Developed the initial curriculum for the Bachelor of Social Work for approval by the Middle States Commission on Higher Education, and recruited Program and Field Directors for the new BSW major.</li>
+          <li>Developed new minors in African American Studies and Latinx Studies.</li>
+          <li>Core member of the committee that developed the General Education Core at Rider University.</li>
+          <li>Developed and regularly taught a wide range of undergraduate and graduate courses in criminology, sociology, race and ethnicity, research methods, and social inequality, including:
+            <ul class="chips">
+              <li>Intro sociology &amp; criminology</li>
+              <li>Research methods</li>
+              <li>Racism</li>
+              <li>Race and crime</li>
+              <li>Race, class and gender</li>
+              <li>Social demography</li>
+              <li>Internships &amp; guided studies</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="leadership">
+        <h2>Teaching Roles &amp; Instructional Leadership</h2>
+        <ul class="items">
+          <li>Internship Coordinator for Justice Studies at San Jose State University (graduate and undergraduate).</li>
+          <li>Program Director for Internships in the Department of Sociology &amp; Criminology at Rider University, overseeing placement, supervision, and assessment.</li>
+          <li>Graduate instructor for Research Methods and Race &amp; Crime at SJSU.</li>
+          <li>Senior Thesis and Honors Thesis Advisor at Stanford University for all junior and senior students in African American Studies, Chicana and Chicano Studies, Asian American Studies, American Indian Studies, and Comparative Studies in Race and Ethnicity, guiding them through thesis writing with weekly classes, writing workshops, and scholarship assistance.</li>
+        </ul>
+      </section>
+
+      <section id="mentoring">
+        <h2>Student Advising, Mentoring &amp; High-Impact Learning</h2>
+        <ul class="items">
+          <li>Represented Rider University at Bonner High Impact Institute meetings at Allegheny College (2013) and Siena College (2014).</li>
+          <li>Advised and mentored students through the Educational Opportunity Program (EOP) in New Jersey, supporting first-generation and underserved students with academic, developmental, and scholarship guidance.</li>
+          <li>Honors College Advisor at Stanford University, including thesis supervision, research development, mentorship, and support.</li>
+          <li>Regularly advise students in African American Studies and Latinx Studies on course selection, minor requirements, and career planning.</li>
+        </ul>
+      </section>
+
+      <section id="recognition">
+        <h2>Awards, Recognition &amp; Grants Supporting Pedagogy</h2>
+        <ul class="items">
+          <li>Stanford Teaching Assistant Improvement Grant for enhancing teaching assistant training and instructional quality.</li>
+          <li>Multiple Rider University Summer Research Fellowships and Research Grants, several supporting course development and research mentorship with students.</li>
+          <li>Supported student research through coauthored conference presentations and papers.</li>
+          <li>Active contributor to instructional technology, curriculum committees, and college-level academic governance.</li>
+        </ul>
+      </section>
+
+      <section id="courses">
+        <h2>Course Offerings</h2>
+
+        <div class="course-card">
+          <h3>Rider University</h3>
+          <div class="years">2010 – present</div>
+          <p>Theories of Racism; Race and Crime; Racial and Ethnic Relations; Research Methods; Punishment; Introduction to Criminology; Introduction to Law &amp; Society; Crime and Media; Sociology of Deviance; Social Demography; Punishment and Society.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>San Jose State University</h3>
+          <div class="years">2005 – 2008 &amp; 2016 – 2018</div>
+          <p>Graduate &amp; Undergraduate Research Methods; Graduate Race &amp; Crime; Social Theory; Immigration &amp; Identity; Social Problems; Writing for Sociologists; Introduction to Sociology.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>Columbus State Community College</h3>
+          <div class="years">2009 – 2010</div>
+          <p>Introductory Sociology; Sociology of Deviance.</p>
+        </div>
+
+        <div class="course-card">
+          <h3>Stanford University</h3>
+          <div class="years">2002 – 2009</div>
+          <p>Senior Seminar in Comparative Studies in Race and Ethnicity; Pre-Honors Seminar on Research Methods &amp; Thesis Writing; Race, Community &amp; Urban Sociology; Political Sociology (Summer Fellow); American Language &amp; Culture; Writing Tutor &amp; Advisor (Urban Studies).</p>
+        </div>
+
+        <p class="note">Courses on race, crime, and punishment draw directly on my <a href="../research/index.html#punishment">research with Lawrence Bobo</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      © DataBums · <a class="back" style="margin:0" href="../personal/">About &amp; CV</a> ·
+      <a class="back" style="margin:0" href="../research/index.html">Research</a>
+    </footer>
+  </div>
 </body>
 </html>
